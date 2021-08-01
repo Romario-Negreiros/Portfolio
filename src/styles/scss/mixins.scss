@@ -1,0 +1,36 @@
+@mixin flexbox-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexbox-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin mQ($wdt) {
+    @media screen and (max-width: $wdt) {
+        @content;
+    }
+}
+
+@mixin animateRight {
+    transform: translateX(-550px);
+    visibility: hidden;
+    transition: 0.8s;
+}
+
+@mixin animateLeft {
+    transform: translateX(550px);
+    visibility: hidden;
+    transition: 0.8s;
+}
+
+@mixin animateEnd {
+    transform: translateX(0px);
+    visibility: visible;
+}

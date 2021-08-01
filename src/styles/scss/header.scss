@@ -1,0 +1,97 @@
+.a-header {
+  background: $lighterBg;
+  height: 60px;
+  padding: 25px;
+  overflow: hidden;
+  border-bottom: 1px solid $borders;
+  .a-header__left {
+    color: $weakGray;
+    font-size: 1.4rem;
+    @include mQ(600px) {
+      font-size: 1.2rem;
+    }
+  }
+  @include flexbox-row;
+  .a-header__nav {
+    .mobile-menu__container {
+      display: none;
+      @include mQ(600px) {
+          cursor: pointer;
+          display: block;
+          position: absolute;
+          top: 22px;
+          right: 25px;
+          z-index: 11;
+      }
+    }
+    .burguer {
+      @include mQ(600px) {
+        width: 15px;
+        height: 2px;
+        display: block;
+        margin-top: 3px;
+        background: $weakGray;
+        transition: transform .4s ease-in-out;
+      }
+    }
+    .close-left {
+      transform: translate(0, 2px) rotate(45deg);
+    }
+    .close-right {
+      transform: translate(0, -3px) rotate(135deg);
+    }
+    .fade {
+      transform: translateX(1000px);
+    }
+    .a-header__navList {
+      @include flexbox-row;
+      @include mQ(600px) {
+        @include flexbox-column;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        background: $lighterBg;
+        top: 5px;
+        left: 1px;
+        z-index: 10;
+        height: 100vh;
+        transform: translateY(-1000px);
+        transition: transform 0.4s ease-in-out;
+      }
+    }
+    .a-header__mobile--active {
+        transform: translateY(0px);
+    }
+    li
+     {
+      position: relative;
+      margin-left: 30px;
+      @include mQ(600px) {
+        margin: auto;
+      }
+    }
+    a {
+      padding: 20px 0;
+      color: $text;
+      font-weight: 600;
+      transition: color 0.3s ease-in-out;
+      &::after {
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background: $underline;
+        transition: width 0.3s ease-in-out;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+        color: $weakGray;
+      }
+    }
+  }
+}
