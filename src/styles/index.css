@@ -7,7 +7,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 html {
@@ -36,7 +36,8 @@ ul {
 
 .wrapper {
   background: #151519;
-  height: 1000px;
+  padding: 50px;
+  height: 800px;
 }
 
 .a-header {
@@ -145,6 +146,7 @@ ul {
     left: 1px;
     z-index: 10;
     height: 100vh;
+    visibility: hidden;
     -webkit-transform: translateY(-1000px);
             transform: translateY(-1000px);
     -webkit-transition: -webkit-transform 0.4s ease-in-out;
@@ -154,6 +156,7 @@ ul {
   }
 }
 .a-header .a-header__nav .a-header__mobile--active {
+  visibility: visible;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
 }
@@ -190,4 +193,89 @@ ul {
 }
 .a-header .a-header__nav a:hover::after {
   width: 100%;
+}
+
+.c-aboutme {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+@media screen and (max-width: 600px) {
+  .c-aboutme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.c-aboutme .section-title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-size: 1.6rem;
+  color: #a8a8b3;
+  -webkit-transform: translateX(-550px);
+          transform: translateX(-550px);
+  visibility: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+@media screen and (max-width: 600px) {
+  .c-aboutme .section-title {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .c-aboutme .section-title {
+    font-size: 1.2rem;
+  }
+}
+.c-aboutme .c-aboutme__lefttop, .c-aboutme .c-aboutme__rightbottom {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  margin-top: 25px;
+}
+.c-aboutme .c-aboutme__lefttop p, .c-aboutme .c-aboutme__rightbottom p {
+  text-justify: distribute;
+  color: #a8a8b3;
+}
+.c-aboutme .c-aboutme__lefttop {
+  -webkit-transform: translateX(-550px);
+          transform: translateX(-550px);
+  visibility: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.c-aboutme .c-aboutme__rightbottom {
+  -webkit-transform: translateX(550px);
+          transform: translateX(550px);
+  visibility: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+.c-aboutme .animated {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  visibility: visible;
 }

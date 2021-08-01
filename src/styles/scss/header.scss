@@ -55,11 +55,13 @@
         left: 1px;
         z-index: 10;
         height: 100vh;
+        visibility: hidden;
         transform: translateY(-1000px);
         transition: transform 0.4s ease-in-out;
       }
     }
     .a-header__mobile--active {
+        visibility: visible;
         transform: translateY(0px);
     }
     li

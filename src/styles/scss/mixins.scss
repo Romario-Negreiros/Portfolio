@@ -12,6 +12,17 @@
     align-items: center;
 }
 
+@mixin sectitle {
+    flex-basis: 100%;
+    font-size: 1.6rem;
+    @include mQ(600px) {
+        font-size: 1.4rem;
+    }
+    @include mQ(400px) {
+        font-size: 1.2rem;
+    }
+}
+
 @mixin mQ($wdt) {
     @media screen and (max-width: $wdt) {
         @content;

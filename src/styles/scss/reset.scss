@@ -6,7 +6,7 @@
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 html {
@@ -33,5 +33,6 @@ ul {
 
 .wrapper {
   background: $lighterBg;  
-  height: 1000px;
+  padding: 50px;
+  height: 800px;
 }

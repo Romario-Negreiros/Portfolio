@@ -1,0 +1,30 @@
+.c-aboutme {
+    width: 100%;
+    @include flexbox-row;
+    flex-flow: row wrap;
+    @include mQ(600px) {
+        @include flexbox-column;
+    }
+    .section-title {
+        @include sectitle;
+        color: $text;
+        @include animateRight;
+    }
+    .c-aboutme__lefttop, .c-aboutme__rightbottom {
+        flex-basis: 45%;
+        margin-top: 25px;
+    }
+    .c-aboutme__lefttop p, .c-aboutme__rightbottom p {
+        text-justify: distribute;
+        color: $text;
+    }
+    .c-aboutme__lefttop {
+        @include animateRight;
+    }
+    .c-aboutme__rightbottom {
+        @include animateLeft;
+    }
+    .animated {
+        @include animateEnd;
+    }
+}
