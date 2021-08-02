@@ -34,7 +34,6 @@ window.addEventListener("load", animations);
 
 /*************** Smooth scroll on links ****************/
 const smoothScroll = event => {
-  console.log('heloo')
   event.preventDefault();
   const element = document.querySelector(event.target.getAttribute('href'));
   window.scroll({
@@ -46,4 +45,6 @@ const smoothScroll = event => {
 const internLinks = [...document.querySelectorAll('[href^="#"]')];
 internLinks.forEach(link => {
   link.addEventListener('click', smoothScroll);
+  // Faz com que o menu seja fechado ao clicar em um dos links internos.
+  link.addEventListener('click', menuMechanisms);
 });
