@@ -185,7 +185,7 @@ ul {
   padding: 50px;
   width: 100%;
   overflow: hidden;
-  background: #161619;
+  background: #161619 url(../../../assets/stars.svg) right top no-repeat;
   color: #a8a8b3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,6 +196,21 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .c-aboutme {
+    background-position-y: -50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .c-aboutme {
+    background-position-y: -100px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .c-aboutme {
+    background-position-y: -115px;
+  }
 }
 .c-aboutme .c-aboutme__wrapper {
   display: -webkit-box;
