@@ -51,13 +51,13 @@
         position: absolute;
         width: 100%;
         background: $lighterBg;
-        top: 5px;
-        left: 1px;
+        top: 0px;
+        left: 0px;
         z-index: 10;
         height: 100vh;
         visibility: hidden;
         transform: translateY(-1000px);
-        transition: transform 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
       }
     }
     .a-header__mobile--active {

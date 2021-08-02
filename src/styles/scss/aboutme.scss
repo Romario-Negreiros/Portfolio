@@ -1,30 +1,39 @@
 .c-aboutme {
+    min-height: 100vh;
+    border-bottom: 1px solid $borders;
+    padding: 50px;
     width: 100%;
-    @include flexbox-row;
-    flex-flow: row wrap;
-    @include mQ(600px) {
-        @include flexbox-column;
-    }
-    .section-title {
-        @include sectitle;
-        color: $text;
-        @include animateRight;
-    }
-    .c-aboutme__lefttop, .c-aboutme__rightbottom {
-        flex-basis: 45%;
-        margin-top: 25px;
-    }
-    .c-aboutme__lefttop p, .c-aboutme__rightbottom p {
-        text-justify: distribute;
-        color: $text;
-    }
-    .c-aboutme__lefttop {
-        @include animateRight;
-    }
-    .c-aboutme__rightbottom {
-        @include animateLeft;
-    }
-    .animated {
-        @include animateEnd;
+    overflow: hidden;
+    background: $sectionsBg;
+    color: $text;
+    @include flexbox-center;
+    .c-aboutme__wrapper {
+        @include flexbox-row;
+        flex-flow: row wrap;
+        .section-title {
+            @include animateRight;
+            @include sectitle;
+            margin-bottom: 100px;
+            @include mQ(800px) {
+                margin-bottom: 40px;
+            }
+        }
+        .c-aboutme__innerwrapper {
+            @include flexbox-row;
+            @include mQ(800px) {
+                flex-direction: column;
+            }
+        }
+        .c-aboutme__lefttop {
+            @include animateRight;
+            @include texts;
+        }
+        .c-aboutme__rightbottom {
+            @include animateLeft;
+            @include texts;
+            @include mQ(800px) {
+                margin-top: 20px;
+            }
+        }
     }
 }

@@ -1,7 +1,12 @@
 @mixin flexbox-row {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -14,6 +19,20 @@
 
 @mixin sectitle {
     flex-basis: 100%;
+    font-size: 2rem;
+    @include mQ(600px) {
+        font-size: 1.6rem;
+    }
+    @include mQ(400px) {
+        font-size: 1.4rem;
+    }
+}
+
+@mixin texts {
+    line-height: 35px;
+    text-justify: distribute;
+    align-self: stretch;
+    flex-basis: 45%;
     font-size: 1.6rem;
     @include mQ(600px) {
         font-size: 1.4rem;
@@ -42,6 +61,6 @@
 }
 
 @mixin animateEnd {
-    transform: translateX(0px);
-    visibility: visible;
+    transform: translateX(0px) !important;
+    visibility: visible !important;
 }

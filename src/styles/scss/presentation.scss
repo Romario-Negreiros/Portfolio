@@ -1,0 +1,53 @@
+.b-presentation {
+    height: 100vh;
+    color: $text;
+    background: $darkerBg;  
+    padding: 50px;
+    @include flexbox-column;
+    justify-content: center;
+    align-items: flex-start;
+    @include mQ(600px) {
+        align-items: center;
+    }
+    h1 {
+        @include animateRight;
+        margin-top: -50px;
+        font-size: 3rem;
+        @include mQ(1000px) {
+            font-size: 2.2rem;
+        }
+        @include mQ(600px) {
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        @include mQ(400px) {
+            font-size: 1.5rem;
+            margin-top: -80px;
+        }
+    }
+    a {
+        @include animateRight;
+        margin-top: 50px;
+        color: #fff;
+        padding: 5px 50px;
+        background: $link;
+        font-weight: 600;
+        font-size: 1.6rem;
+        border-radius: 2px;
+        @include flexbox-row;
+        @include mQ(1000px) {
+            font-size: 1.4rem;
+        }
+        &:hover {
+            opacity: 0.5;
+        }
+        @include mQ(400px) {
+            padding: 20px;
+        }
+    }
+    img {
+        width: 25px;
+        margin-left: 20px;
+        object-fit: cover;
+    }
+}

@@ -3,3 +3,8 @@
 @import "mixins";
 @import "header";
 @import "aboutme";
+@import "presentation";
+
+.animated {
+    @include animateEnd;
+}
