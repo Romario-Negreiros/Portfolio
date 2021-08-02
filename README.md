@@ -1,9 +1,10 @@
 ## Romario Negreiros
 
-Esse é meu portfólio como desenvolvedor front end 😁
+Esse é o início do meu portfólio como desenvolvedor front end
 
-O portfólio irá conter três partes até o momento: 
+O portfólio conteêm três partes até o momento: 
 * Sobre mim
 * Conhecimentos
 * Projetos
+
 
