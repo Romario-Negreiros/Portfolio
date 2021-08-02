@@ -1,4 +1,7 @@
+/*************** Mobile menu ****************/
 const menuMechanisms = () => {
+  const { body } = window.document;
+  body.style.overflowY === 'hidden' ? body.style.overflowY = 'visible' : body.style.overflowY = 'hidden';
   const spans = [...document.querySelectorAll(".burguer")];
   spans.forEach((span, index) => {
     if (index === 1) span.classList.toggle("close-left");
@@ -12,13 +15,14 @@ const menuMechanisms = () => {
 const mobileMenu = document.querySelector(".mobile-menu__container");
 mobileMenu.addEventListener("click", menuMechanisms);
 
+/*************** Animate on scroll ****************/
 const animations = () => {
   const { pageYOffset, innerHeight } = window;
-  const aboutme = [...document.querySelector(".c-aboutme").children];
-  aboutme.forEach((element) => {
+  const elementsToAnimate = [...document.querySelectorAll('[data-aos]')]
+  elementsToAnimate.forEach((element) => {
     if (
       element.offsetTop - pageYOffset <=
-      innerHeight - (element.offsetTop - pageYOffset)
+      innerHeight - ((element.offsetTop - pageYOffset) / 2)
     ) {
       element.classList.add("animated");
     }
@@ -27,3 +31,19 @@ const animations = () => {
 
 window.addEventListener("scroll", animations);
 window.addEventListener("load", animations);
+
+/*************** Smooth scroll on links ****************/
+const smoothScroll = event => {
+  console.log('heloo')
+  event.preventDefault();
+  const element = document.querySelector(event.target.getAttribute('href'));
+  window.scroll({
+    top: element.offsetTop,
+    behavior: "smooth"
+  });
+};
+
+const internLinks = [...document.querySelectorAll('[href^="#"]')];
+internLinks.forEach(link => {
+  link.addEventListener('click', smoothScroll);
+});
