@@ -1,5 +1,6 @@
 /*************** Mobile menu ****************/
 const menuMechanisms = () => {
+
     const spans = [...document.querySelectorAll(".burguer")];
     spans.forEach((span, index) => {
       if (index === 1) span.classList.toggle("close-left");
@@ -34,6 +35,7 @@ window.addEventListener("load", animations);
 const smoothScroll = (event) => {
   event.preventDefault();
   const element = document.querySelector(event.target.getAttribute("href"));
+
   window.scroll({
     top: element.offsetTop,
     behavior: "smooth",
@@ -42,8 +44,8 @@ const smoothScroll = (event) => {
 
 const internLinks = [...document.querySelectorAll('[href^="#"]')];
 internLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    smoothScroll()
+  link.addEventListener("click", event => {
     menuMechanisms()
+    smoothScroll(event)
   });
 });
