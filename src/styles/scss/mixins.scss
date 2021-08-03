@@ -32,7 +32,6 @@
     line-height: 35px;
     text-justify: distribute;
     align-self: stretch;
-    flex-basis: 45%;
     font-size: 1.6rem;
     @include mQ(600px) {
         font-size: 1.4rem;
@@ -40,6 +39,14 @@
     @include mQ(400px) {
         font-size: 1.2rem;
     }
+}
+
+@mixin buttons {
+    color: #fff;
+    padding: 5px 50px;
+    background: $link;
+    font-weight: 600;
+    border-radius: 2px;
 }
 
 @mixin mQ($wdt) {
