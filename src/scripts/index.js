@@ -24,7 +24,7 @@ const animations = () => {
   elementsToAnimate.forEach((element) => {
     if (
       element.offsetTop - pageYOffset <=
-      innerHeight - (element.offsetTop - pageYOffset) / 2
+      innerHeight - (element.offsetTop - pageYOffset) / 6
     ) {
       element.classList.add("animated");
     }
