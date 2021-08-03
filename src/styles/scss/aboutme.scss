@@ -17,6 +17,7 @@
   }
   @include flexbox-center;
   .c-aboutme__wrapper {
+    overflow: hidden;
     @include flexbox-row;
     flex-flow: row wrap;
     .section-title {
@@ -28,6 +29,7 @@
       }
     }
     .c-aboutme__innerwrapper {
+      overflow: hidden;
       align-self: baseline;
       @include flexbox-column;
       flex-basis: 45%;
@@ -45,6 +47,7 @@
       @include texts;
     }
     .c-aboutme__linksWrapper {
+      overflow: hidden;
         width: 100%;
         @include flexbox-row;
         margin-top: 30px;

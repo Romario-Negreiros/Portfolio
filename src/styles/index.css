@@ -17,7 +17,6 @@ body {
 
 html {
   font-size: 16px;
-  scroll-behavior: smooth;
 }
 
 a {
@@ -100,8 +99,8 @@ ul {
           transform: translate(0, -3px) rotate(135deg);
 }
 .a-header .a-header__nav .fade {
-  -webkit-transform: translateX(1000px);
-          transform: translateX(1000px);
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
 }
 .a-header .a-header__nav .a-header__navList {
   display: -webkit-box;
@@ -219,6 +218,7 @@ ul {
   }
 }
 .c-aboutme .c-aboutme__wrapper {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,6 +260,7 @@ ul {
   }
 }
 .c-aboutme .c-aboutme__wrapper .c-aboutme__innerwrapper {
+  overflow: hidden;
   -ms-flex-item-align: baseline;
       align-self: baseline;
   display: -webkit-box;
@@ -332,6 +333,7 @@ ul {
   }
 }
 .c-aboutme .c-aboutme__wrapper .c-aboutme__linksWrapper {
+  overflow: hidden;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

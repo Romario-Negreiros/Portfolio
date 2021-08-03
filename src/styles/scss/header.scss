@@ -41,7 +41,7 @@
       transform: translate(0, -3px) rotate(135deg);
     }
     .fade {
-      transform: translateX(1000px);
+      transform: translateX(100px);
     }
     .a-header__navList {
       @include flexbox-row;
@@ -64,8 +64,7 @@
         visibility: visible;
         transform: translateY(0px);
     }
-    li
-     {
+    li {
       position: relative;
       margin-left: 30px;
       @include mQ(600px) {

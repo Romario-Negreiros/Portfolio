@@ -1,21 +1,38 @@
 /*************** Mobile menu ****************/
 const menuMechanisms = () => {
-  if (window.innerWidth <= 600) {
-    const { body } = window.document;
-    body.classList.toggle("body--active");
-    const spans = [...document.querySelectorAll(".burguer")];
-    spans.forEach((span, index) => {
-      if (index === 1) span.classList.toggle("close-left");
-      else if (index === 2) span.classList.toggle("close-right");
-      else span.classList.toggle("fade");
-    });
-    const menuList = document.querySelector(".a-header__navList");
-    menuList.classList.toggle("a-header__mobile--active");
-  }
-};
+  if(window.innerWidth <= 600) {
+    window.document.body.classList.toggle('body--active') 
 
-const mobileMenu = document.querySelector(".mobile-menu__container");
-mobileMenu.addEventListener("click", menuMechanisms);
+    const spans = [...document.querySelectorAll('.burguer')]
+    spans.forEach((span, index) => {
+      if(index === 0) span.classList.toggle('close-left')
+      else if(index === 1) span.classList.toggle('close-right')
+      else span.classList.toggle('fade')
+    })
+
+    const menu = document.querySelector('.a-header__navList')
+    menu.classList.toggle('a-header__mobile--active')
+  }
+}
+
+const mobileMenuBtn = document.querySelector('.mobile-menu__container')
+mobileMenuBtn.addEventListener('click', menuMechanisms)
+ 
+/*************** Smooth scroll on intern links ****************/
+const internLinks = [...document.querySelectorAll('[href^="#')]
+internLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault()
+    // Makes menu close 
+    menuMechanisms()
+    // Smooth scroll
+    const element = document.querySelector(event.target.getAttribute('href'))
+    window.scroll({
+      top: element.offsetTop,
+      behavior: "smooth"
+    })
+  })
+})
 
 /*************** Animate on scroll ****************/
 const animations = () => {
@@ -33,9 +50,3 @@ const animations = () => {
 
 window.addEventListener("scroll", animations);
 window.addEventListener("load", animations);
-
-/*************** Makes link close mobile menu when clicked ****************/
-const internLinks = [...document.querySelectorAll('[href^="#"]')];
-internLinks.forEach((link) => {
-  link.addEventListener("click", menuMechanisms)
-})
