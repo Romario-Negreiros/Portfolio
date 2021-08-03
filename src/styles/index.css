@@ -351,8 +351,8 @@ ul {
   }
 }
 .c-aboutme .c-aboutme__wrapper a {
-  -webkit-transform: translateX(550px);
-          transform: translateX(550px);
+  -webkit-transform: translateX(-550px);
+          transform: translateX(-550px);
   visibility: hidden;
   -webkit-transition: 0.8s;
   transition: 0.8s;

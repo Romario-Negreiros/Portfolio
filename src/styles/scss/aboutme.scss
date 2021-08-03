@@ -53,7 +53,7 @@
         }
     }
     a {
-      @include animateLeft;
+      @include animateRight;
       @include flexbox-row;
       @include buttons;
       margin: 15px 0;
