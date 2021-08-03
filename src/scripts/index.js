@@ -42,7 +42,8 @@ const smoothScroll = (event) => {
 
 const internLinks = [...document.querySelectorAll('[href^="#"]')];
 internLinks.forEach((link) => {
-  link.addEventListener("click", smoothScroll);
-  // Faz com que o menu seja fechado ao clicar em um dos links internos.
-  link.addEventListener("click", menuMechanisms);
+  link.addEventListener("click", () => {
+    smoothScroll()
+    menuMechanisms()
+  });
 });
