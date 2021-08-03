@@ -7,15 +7,17 @@
 }
 
 body {
+  position: relative;
   overflow-x: hidden;
 }
 
 .body--active {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 a {
