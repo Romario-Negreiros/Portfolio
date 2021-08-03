@@ -1,14 +1,16 @@
 /*************** Mobile menu ****************/
-const menuMechanisms = () => {
-
-    const spans = [...document.querySelectorAll(".burguer")];
-    spans.forEach((span, index) => {
-      if (index === 1) span.classList.toggle("close-left");
-      else if (index === 2) span.classList.toggle("close-right");
-      else span.classList.toggle("fade");
-    });
-    const menuList = document.querySelector(".a-header__navList");
-    menuList.classList.toggle("a-header__mobile--active");
+const menuMechanisms = (event, smoothScroll) => {
+  smoothScroll ? smoothScroll(event) : "";
+  const { body } = window.document;
+  body.classList.toggle("body--active");
+  const spans = [...document.querySelectorAll(".burguer")];
+  spans.forEach((span, index) => {
+    if (index === 1) span.classList.toggle("close-left");
+    else if (index === 2) span.classList.toggle("close-right");
+    else span.classList.toggle("fade");
+  });
+  const menuList = document.querySelector(".a-header__navList");
+  menuList.classList.toggle("a-header__mobile--active");
 };
 
 const mobileMenu = document.querySelector(".mobile-menu__container");
@@ -44,8 +46,7 @@ const smoothScroll = (event) => {
 
 const internLinks = [...document.querySelectorAll('[href^="#"]')];
 internLinks.forEach((link) => {
-  link.addEventListener("click", event => {
-    menuMechanisms()
-    smoothScroll(event)
+  link.addEventListener("click", (event) => {
+    menuMechanisms(event, smoothScroll);
   });
 });
