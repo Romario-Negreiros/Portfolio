@@ -8,6 +8,9 @@
 body {
   overflow-x: hidden;
 }
+.body--active {
+  overflow-y: hidden;
+}
 
 html {
   font-size: 16px;
