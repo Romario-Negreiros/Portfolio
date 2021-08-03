@@ -4,7 +4,7 @@
     padding: 50px;
     width: 100%;
     overflow: hidden;
-    background: $sectionsBg url(../../../assets/stars.svg) right top no-repeat;
+    background: $sectionsBg url(../../../assets/star.svg) right top no-repeat;
     color: $text;
     @include mQ(800px) {
         background-position-y: -50px;
