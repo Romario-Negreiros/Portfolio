@@ -1,26 +1,16 @@
 .c-aboutme {
   min-height: 100vh;
   border-bottom: 1px solid $borders;
-  padding: 50px;
   width: 100%;
-  overflow: hidden;
   background: $sectionsBg;
   color: $text;
-  @include mQ(800px) {
-    background-position-y: -50px;
-  }
-  @include mQ(500px) {
-    background-position-y: -100px;
-  }
-  @include mQ(350px) {
-    background-position-y: -115px;
-  }
+  @include padding;
   @include flexbox-center;
   .c-aboutme__wrapper {
     overflow: hidden;
     @include flexbox-row;
     flex-flow: row wrap;
-    .section-title {
+    h1 {
       @include animateRight;
       @include sectitle;
       margin-bottom: 100px;
@@ -59,16 +49,19 @@
       @include animateRight;
       @include flexbox-row;
       @include buttons;
+      padding: 15px 35px;
       margin: 15px 0;
       cursor: pointer;
       &:hover {
         opacity: 0.5;
       }
+      @include mQ(600px) {
+        width: 100%;
+        justify-content: center;
+      }
     }
     img {
-        width: 15px;
-        margin-left: 20px;
-        object-fit: cover;
+        @include smallerIcons;
     }
   }
 }

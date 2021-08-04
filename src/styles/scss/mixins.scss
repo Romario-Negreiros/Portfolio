@@ -1,73 +1,110 @@
 @mixin flexbox-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @mixin flexbox-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flexbox-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@mixin sectitle {
-    flex-basis: 100%;
-    font-size: 2rem;
-    @include mQ(600px) {
-        font-size: 1.6rem;
-    }
-    @include mQ(400px) {
-        font-size: 1.4rem;
-    }
-}
-
-@mixin texts {
-    line-height: 35px;
-    text-justify: distribute;
-    align-self: stretch;
-    font-size: 1.6rem;
-    @include mQ(600px) {
-        font-size: 1.4rem;
-    }
-    @include mQ(400px) {
-        font-size: 1.2rem;
-    }
-}
-
-@mixin buttons {
-    color: #fff;
-    padding: 5px 50px;
-    background: $link;
-    font-weight: 600;
-    border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @mixin mQ($wdt) {
-    @media screen and (max-width: $wdt) {
-        @content;
-    }
+  @media screen and (max-width: $wdt) {
+    @content;
+  }
+}
+
+@mixin three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @include mQ(1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include mQ(700px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+@mixin sectitle {
+  color: $text;
+  flex-basis: 100%;
+  font-size: 2rem;
+  @include mQ(600px) {
+    font-size: 1.6rem;
+  }
+  @include mQ(400px) {
+    font-size: 1.4rem;
+  }
+}
+
+@mixin cardtitle {
+  color: $text;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+@mixin texts {
+  color: $text;
+  line-height: 35px;
+  text-justify: distribute;
+  align-self: stretch;
+  font-size: 1.2rem;
+}
+
+@mixin padding {
+  padding: 50px;
+  @include mQ(600px) {
+    padding: 25px;
+  }
+  @include mQ(400px) {
+    padding: 20px 10px;
+  }
+}
+
+@mixin smallerIcons {
+  width: 15px;
+  margin-left: 20px;
+  object-fit: cover;
+}
+
+@mixin buttons {
+  color: #fff;
+  background: $link;
+  font-weight: 600;
+  border-radius: 2px;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 @mixin animateRight {
-    transform: translateX(-550px);
-    visibility: hidden;
-    transition: 0.8s;
+  transform: translateX(-550px);
+  visibility: hidden;
+  transition: 0.8s;
 }
 
 @mixin animateLeft {
-    transform: translateX(550px);
-    visibility: hidden;
-    transition: 0.8s;
+  transform: translateX(550px);
+  visibility: hidden;
+  transition: 0.8s;
+}
+
+@mixin animateTop {
+  transform: translateY(-550px);
+  visibility: hidden;
+  transition: 0.8s;
 }
 
 @mixin animateEnd {
-    transform: translateX(0px) !important;
-    visibility: visible !important;
+  transform: translateX(0px) !important;
+  visibility: visible !important;
 }

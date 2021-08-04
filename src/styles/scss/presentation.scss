@@ -1,8 +1,8 @@
 .b-presentation {
-  height: 100vh;
+  min-height: 100vh;
   color: $text;
   background: $darkerBg;
-  padding: 50px;
+  @include padding;
   @include flexbox-column;
   justify-content: center;
   align-items: flex-start;
@@ -16,29 +16,25 @@
     @include mQ(1000px) {
       font-size: 2.2rem;
     }
-    @include mQ(600px) {
+    @include mQ(400px) {
       text-align: center;
       font-size: 1.8rem;
-    }
-    @include mQ(400px) {
-      font-size: 1.5rem;
       margin-top: -80px;
     }
   }
   a {
     @include animateRight;
-    @include buttons;
-    margin-top: 50px;
-    font-size: 1.6rem;
     @include flexbox-row;
-    @include mQ(1000px) {
-        font-size: 1.4rem;
-    }
+    @include buttons;
+    padding: 15px 70px;
+    margin-top: 50px;
+    cursor: pointer;
     &:hover {
-        opacity: 0.5;
+      opacity: 0.5;
     }
-    @include mQ(400px) {
-        padding: 20px;
+    @include mQ(600px) {
+      width: 100%;
+      justify-content: center;
     }
   }
   img {
