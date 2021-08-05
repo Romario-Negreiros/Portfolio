@@ -1,0 +1,14 @@
+.e-skills {
+    @include padding;
+    min-height: 100vh;
+    width: 100%;
+    background: $darkerBg;
+    border-bottom: 1px solid $borders;
+    @include mQ(300px) {
+      padding: 20px 0px;
+    }
+    @include flexbox-center;
+    .e-skills_wrapper {
+        overflow: hidden;
+    }
+}

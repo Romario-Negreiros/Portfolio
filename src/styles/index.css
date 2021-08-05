@@ -574,6 +574,16 @@ ul {
   padding: 15px;
   -webkit-transition: border 0.5s;
   transition: border 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-transform: translateY(-550px);
           transform: translateY(-550px);
   visibility: hidden;
@@ -585,16 +595,11 @@ ul {
 }
 @media screen and (max-width: 600px) {
   .d-projects .d-projects__wrapper .d-projects__list li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-transform: translateX(-550px);
+            transform: translateX(-550px);
+    visibility: hidden;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -614,6 +619,14 @@ ul {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   font-size: 1.2rem;
+}
+.d-projects .d-projects__wrapper .d-projects__list .card-bottompart {
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .d-projects .d-projects__wrapper .d-projects__list .card-bottompart {
+    text-align: center;
+  }
 }
 .d-projects .d-projects__wrapper .d-projects__list a {
   margin-top: 25px;
@@ -638,7 +651,7 @@ ul {
 .d-projects .d-projects__wrapper .d-projects__list a:hover {
   opacity: 0.5;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   .d-projects .d-projects__wrapper .d-projects__list a {
     width: 100%;
     -webkit-box-pack: center;
@@ -679,7 +692,7 @@ ul {
   }
 }
 .d-projects .d-projects__wrapper .d-projects__list .d-projects__tags span {
-  margin: 2.5px;
+  margin: 2.5px 2.5px 2.5px 0;
   display: inline-block;
   padding: 5px 10px;
   background: #121214;
@@ -699,6 +712,41 @@ ul {
     padding: 10px;
     text-align: center;
   }
+}
+
+.e-skills {
+  padding: 50px;
+  min-height: 100vh;
+  width: 100%;
+  background: #121214;
+  border-bottom: 1px solid #323238;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .e-skills {
+    padding: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .e-skills {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .e-skills {
+    padding: 20px 0px;
+  }
+}
+.e-skills .e-skills_wrapper {
+  overflow: hidden;
 }
 
 .animated {

@@ -29,12 +29,16 @@
         border: 2px solid transparent;
         padding: 15px;
         transition: border 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         @include animateTop;
         &:hover {
           border-color: $link;
         }
         @include mQ(600px) {
-          @include flexbox-column;
+          @include animateRight;
+          align-items: center;
         }
       }
       h2 {
@@ -44,13 +48,19 @@
       p {
         @include texts;
       }
+      .card-bottompart {
+        width: 100%;
+        @include mQ(600px) {
+          text-align: center;
+        }
+      }
       a {
         margin-top: 25px;
         width: fit-content;
         @include flexbox-row;
         @include buttons;
         padding: 10px 20px;
-        @include mQ(400px) {
+        @include mQ(600px) {
           width: 100%;
           justify-content: center;
         }
@@ -67,7 +77,7 @@
           justify-content: center;
         }
         span {
-          margin: 2.5px;
+          margin: 2.5px 2.5px 2.5px 0;
           display: inline-block;
           padding: 5px 10px;
           background: $darkerBg;
