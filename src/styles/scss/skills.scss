@@ -26,7 +26,6 @@
       }
     }
     ul {
-      @include animateRight;
       flex-basis: 45%;
       @include three-col-grid;
       @include mQ(700px) {
@@ -37,6 +36,7 @@
       }
     }
     li {
+      @include animateRight;
       padding: 20px 15px;
       @include flexbox-center;
       overflow: hidden;
@@ -54,6 +54,7 @@
         height: 70px;
         padding: 0px;
         margin: 10px;
+        @include animateTop;
       }
       @include mQ(350px) {
         width: 50px;

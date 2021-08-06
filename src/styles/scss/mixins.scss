@@ -34,6 +34,19 @@
   }
 }
 
+@mixin four-col-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  @include mQ(1100px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include mQ(900px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include mQ(600px) {
+    grid-template-columns: 1fr;
+  }
+}
 
 @mixin sectitle {
   color: $text;
