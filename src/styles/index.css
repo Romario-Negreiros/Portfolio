@@ -742,7 +742,7 @@ ul {
 }
 @media screen and (max-width: 300px) {
   .e-skills {
-    padding: 20px 0px;
+    padding: 20px 5px;
   }
 }
 .e-skills .e-skills__wrapper {
@@ -940,7 +940,7 @@ ul {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   font-size: 1.2rem;
-  height: 100px;
+  height: 250px;
 }
 
 .animated {

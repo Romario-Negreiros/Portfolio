@@ -5,7 +5,7 @@
   background: $lighterBg;
   border-bottom: 1px solid $borders;
   @include mQ(300px) {
-    padding: 20px 0px;
+    padding: 20px 5px;
   }
   @include flexbox-center;
   .e-skills__wrapper {
@@ -89,7 +89,7 @@
     p {
       margin-top: 40px;
       @include texts;
-      height: 100px;
+      height: 250px;
     }
   }
 }
