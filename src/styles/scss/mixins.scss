@@ -106,6 +106,6 @@
 }
 
 @mixin animateEnd {
-  transform: translateX(0px) !important;
+  transform: translate(0px) !important;
   visibility: visible !important;
 }
