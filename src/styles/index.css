@@ -439,7 +439,6 @@ ul {
   visibility: hidden;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  margin-top: -50px;
   font-size: 3rem;
 }
 @media screen and (max-width: 1000px) {
@@ -451,7 +450,6 @@ ul {
   .b-presentation h1 {
     text-align: center;
     font-size: 1.8rem;
-    margin-top: -80px;
   }
 }
 .b-presentation a {

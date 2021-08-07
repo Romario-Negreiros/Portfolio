@@ -2,7 +2,7 @@ import texts from "./texts.js";
 
 /*************** Mobile menu ****************/
 const menuMechanisms = () => {
-  if (window.innerWidth <= 600) {
+  if (window.innerWidth <= 700) {
     window.document.body.classList.toggle("body--active");
 
     const spans = [...document.querySelectorAll(".burguer")];
