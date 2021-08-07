@@ -28,11 +28,23 @@ internLinks.forEach((link) => {
     // Makes menu close
     menuMechanisms();
     // Smooth scroll
-    const element = document.querySelector(event.target.getAttribute("href"));
-    window.scroll({
-      top: element.offsetTop,
-      behavior: "smooth",
-    });
+    if (event.target.getAttribute("href") === "#header" || event.target.alt === "voltar ao topo") {
+      window.scroll({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else if (event.target.getAttribute("href") === "#contacts") {
+      window.scroll({
+        top: window.document.body.offsetHeight,
+        behavior: "smooth",
+      });
+    } else {
+      const element = document.querySelector(event.target.getAttribute("href"));
+      window.scroll({
+        top: element.offsetTop,
+        behavior: "smooth",
+      });
+    }
   });
 });
 
@@ -55,8 +67,8 @@ window.addEventListener("load", animations);
 
 /*************** Animations on skills section  ****************/
 const insertContent = (event) => {
-  const tec = event.target.getAttribute('data-skill')
-  console.log(tec)
+  const tec = event.target.getAttribute("data-skill");
+  console.log(tec);
   if (tec !== null) {
     const obj = texts.find((obj) => obj.title === tec);
     title.innerHTML = obj.title;
@@ -77,3 +89,14 @@ skills.forEach((skill) => {
     `;
   });
 });
+
+/*************** Display back to top button  ****************/
+window.addEventListener('scroll', () => {
+  if(window.pageYOffset >= document.querySelector("#services").offsetTop) 
+    document.querySelector(".back-to-top").classList.add("back-to-top--active")
+  else {
+    if(document.querySelector(".back-to-top--active")) 
+    document.querySelector(".back-to-top--active").classList.remove("back-to-top--active")
+  } 
+})
+
