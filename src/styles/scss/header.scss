@@ -8,7 +8,7 @@
     color: $weakGray;
     font-size: 1.4rem;
     @include flexbox-row;
-    @include mQ(600px) {
+    @include mQ(700px) {
       font-size: 1.2rem;
     }
     img {
@@ -21,7 +21,7 @@
   .a-header__nav {
     .mobile-menu__container {
       display: none;
-      @include mQ(600px) {
+      @include mQ(700px) {
           cursor: pointer;
           display: block;
           position: absolute;
@@ -31,7 +31,7 @@
       }
     }
     .burguer {
-      @include mQ(600px) {
+      @include mQ(700px) {
         width: 15px;
         height: 2px;
         display: block;
@@ -51,7 +51,7 @@
     }
     .a-header__navList {
       @include flexbox-row;
-      @include mQ(600px) {
+      @include mQ(700px) {
         @include flexbox-column;
         justify-content: space-around;
         position: absolute;
@@ -73,7 +73,7 @@
     li {
       position: relative;
       margin-left: 30px;
-      @include mQ(600px) {
+      @include mQ(700px) {
         margin: auto;
       }
     }

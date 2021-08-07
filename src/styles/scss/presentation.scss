@@ -10,22 +10,6 @@
   @include mQ(600px) {
     align-items: center;
   }
-  .b-presentation__welcome {
-    position: absolute;
-    top: 20%;
-    @include animateRight;
-    color: $weakGray;
-    display: block;
-    font-size: 1.4rem;
-    @include mQ(400px) {
-      font-size: 1.2rem;
-    }
-    &::after {
-      content: '👋';
-      display: inline-block;
-      animation: shake 3s ease-in-out infinite;
-    }
-  }
   h1 {
     @include animateRight;
     margin-top: -50px;
@@ -59,12 +43,4 @@
     margin-left: 20px;
     object-fit: cover;
   }
-}
-
-@keyframes shake {
-  0% { transform: rotate(0) }
-  25% { transform: rotate(70deg) }
-  50% { transform: rotate(0) }
-  75% { transform: rotate(70deg) }
-  100% { transform: rotate(0) }
 }
