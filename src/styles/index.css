@@ -415,7 +415,6 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  position: relative;
 }
 @media screen and (max-width: 600px) {
   .b-presentation {

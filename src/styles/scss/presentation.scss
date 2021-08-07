@@ -6,7 +6,6 @@
   @include flexbox-column;
   justify-content: center;
   align-items: flex-start;
-  position: relative;
   @include mQ(600px) {
     align-items: center;
   }
