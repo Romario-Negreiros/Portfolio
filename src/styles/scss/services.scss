@@ -9,48 +9,48 @@
   }
   @include flexbox-center;
   .f-services__wrapper {
-      width: 100%;
-      overflow: hidden;
-      @include flexbox-column;
-      h1 {
-          @include animateRight;
-          @include sectitle;
-          text-align: center;
+    width: 100%;
+    overflow: hidden;
+    @include flexbox-column;
+    h1 {
+      @include animateRight;
+      @include sectitle;
+      text-align: center;
       margin-bottom: 100px;
       @include mQ(800px) {
         margin-bottom: 40px;
       }
+    }
+    ul {
+      @include four-col-grid;
+    }
+    li {
+      margin: 15px;
+      border: 2px solid transparent;
+      border-radius: 2px;
+      padding: 15px;
+      background: $lighterBg;
+      transition: border 0.5s;
+      text-align: center;
+      @include animateTop;
+      &:hover {
+        border-color: $link;
       }
-      ul {
-          @include four-col-grid;
+      @include mQ(700px) {
+        @include animateRight;
       }
-      li {
-          margin: 15px;
-          border: 2px solid transparent;
-          border-radius: 2px;
-          padding: 15px;
-          background: $lighterBg;
-          transition: border 0.5s;
-          text-align: center;
-          @include animateTop;
-          &:hover {
-              border-color: $link;      
-          }
-          @include mQ(600px) {
-            @include animateRight;
-          }
-      }
-      img {
-          width: 25px;
-          object-fit: cover;
-          margin-bottom: 20px;
-      }
-      h2 {
-        margin-bottom: 10px;
-        @include cardtitle;
-      }
-      p {
-        @include texts;
-      }
+    }
+    img {
+      width: 25px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-bottom: 10px;
+      @include cardtitle;
+    }
+    p {
+      @include texts;
+    }
   }
 }

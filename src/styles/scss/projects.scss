@@ -36,7 +36,7 @@
         &:hover {
           border-color: $link;
         }
-        @include mQ(600px) {
+        @include mQ(700px) {
           @include animateRight;
           align-items: center;
         }
