@@ -19,6 +19,9 @@
       text-align: center;
       font-size: 1.8rem;
     }
+    @include mQ(250px) {
+      font-size: 1.6rem;
+    }
   }
   a {
     @include animateRight;

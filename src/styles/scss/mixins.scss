@@ -101,19 +101,19 @@
 }
 
 @mixin animateRight {
-  transform: translateX(-550px);
+  transform: translateX(-300px);
   visibility: hidden;
   transition: 0.8s;
 }
 
 @mixin animateLeft {
-  transform: translateX(550px);
+  transform: translateX(300px);
   visibility: hidden;
   transition: 0.8s;
 }
 
 @mixin animateTop {
-  transform: translateY(-550px);
+  transform: translateY(-300px);
   visibility: hidden;
   transition: 0.8s;
 }

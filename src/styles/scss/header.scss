@@ -47,7 +47,7 @@
       transform: translate(0, -3px) rotate(135deg);
     }
     .fade {
-      transform: translateX(100px);
+      transform: translateX(50px);
     }
     .a-header__navList {
       @include flexbox-row;
@@ -60,9 +60,9 @@
         top: 0px;
         left: 0px;
         z-index: 10;
-        height: 100vh;
+        min-height: 100vh;
         visibility: hidden;
-        transform: translateY(-1000px);
+        transform: translateY(-200px);
         transition: all 0.4s ease-in-out;
       }
     }
