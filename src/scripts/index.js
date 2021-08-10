@@ -1,19 +1,23 @@
 import texts from "./texts.js";
 
 /*************** Mobile menu ****************/
-const menuMechanisms = () => {
+const menuMechanisms = (event) => {
   if (window.innerWidth <= 700) {
-    window.document.body.classList.toggle("body--active");
+    console.log(event)
+    if (event.target.alt === "voltar ao topo") return;
+    else {
+      window.document.body.classList.toggle("body--active");
 
-    const spans = [...document.querySelectorAll(".burguer")];
-    spans.forEach((span, index) => {
-      if (index === 0) span.classList.toggle("close-left");
-      else if (index === 1) span.classList.toggle("close-right");
-      else span.classList.toggle("fade");
-    });
+      const spans = [...document.querySelectorAll(".burguer")];
+      spans.forEach((span, index) => {
+        if (index === 0) span.classList.toggle("close-left");
+        else if (index === 1) span.classList.toggle("close-right");
+        else span.classList.toggle("fade");
+      });
 
-    const menu = document.querySelector(".a-header__navList");
-    menu.classList.toggle("a-header__mobile--active");
+      const menu = document.querySelector(".a-header__navList");
+      menu.classList.toggle("a-header__mobile--active");
+    }
   }
 };
 
@@ -26,9 +30,12 @@ internLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
     // Makes menu close
-    menuMechanisms();
+    menuMechanisms(event);
     // Smooth scroll
-    if (event.target.getAttribute("href") === "#header" || event.target.alt === "voltar ao topo") {
+    if (
+      event.target.getAttribute("href") === "#header" ||
+      event.target.alt === "voltar ao topo"
+    ) {
       window.scroll({
         top: 0,
         behavior: "smooth",
@@ -91,12 +98,13 @@ skills.forEach((skill) => {
 });
 
 /*************** Display back to top button  ****************/
-window.addEventListener('scroll', () => {
-  if(window.pageYOffset >= document.querySelector("#services").offsetTop) 
-    document.querySelector(".back-to-top").classList.add("back-to-top--active")
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset >= document.querySelector("#services").offsetTop)
+    document.querySelector(".back-to-top").classList.add("back-to-top--active");
   else {
-    if(document.querySelector(".back-to-top--active")) 
-    document.querySelector(".back-to-top--active").classList.remove("back-to-top--active")
-  } 
-})
-
+    if (document.querySelector(".back-to-top--active"))
+      document
+        .querySelector(".back-to-top--active")
+        .classList.remove("back-to-top--active");
+  }
+});
