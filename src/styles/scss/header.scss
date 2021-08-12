@@ -37,7 +37,7 @@
         display: block;
         margin-top: 3px;
         background: $weakGray;
-        transition: transform .4s ease-in-out;
+        transition: all .4s ease-in-out
       }
     }
     .close-left {
@@ -47,7 +47,7 @@
       transform: translate(0, -3px) rotate(135deg);
     }
     .fade {
-      transform: translateX(50px);
+      opacity: 0;
     }
     .a-header__navList {
       @include flexbox-row;
