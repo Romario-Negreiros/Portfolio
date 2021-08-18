@@ -48,6 +48,15 @@ const texts = [
             Experiência de 1 mes.
         `,
   },
+  {
+    title: "Jquery",
+    description: `
+          Bilbioteca javascript. <br />
+          Auxilia na manipulação do DOM, assim como traz outras soluções,
+          como para fazer animações ou requisições HTTP. <br />
+          Experiência de 1 semana.
+    `,
+  },
 ];
 
 export default texts;

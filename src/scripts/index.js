@@ -3,7 +3,7 @@ import texts from "./texts.js";
 /*************** Mobile menu ****************/
 const menuMechanisms = (event) => {
   if (window.innerWidth <= 700) {
-    console.log(event)
+    console.log(event);
     if (event.target.alt === "voltar ao topo") return;
     else {
       window.document.body.classList.toggle("body--active");
