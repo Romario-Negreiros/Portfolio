@@ -150,8 +150,8 @@ ul {
     z-index: 10;
     min-height: 100vh;
     visibility: hidden;
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
+    -webkit-transform: translateY(-600px);
+            transform: translateY(-600px);
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
   }
