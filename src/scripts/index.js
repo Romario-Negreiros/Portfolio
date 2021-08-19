@@ -3,7 +3,6 @@ import texts from "./texts.js";
 /*************** Mobile menu ****************/
 const menuMechanisms = (event) => {
   if (window.innerWidth <= 700) {
-    console.log(event);
     if (event.target.alt === "voltar ao topo") return;
     else {
       window.document.body.classList.toggle("body--active");
@@ -75,7 +74,6 @@ window.addEventListener("load", animations);
 /*************** Animations on skills section  ****************/
 const insertContent = (event) => {
   const tec = event.target.getAttribute("data-skill");
-  console.log(tec);
   if (tec !== null) {
     const obj = texts.find((obj) => obj.title === tec);
     title.innerHTML = obj.title;
