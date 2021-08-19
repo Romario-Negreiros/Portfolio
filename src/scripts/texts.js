@@ -24,6 +24,14 @@ const texts = [
         `,
   },
   {
+    title: "Git",
+    description: `
+            Sistema de versionamento de código. <br />
+            Agiliza o trabalho em equipe, o versionamento do código, e de maneira bem simples. <br />
+            Experiência de 4 meses.
+    `,
+  },
+  {
     title: "React",
     description: `
             Biblioteca Javascript. <br />
