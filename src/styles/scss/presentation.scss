@@ -1,11 +1,20 @@
 .b-presentation {
+  background: $darkerBg no-repeat;
+  background-image: url(../css/astronaut.svg);
+  background-size: 50% 90vh;
+  background-position: 115% -15px;
   min-height: 100vh;
   color: $text;
-  background: $darkerBg;
   @include padding;
   @include flexbox-column;
   justify-content: center;
   align-items: flex-start;
+  @include mQ(1300px) {
+    background-position: 115% -5px;
+  }
+  @include mQ(1100px) {
+    background-image: unset;
+  }
   @include mQ(600px) {
     align-items: center;
   }

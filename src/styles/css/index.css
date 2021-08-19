@@ -388,9 +388,12 @@ ul {
 }
 
 .b-presentation {
+  background: #121214 no-repeat;
+  background-image: url(../css/astronaut.svg);
+  background-size: 50% 90vh;
+  background-position: 115% -15px;
   min-height: 100vh;
   color: #a8a8b3;
-  background: #121214;
   padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -420,6 +423,16 @@ ul {
 @media screen and (max-width: 400px) {
   .b-presentation {
     padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .b-presentation {
+    background-position: 115% -5px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .b-presentation {
+    background-image: unset;
   }
 }
 @media screen and (max-width: 600px) {
