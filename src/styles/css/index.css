@@ -197,10 +197,12 @@ ul {
 }
 
 .c-aboutme {
+  background: #161619 url(../css/thinking.svg) no-repeat;
+  background-position: 95%;
+  background-size: 50%;
   min-height: 100vh;
   border-bottom: 1px solid #323238;
   width: 100%;
-  background: #161619;
   color: #a8a8b3;
   padding: 50px;
   display: -webkit-box;
@@ -221,6 +223,11 @@ ul {
 @media screen and (max-width: 400px) {
   .c-aboutme {
     padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .c-aboutme {
+    background-image: unset;
   }
 }
 .c-aboutme .c-aboutme__wrapper {

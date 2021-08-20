@@ -1,11 +1,16 @@
 .c-aboutme {
+  background: $sectionsBg url(../css/thinking.svg) no-repeat;
+  background-position:95%;
+  background-size: 50%;
   min-height: 100vh;
   border-bottom: 1px solid $borders;
   width: 100%;
-  background: $sectionsBg;
   color: $text;
   @include padding;
   @include flexbox-center;
+  @include mQ(1050px) {
+    background-image: unset;
+  }
   .c-aboutme__wrapper {
     overflow: hidden;
     @include flexbox-row;
