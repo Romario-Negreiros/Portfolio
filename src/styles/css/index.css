@@ -1216,6 +1216,7 @@ ul {
 }
 .g-footer .g-footer__credits a {
   color: #a8a8b3;
+  display: block;
   font-size: 1.1rem;
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
