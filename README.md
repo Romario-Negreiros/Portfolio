@@ -17,10 +17,9 @@ e também sobre mim.
 -----------------------------------------------------------------------------------------------------------------------------
 
 ##### Progresso
-- [ ] Imagem para seção de apresentação
-- [ ] Imagem para seção sobre mim
+- [x] Imagem para seção de apresentação
+- [x] Imagem para seção sobre mim
 - [x] Conteúdo das seções
 - [x] Baixar icones
 - [x] Animações
 - [x] Responsividade
-- [ ] Botão de alternar lingua ( português / inglês)
