@@ -53,10 +53,10 @@
   flex-basis: 100%;
   font-size: 2rem;
   @include mQ(600px) {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   @include mQ(400px) {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
