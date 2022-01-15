@@ -28,6 +28,9 @@
       align-self: baseline;
       @include flexbox-column;
       flex-basis: 45%;
+      @include mQ(1050px) {
+        flex-basis: 85%;
+      }
       @include mQ(800px) {
         flex-basis: 100%;
       }

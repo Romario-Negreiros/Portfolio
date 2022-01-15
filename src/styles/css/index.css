@@ -293,6 +293,12 @@ ul {
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
 }
+@media screen and (max-width: 1050px) {
+  .c-aboutme .c-aboutme__wrapper .c-aboutme__innerwrapper {
+    -ms-flex-preferred-size: 85%;
+        flex-basis: 85%;
+  }
+}
 @media screen and (max-width: 800px) {
   .c-aboutme .c-aboutme__wrapper .c-aboutme__innerwrapper {
     -ms-flex-preferred-size: 100%;
