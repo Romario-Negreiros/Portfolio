@@ -803,7 +803,7 @@ ul {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
   .e-skills .e-skills__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -868,7 +868,7 @@ ul {
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
   .e-skills .e-skills__wrapper ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -914,12 +914,18 @@ ul {
           transform: scale(1.1);
   background: #252529;
 }
+@media screen and (max-width: 1024px) {
+  .e-skills .e-skills__wrapper li {
+    width: 75px;
+    height: 75px;
+    padding: 0px;
+    margin: 8px;
+  }
+}
 @media screen and (max-width: 700px) {
   .e-skills .e-skills__wrapper li {
-    width: 70px;
-    height: 70px;
-    padding: 0px;
-    margin: 10px;
+    width: 50px;
+    height: 50px;
     -webkit-transform: translateY(-300px);
             transform: translateY(-300px);
     visibility: hidden;
@@ -929,8 +935,8 @@ ul {
 }
 @media screen and (max-width: 350px) {
   .e-skills .e-skills__wrapper li {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
     margin: 5px;
   }
 }
@@ -939,9 +945,14 @@ ul {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 1024px) {
+  .e-skills .e-skills__wrapper img {
+    width: 40px;
+  }
+}
 @media screen and (max-width: 700px) {
   .e-skills .e-skills__wrapper img {
-    width: 35px;
+    width: 30px;
   }
 }
 @media screen and (max-width: 350px) {
@@ -962,12 +973,12 @@ ul {
       -ms-grid-row-align: stretch;
       align-self: stretch;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1024px) {
   .e-skills .e-skills__wrapper .e-skills__contents {
     margin-top: 40px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .e-skills .e-skills__wrapper .e-skills__contents {
     text-align: center;
   }

@@ -13,7 +13,7 @@
     overflow: hidden;
     @include flexbox-row;
     flex-flow: row wrap;
-    @include mQ(700px) {
+    @include mQ(1024px) {
       @include flexbox-column;
     }
     h1 {
@@ -28,7 +28,7 @@
     ul {
       flex-basis: 45%;
       @include three-col-grid;
-      @include mQ(700px) {
+      @include mQ(1024px) {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -49,24 +49,31 @@
         transform: scale(1.1);
         background: lighten($color: $darkerBg, $amount: 8);
       }
-      @include mQ(700px) {
-        width: 70px;
-        height: 70px;
+      @include mQ(1024px) {
+        width: 75px;
+        height: 75px;
         padding: 0px;
-        margin: 10px;
+        margin: 8px;
+      }
+      @include mQ(700px) {
+        width: 50px;
+        height: 50px;
         @include animateTop;
       }
       @include mQ(350px) {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
         margin: 5px;
       }
     }
     img {
       width: 50px;
       object-fit: cover;
+      @include mQ(1024px) {
+        width: 40px;
+      }
       @include mQ(700px) {
-        width: 35px;
+        width: 30px;
       }
       @include mQ(350px) {
         width: 25px;
@@ -77,10 +84,10 @@
       color: $text;
       flex-basis: 45%;
       align-self: stretch;
-      @include mQ(700px) {
+      @include mQ(1024px) {
         margin-top: 40px;
       }
-      @include mQ(600px) {
+      @include mQ(1024px) {
         text-align: center;
       }
     }
