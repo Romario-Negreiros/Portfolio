@@ -2,87 +2,68 @@ const texts = [
   {
     title: 'HTML',
     description: `
-        Linguagem de marcação de hipertexto. <br /> 
-        Cria todo o corpo da página, textos, imagens etc. <br />
-        Experiência de 1 ano.
-      `
+            Hyper text markup language. <br /> 
+            Creates all the page's body, texts, images etc. <br />
+            1 year and 1 month experience.
+        `
   },
   {
     title: 'CSS',
     description: `
-            Linguagem de estilização. <br />
-            Traz um visual melhor para o site, e também animações e efeitos. <br />
-            Experiência de 1 ano.
+            Cascading style sheets. <br />
+            Brings up a better visual to the website, as well as animations and effects <br />.
+            1 year and 1 month experience.
+
         `
   },
   {
     title: 'JavaScript',
     description: `
-            Linguagem de programação. <br />
-            Entrega dinâmica ao site, tornando-o mais agradável para o usuário. <br />
-            Experiência de 1 ano.
+            Programming language. <br />
+            Delivers dinamic to the website, making it more pleasant to the user. <br />
+            1 year and 1 month experience.
         `
   },
   {
     title: 'Git',
     description: `
-            Sistema de versionamento de código. <br />
-            Agiliza o trabalho em equipe, o versionamento do código, e de maneira bem simples. <br />
-            Experiência de 8 meses.
-    `
+            Code versionament system. <br />
+            Makes teamwork faster allowing organizing the code in a simply and fast way. <br />
+            8 Months experience.
+        `
   },
   {
     title: 'React',
     description: `
-            Biblioteca Javascript. <br />
-            Torna a construção e expansão do projeto mais fácil, e com uma melhor performance. <br />
-            Experiência de 11 meses.
+            Javascript library. <br />
+            Eases the construction and expansion of the project while gives a better performance. <br />
+            11 months experience.
         `
   },
   {
     title: 'TypeScript',
     description: `
-            Linguagem de programação que se baseia no JavaScript. <br />
-            Adiciona tipagem estática ao JavaScript, trazendo benefícios como a captura de erros durante
-            o desenvolvimento. <br />
-            Experiência de 8 meses.
+            Programming language based on javascript. <br />
+            Adds static types to javascript, bringing benefits as the capture of errors during development. <br />
+            8 months experience.
         `
   },
   {
     title: 'SASS',
     description: `
-            Pré-processador CSS. <br />
-            Auxília na criação e organização dos estilos. <br />
-            Experiência de 5 meses.
+            CSS preprocessor. <br />
+            Auxiliates in the creation and organization of the style sheets. <br />
+            6 months experience.
         `
   },
   {
     title: 'Jquery',
     description: `
-          Bilbioteca javascript. <br />
-          Auxilia na manipulação do DOM, assim como traz outras soluções,
-          como para fazer animações ou requisições HTTP. <br />
-          Experiência de 2 meses.
-    `
-  },
-  {
-    title: 'NodeJs',
-    description: `
-          Ambiente para execução de codigo javascript fora do navegador. <br />
-          Possiblita a criação de aplicações com backends facilmente escalaveis,
-          utilizando javascript. <br />
-          Experiência de 3 meses.
-    `
-  },
-  {
-    title: 'PostgreSQL',
-    description: `
-          Banco de dados objeto-relacional. <br />
-          Armazena dados em tabelas, oferecenco funções como a integração de dados entre
-          tabelas utilizando chaves estrangeiras, além de possuir um alto desempenho com 
-          um reduzido custo de manutenção. <br />
-          Experiência de 3 meses.
-    `
+            Javascript library. <br />
+            Helps in DOM manipulation, also brings solutions to make animations,
+            or HTTP requests. <br />
+            2 months experience;
+        `
   }
 ]
 

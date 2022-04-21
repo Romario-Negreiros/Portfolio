@@ -1,25 +1,24 @@
 <h2 style="text-align: center; font-weight: bold;">Romario Negreiros</h2>
-<h2 style="text-align: center; font-weight: bold;">Desenvolvedor Front End</h2>
+<h2 style="text-align: center; font-weight: bold;">Front End Developer</h2>
 
-Esse é meu portfólio como desenvolvedor front end, trazendo um pouco dos meus conhecimentos
-e também sobre mim.
+This is my porfolio
 
-#### O portfólio contém
-* Uma seção de apresentação
-* Uma seção sobre mim
-* Uma seção para projetos
-* Uma seção para meus conhecimentos
-* Uma seção para os serviços
+#### The portfolio contains
+* A presentational section
+* An about me section
+* A section for projects
+* A section for my knowledge
+* A section to share what I provided
 
 ### Snapshot
 ![Snapshot](./assets/snapshot.png)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-##### Progresso
-- [x] Imagem para seção de apresentação
-- [x] Imagem para seção sobre mim
-- [x] Conteúdo das seções
-- [x] Baixar icones
-- [x] Animações
-- [x] Responsividade
+##### Progress
+- [x] Image to presentational section
+- [x] Image to about me section
+- [x] Sections' content
+- [x] Download icons
+- [x] Animations
+- [x] Responsivity
