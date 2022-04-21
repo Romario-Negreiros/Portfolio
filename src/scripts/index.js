@@ -1,108 +1,100 @@
-import texts from "./texts.js";
+import texts from './texts.js'
 
 /*************** Mobile menu ****************/
-const menuMechanisms = (event) => {
+const menuMechanisms = event => {
   if (window.innerWidth <= 700) {
-    if (event.target.alt === "voltar ao topo") return;
+    if (event.target.alt === 'voltar ao topo') return
     else {
-      window.document.body.classList.toggle("body--active");
+      window.document.body.classList.toggle('body--active')
 
-      const spans = [...document.querySelectorAll(".burguer")];
+      const spans = [...document.querySelectorAll('.burguer')]
       spans.forEach((span, index) => {
-        if (index === 0) span.classList.toggle("close-left");
-        else if (index === 1) span.classList.toggle("close-right");
-        else span.classList.toggle("fade");
-      });
+        if (index === 0) span.classList.toggle('close-left')
+        else if (index === 1) span.classList.toggle('close-right')
+        else span.classList.toggle('fade')
+      })
 
-      const menu = document.querySelector(".a-header__navList");
-      menu.classList.toggle("a-header__mobile--active");
+      const menu = document.querySelector('.a-header__navList')
+      menu.classList.toggle('a-header__mobile--active')
     }
   }
-};
+}
 
-const mobileMenuBtn = document.querySelector(".mobile-menu__container");
-mobileMenuBtn.addEventListener("click", menuMechanisms);
+const mobileMenuBtn = document.querySelector('.mobile-menu__container')
+mobileMenuBtn.addEventListener('click', menuMechanisms)
 
 /*************** Smooth scroll on intern links ****************/
-const internLinks = [...document.querySelectorAll('[href^="#')];
-internLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
+const internLinks = [...document.querySelectorAll('[href^="#')]
+internLinks.forEach(link => {
+  link.addEventListener('click', event => {
+    event.preventDefault()
     // Makes menu close
-    menuMechanisms(event);
+    menuMechanisms(event)
     // Smooth scroll
-    if (
-      event.target.getAttribute("href") === "#header" ||
-      event.target.alt === "voltar ao topo"
-    ) {
+    if (event.target.getAttribute('href') === '#header' || event.target.alt === 'voltar ao topo') {
       window.scroll({
         top: 0,
-        behavior: "smooth",
-      });
-    } else if (event.target.getAttribute("href") === "#contacts") {
+        behavior: 'smooth'
+      })
+    } else if (event.target.getAttribute('href') === '#contacts') {
       window.scroll({
         top: window.document.body.offsetHeight,
-        behavior: "smooth",
-      });
+        behavior: 'smooth'
+      })
     } else {
-      const element = document.querySelector(event.target.getAttribute("href"));
+      const element = document.querySelector(event.target.getAttribute('href'))
       window.scroll({
         top: element.offsetTop,
-        behavior: "smooth",
-      });
+        behavior: 'smooth'
+      })
     }
-  });
-});
+  })
+})
 
 /*************** Animate on scroll ****************/
 const animations = () => {
-  const { pageYOffset, innerHeight } = window;
-  const elementsToAnimate = [...document.querySelectorAll("[data-aos]")];
-  elementsToAnimate.forEach((element) => {
-    if (
-      element.offsetTop - pageYOffset <=
-      innerHeight - (element.offsetTop - pageYOffset) / 7
-    ) {
-      element.classList.add("animated");
+  const { pageYOffset, innerHeight } = window
+  const elementsToAnimate = [...document.querySelectorAll('[data-aos]')]
+  elementsToAnimate.forEach(element => {
+    if (element.offsetTop - pageYOffset <= innerHeight - (element.offsetTop - pageYOffset) / 7) {
+      element.classList.add('animated')
     }
-  });
-};
+  })
+}
 
-window.addEventListener("scroll", animations);
-window.addEventListener("load", animations);
+window.addEventListener('scroll', animations)
+window.addEventListener('load', animations)
 
 /*************** Animations on skills section  ****************/
-const insertContent = (event) => {
-  const tec = event.target.getAttribute("data-skill");
+const insertContent = event => {
+  const tec = event.target.getAttribute('data-skill')
   if (tec !== null) {
-    const obj = texts.find((obj) => obj.title === tec);
-    title.innerHTML = obj.title;
-    content.innerHTML = obj.description;
+    const obj = texts.find(obj => obj.title === tec)
+    title.innerHTML = obj.title
+    content.innerHTML = obj.description
   }
-};
-const skills = [...document.querySelectorAll(".skill")];
-const title = document.querySelector(".e-skills__contents h2");
-const content = document.querySelector(".e-skills__contents p");
-skills.forEach((skill) => {
-  skill.addEventListener("mouseover", insertContent);
-  skill.addEventListener("click", insertContent);
-  skill.addEventListener("mouseout", () => {
-    title.innerHTML = "Tecnologias";
+}
+const skills = [...document.querySelectorAll('.skill')]
+const title = document.querySelector('.e-skills__contents h2')
+const content = document.querySelector('.e-skills__contents p')
+skills.forEach(skill => {
+  skill.addEventListener('mouseover', insertContent)
+  skill.addEventListener('click', insertContent)
+  skill.addEventListener('mouseout', () => {
+    title.innerHTML = 'Tecnologias'
     content.innerHTML = `
-    Passe o mouse sobre os cards para ver um breve resumo da tecnologia. <br />
-    Se estiver em um dispositivo móvel, basta clicar nos cards para ver o resumo.
-    `;
-  });
-});
+    Hover over the cards to see a brief abstract about the technology. <br />
+              If you are in a mobile device, just click on the cards to see the abstract.
+    `
+  })
+})
 
 /*************** Display back to top button  ****************/
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset >= document.querySelector("#services").offsetTop)
-    document.querySelector(".back-to-top").classList.add("back-to-top--active");
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset >= document.querySelector('#services').offsetTop)
+    document.querySelector('.back-to-top').classList.add('back-to-top--active')
   else {
-    if (document.querySelector(".back-to-top--active"))
-      document
-        .querySelector(".back-to-top--active")
-        .classList.remove("back-to-top--active");
+    if (document.querySelector('.back-to-top--active'))
+      document.querySelector('.back-to-top--active').classList.remove('back-to-top--active')
   }
-});
+})
