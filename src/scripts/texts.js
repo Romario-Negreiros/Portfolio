@@ -11,7 +11,7 @@ const texts = [
     title: 'CSS',
     description: `
             Cascading style sheets. <br />
-            Brings up a better visual to the website, as well as animations and effects <br />.
+            Brings up a better visual to the website, as well as animations and effects. <br />
             1 year and 1 month experience.
 
         `
@@ -62,7 +62,7 @@ const texts = [
             Javascript library. <br />
             Helps in DOM manipulation, also brings solutions to make animations,
             or HTTP requests. <br />
-            2 months experience;
+            2 months experience.
         `
   }
 ]
