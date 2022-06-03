@@ -25,12 +25,14 @@ ul {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: $scrollbar-background;
 }
+
 ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
   background: $scrollbar;
 }
-
