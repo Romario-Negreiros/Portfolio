@@ -1,106 +1,106 @@
-.g-footer {
-    @include padding;
-    min-height: 20vh;
+.h-footer {
+  @include padding;
+  min-height: 20vh;
+  width: 100%;
+  background: $sectionsBg;
+  @include mQ(300px) {
+    padding: 20px 0;
+  }
+  @include flexbox-center;
+  .h-footer__wrapper {
     width: 100%;
-    background: $sectionsBg;
-    @include mQ(300px) {
-        padding: 20px 0;
+    @include flexbox-row;
+    @include mQ(800px) {
+      @include flexbox-column;
     }
-    @include flexbox-center;
-    .g-footer__wrapper {
-        width: 100%;
-        @include flexbox-row;
-        @include mQ(800px) {
-            @include flexbox-column;
-        }
+  }
+  .h-footer__credits {
+    text-align: right;
+    align-self: stretch;
+    h2 {
+      color: $text;
+      margin-bottom: 30px;
+      font-size: 1.3rem;
+      @include mQ(800px) {
+        text-align: center;
+        font-size: 1.1rem;
+      }
     }
-    .g-footer__credits {
-        text-align: right;
-        align-self: stretch;
-        h2 {
-            color: $text;
-            margin-bottom: 30px;
-            font-size: 1.3rem;
-            @include mQ(800px) {
-                text-align: center;
-                font-size: 1.1rem;
-            }
-        }
-        @include mQ(800px) {
-            margin-top: 30px;
-            text-align: center;
-        }
-        a {
-            color: $text;
-            display: block;
-            font-size: 1.1rem;
-            border-bottom: 1px solid transparent;
-            padding-bottom: 2px;
-            @include mQ(800px) {
-                font-size: 1rem;
-            }
-            &:hover {
-                border-color: $link;
-                color: $weakGray;
-            }
-        }
+    @include mQ(800px) {
+      margin-top: 30px;
+      text-align: center;
     }
-    .g-footer__contactme {
-        @include flexbox-column;
-        @include mQ(800px) {
-            width: 100%;
-            flex-flow: row wrap;
-            justify-content: space-around;
-        }
-        @include mQ(450px) {
-            flex-direction: column;
-        }
-        h2 {
-            width: 100%;
-            color: $text;
-            margin-bottom: 30px;
-            font-size: 1.3rem;
-            @include mQ(800px) {
-                text-align: center;
-                font-size: 1.1rem;
-            }
-        }
-        a {
-            margin: 4px 0;
-            color: $text;
-            align-self: stretch;
-            transition: all .3s;
-            border-left: 2px solid transparent;
-            @include flexbox-row;
-            justify-content: space-around;
-            font-size: 1.2rem;
-            &:hover {
-                color: $weakGray;
-                border-color: $link;
-                .g-footer__circle {
-                    border-color: $link;
-                }
-            }
-            @include mQ(800px) {
-                font-size: 1rem;
-                padding-bottom: 3px;
-                border-left: 0 none;
-                border-bottom: 2px solid transparent;
-            }
-        }
-        img {
-            width: 15px;
-            object-fit: cover;
-        }
+    a {
+      color: $text;
+      display: block;
+      font-size: 1.1rem;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+      @include mQ(800px) {
+        font-size: 1rem;
+      }
+      &:hover {
+        border-color: $link;
+        color: $weakGray;
+      }
+    }
+  }
+  .h-footer__contactme {
+    @include flexbox-column;
+    @include mQ(800px) {
+      width: 100%;
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+    @include mQ(450px) {
+      flex-direction: column;
+    }
+    h2 {
+      width: 100%;
+      color: $text;
+      margin-bottom: 30px;
+      font-size: 1.3rem;
+      @include mQ(800px) {
+        text-align: center;
+        font-size: 1.1rem;
+      }
+    }
+    a {
+      margin: 4px 0;
+      color: $text;
+      align-self: stretch;
+      transition: all 0.3s;
+      border-left: 2px solid transparent;
+      @include flexbox-row;
+      justify-content: space-around;
+      font-size: 1.2rem;
+      &:hover {
+        color: $weakGray;
+        border-color: $link;
         .g-footer__circle {
-            padding: 14px;
-            border-radius: 50%;
-            @include flexbox-center;
-            border: 1px solid $iconsandtags;
-            @include mQ(800px) {
-                padding: 6px;
-                transform: translateX(7px);
-            }
+          border-color: $link;
         }
+      }
+      @include mQ(800px) {
+        font-size: 1rem;
+        padding-bottom: 3px;
+        border-left: 0 none;
+        border-bottom: 2px solid transparent;
+      }
     }
+    img {
+      width: 15px;
+      object-fit: cover;
+    }
+    .h-footer__circle {
+      padding: 14px;
+      border-radius: 50%;
+      @include flexbox-center;
+      border: 1px solid $iconsandtags;
+      @include mQ(800px) {
+        padding: 6px;
+        transform: translateX(7px);
+      }
+    }
+  }
 }

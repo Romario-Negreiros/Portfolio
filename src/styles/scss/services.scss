@@ -12,7 +12,7 @@
     width: 100%;
     overflow: hidden;
     @include flexbox-column;
-    h1 {
+    h2 {
       @include animateRight;
       @include sectitle;
       text-align: center;
@@ -45,7 +45,7 @@
       object-fit: cover;
       margin-bottom: 20px;
     }
-    h2 {
+    h3 {
       margin-bottom: 10px;
       @include cardtitle;
     }

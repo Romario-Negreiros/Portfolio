@@ -15,7 +15,7 @@
     overflow: hidden;
     @include flexbox-row;
     flex-flow: row wrap;
-    h1 {
+    h2 {
       @include animateRight;
       @include sectitle;
       margin-bottom: 100px;

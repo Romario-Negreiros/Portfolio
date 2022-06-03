@@ -16,7 +16,7 @@
     @include mQ(1024px) {
       @include flexbox-column;
     }
-    h1 {
+    h2 {
       @include animateRight;
       @include sectitle;
       text-align: center;
@@ -91,7 +91,7 @@
         text-align: center;
       }
     }
-    h2 {
+    h3 {
       @include cardtitle;
     }
     p {
