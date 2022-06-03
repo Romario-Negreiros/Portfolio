@@ -1197,7 +1197,7 @@ ul {
       flex-basis: 100%;
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 600px) {
   .g-email .g-email__wrapper h2 {
@@ -1209,13 +1209,14 @@ ul {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .g-email .g-email__wrapper h2 {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 }
 .g-email .g-email__wrapper form {
   width: 100%;
+  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1233,7 +1234,7 @@ ul {
 .g-email .g-email__wrapper input, .g-email .g-email__wrapper textarea, .g-email .g-email__wrapper button {
   width: 100%;
   max-width: 400px;
-  padding: 20px 10px;
+  padding: 13px 10px;
   background: #121214;
   color: #a8a8b3;
   border: 2px solid transparent;
@@ -1246,16 +1247,27 @@ ul {
   color: #fff;
   border-color: #8257e5;
 }
+@media screen and (max-width: 600px) {
+  .g-email .g-email__wrapper input, .g-email .g-email__wrapper textarea, .g-email .g-email__wrapper button {
+    padding: 15px 10px;
+  }
+}
 .g-email .g-email__wrapper input {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 .g-email .g-email__wrapper textarea {
   resize: none;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .g-email .g-email__wrapper button {
   cursor: pointer;
-  max-width: 200px;
+  max-width: 300px;
+  padding: 15px 0;
+}
+@media screen and (max-width: 400px) {
+  .g-email .g-email__wrapper button {
+    max-width: 400px;
+  }
 }
 
 .h-footer {
