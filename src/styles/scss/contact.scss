@@ -16,19 +16,20 @@
       @include animateRight;
       @include sectitle;
       text-align: center;
-      margin-bottom: 60px;
-      @include mQ(800px) {
-        margin-bottom: 40px;
+      margin-bottom: 40px;
+      @include mQ(600px) {
+        margin-bottom: 60px;
       }
     }
     form {
       width: 100%;
+      padding: 0 15px;
       @include flexbox-column;
     }
     input, textarea, button {
       width: 100%;
       max-width: 400px;
-      padding: 20px 10px;
+      padding: 13px 10px;
       background: $darkerBg;
       color: $text;
       border: 2px solid transparent;
@@ -39,17 +40,24 @@
         color: #fff;
         border-color: $underline;
       }
+      @include mQ(600px) {
+        padding: 15px 10px;
+      } 
     }
     input {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
     textarea {
       resize: none;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
     button {
       cursor: pointer;
-      max-width: 200px;
+      max-width: 300px;
+      padding: 15px 0;
+      @include mQ(400px) {
+        max-width: 400px;
+      }
     }
   }
 }
