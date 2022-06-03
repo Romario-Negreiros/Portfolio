@@ -27,15 +27,16 @@ ul {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: #080808;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4d4d57;
+  border-radius: 10px;
+  background: #804aff;
 }
 
 .a-header {
