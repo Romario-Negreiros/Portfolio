@@ -11,7 +11,7 @@ This is my porfolio
 * A section to share what I provided
 
 ### Snapshot
-![Snapshot](./assets/snapshot.png)
+![Snapshot](./public/assets/snapshot.png)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
