@@ -1,4 +1,5 @@
 import texts from './texts.js'
+import '../styles/css/index.css'
 
 /*************** Mobile menu ****************/
 const menuMechanisms = event => {
@@ -75,7 +76,7 @@ const insertContent = event => {
   }
 }
 const skills = [...document.querySelectorAll('.skill')]
-const title = document.querySelector('.e-skills__contents h2')
+const title = document.querySelector('.e-skills__contents h3')
 const content = document.querySelector('.e-skills__contents p')
 skills.forEach(skill => {
   skill.addEventListener('mouseover', insertContent)
