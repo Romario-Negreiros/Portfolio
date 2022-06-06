@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpaclPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const Dotenv = require('dotenv-webpack')
 
 module.exports = {
   mode: 'development',
@@ -13,7 +14,7 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, 'public'),
     compress: true,
-    port: 9000
+    port: 5500
   },
   module: {
     rules: [
@@ -25,6 +26,7 @@ module.exports = {
     new HtmlWebpaclPlugin({
       template: path.resolve(__dirname, 'public', 'index.html')
     }),
-    new MiniCssExtractPlugin({ filename: 'index.css' })
+    new MiniCssExtractPlugin({ filename: 'index.css' }),
+    new Dotenv()
   ]
 }
