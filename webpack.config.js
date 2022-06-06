@@ -7,7 +7,8 @@ module.exports = {
   entry: path.resolve(__dirname, 'src', 'scripts', 'index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    assetModuleFilename: 'assets/[name].[ext]'
   },
   devServer: {
     static: path.resolve(__dirname, 'public'),

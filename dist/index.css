@@ -201,7 +201,7 @@ ul {
 }
 
 .c-aboutme {
-  background: #161619 url(753f25809c3d47a4e95a.svg) no-repeat;
+  background: #161619 url(assets/thinking..svg) no-repeat;
   background-position: 95%;
   background-size: 50%;
   min-height: 100vh;
@@ -406,7 +406,7 @@ ul {
 
 .b-presentation {
   background: #121214 no-repeat;
-  background-image: url(6864b064e6afe6f918e5.svg);
+  background-image: url(assets/astronaut..svg);
   background-size: 50% 90vh;
   background-position: 115% -15px;
   min-height: 100vh;
