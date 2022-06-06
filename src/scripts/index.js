@@ -1,4 +1,5 @@
 import texts from './texts.js'
+import Email from './email.js'
 import '../styles/css/index.css'
 import '../../public/assets/arrow-up.svg'
 import '../../public/assets/code-solid.svg'
@@ -21,6 +22,32 @@ import '../../public/assets/sass-brands.svg'
 import '../../public/assets/share-square-solid.svg'
 import '../../public/assets/sitemap-solid.svg'
 import '../../public/assets/typescript-brands.svg'
+
+/*************** Email sender ****************/
+const emailForm = document.querySelector('.emailForm')
+
+const handleFormSubmit = async event => {
+  event.preventDefault()
+  const templateParams = {
+    [event.target[0].name]: event.target[0].value,
+    [event.target[1].name]: event.target[1].value,
+    [event.target[2].name]: event.target[2].value,
+    [event.target[3].name]: event.target[3].value
+  }
+  try {
+    for (const param in templateParams) {
+      if (!templateParams[param]) {
+        throw new Error(`Missing ${param} field!`)
+      }
+    }
+    await Email.send(templateParams)
+    localStorage.setItem('hasSent', true)
+    alert('Email succesfully sent!')
+  } catch(err) {
+    alert(err.message)
+  }
+}
+emailForm.addEventListener('submit', handleFormSubmit)
 
 /*************** Mobile menu ****************/
 const menuMechanisms = event => {
