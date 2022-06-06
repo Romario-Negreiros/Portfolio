@@ -25,7 +25,7 @@ import '../../public/assets/typescript-brands.svg'
 /*************** Mobile menu ****************/
 const menuMechanisms = event => {
   if (window.innerWidth <= 700) {
-    if (event.target.alt === 'voltar ao topo') return
+    if (event.target.alt === 'back to top') return
     else {
       window.document.body.classList.toggle('body--active')
 
@@ -43,24 +43,19 @@ const menuMechanisms = event => {
 }
 
 const mobileMenuBtn = document.querySelector('.mobile-menu__container')
-mobileMenuBtn.addEventListener('click', menuMechanisms)
+mobileMenuBtn.onclick = menuMechanisms
 
 /*************** Smooth scroll on intern links ****************/
 const internLinks = [...document.querySelectorAll('[href^="#')]
 internLinks.forEach(link => {
-  link.addEventListener('click', event => {
+  link.onclick = event => {
     event.preventDefault()
     // Makes menu close
     menuMechanisms(event)
     // Smooth scroll
-    if (event.target.getAttribute('href') === '#header' || event.target.alt === 'voltar ao topo') {
+    if (event.target.getAttribute('href') === '#header' || event.target.alt === 'back to top') {
       window.scroll({
         top: 0,
-        behavior: 'smooth'
-      })
-    } else if (event.target.getAttribute('href') === '#contacts') {
-      window.scroll({
-        top: window.document.body.offsetHeight,
         behavior: 'smooth'
       })
     } else {
@@ -70,7 +65,7 @@ internLinks.forEach(link => {
         behavior: 'smooth'
       })
     }
-  })
+  }
 })
 
 /*************** Animate on scroll ****************/
