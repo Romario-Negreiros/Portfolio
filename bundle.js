@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/arrow-up..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/arrow-up.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/arrow-up.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/arrow-up.svg?");
 
 /***/ }),
 
@@ -56,7 +56,7 @@ eval("module.exports = __webpack_require__.p + \"assets/arrow-up..svg\";\n\n//# 
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/code-solid..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/code-solid.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/code-solid.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/code-solid.svg?");
 
 /***/ }),
 
@@ -66,7 +66,7 @@ eval("module.exports = __webpack_require__.p + \"assets/code-solid..svg\";\n\n//
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/css3-alt-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/css3-alt-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/css3-alt-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/css3-alt-brands.svg?");
 
 /***/ }),
 
@@ -76,7 +76,7 @@ eval("module.exports = __webpack_require__.p + \"assets/css3-alt-brands..svg\";\
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/expand-arrows-alt-solid..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/expand-arrows-alt-solid.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/expand-arrows-alt-solid.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/expand-arrows-alt-solid.svg?");
 
 /***/ }),
 
@@ -86,7 +86,7 @@ eval("module.exports = __webpack_require__.p + \"assets/expand-arrows-alt-solid.
   \***********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/file-download-solid..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/file-download-solid.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/file-download-solid.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/file-download-solid.svg?");
 
 /***/ }),
 
@@ -96,7 +96,7 @@ eval("module.exports = __webpack_require__.p + \"assets/file-download-solid..svg
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/git-alt-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/git-alt-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/git-alt-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/git-alt-brands.svg?");
 
 /***/ }),
 
@@ -106,7 +106,7 @@ eval("module.exports = __webpack_require__.p + \"assets/git-alt-brands..svg\";\n
   \************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/github-square-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/github-square-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/github-square-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/github-square-brands.svg?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("module.exports = __webpack_require__.p + \"assets/github-square-brands..sv
   \*************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/hand-point-up-regular..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/hand-point-up-regular.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/hand-point-up-regular.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/hand-point-up-regular.svg?");
 
 /***/ }),
 
@@ -126,7 +126,7 @@ eval("module.exports = __webpack_require__.p + \"assets/hand-point-up-regular..s
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/html5-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/html5-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/html5-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/html5-brands.svg?");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ eval("module.exports = __webpack_require__.p + \"assets/html5-brands..svg\";\n\n
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/jquery-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/jquery-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/jquery-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/jquery-brands.svg?");
 
 /***/ }),
 
@@ -146,7 +146,7 @@ eval("module.exports = __webpack_require__.p + \"assets/jquery-brands..svg\";\n\
   \********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/js-square-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/js-square-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/js-square-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/js-square-brands.svg?");
 
 /***/ }),
 
@@ -156,7 +156,7 @@ eval("module.exports = __webpack_require__.p + \"assets/js-square-brands..svg\";
   \**************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/link-solid..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/link-solid.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/link-solid.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/link-solid.svg?");
 
 /***/ }),
 
@@ -166,7 +166,7 @@ eval("module.exports = __webpack_require__.p + \"assets/link-solid..svg\";\n\n//
   \*******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/linkedin-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/linkedin-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/linkedin-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/linkedin-brands.svg?");
 
 /***/ }),
 
@@ -176,7 +176,7 @@ eval("module.exports = __webpack_require__.p + \"assets/linkedin-brands..svg\";\
   \******************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/node-js-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/node-js-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/node-js-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/node-js-brands.svg?");
 
 /***/ }),
 
@@ -186,7 +186,7 @@ eval("module.exports = __webpack_require__.p + \"assets/node-js-brands..svg\";\n
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/palette-solid..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/palette-solid.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/palette-solid.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/palette-solid.svg?");
 
 /***/ }),
 
@@ -196,7 +196,7 @@ eval("module.exports = __webpack_require__.p + \"assets/palette-solid..svg\";\n\
   \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/postgresql-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/postgresql-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/postgresql-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/postgresql-brands.svg?");
 
 /***/ }),
 
@@ -206,7 +206,7 @@ eval("module.exports = __webpack_require__.p + \"assets/postgresql-brands..svg\"
   \****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/react-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/react-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/react-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/react-brands.svg?");
 
 /***/ }),
 
@@ -216,7 +216,7 @@ eval("module.exports = __webpack_require__.p + \"assets/react-brands..svg\";\n\n
   \***************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/sass-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/sass-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/sass-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/sass-brands.svg?");
 
 /***/ }),
 
@@ -226,7 +226,7 @@ eval("module.exports = __webpack_require__.p + \"assets/sass-brands..svg\";\n\n/
   \**********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/share-square-solid..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/share-square-solid.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/share-square-solid.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/share-square-solid.svg?");
 
 /***/ }),
 
@@ -236,7 +236,7 @@ eval("module.exports = __webpack_require__.p + \"assets/share-square-solid..svg\
   \*****************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/sitemap-solid..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/sitemap-solid.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/sitemap-solid.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/sitemap-solid.svg?");
 
 /***/ }),
 
@@ -246,7 +246,7 @@ eval("module.exports = __webpack_require__.p + \"assets/sitemap-solid..svg\";\n\
   \*********************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"assets/typescript-brands..svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/typescript-brands.svg?");
+eval("module.exports = __webpack_require__.p + \"assets/typescript-brands.svg\";\n\n//# sourceURL=webpack://romario-frontend/./public/assets/typescript-brands.svg?");
 
 /***/ })
 
