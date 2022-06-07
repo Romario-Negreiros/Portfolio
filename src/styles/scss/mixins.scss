@@ -72,6 +72,9 @@
   text-justify: distribute;
   align-self: stretch;
   font-size: 1.2rem;
+  @include mQ(600px) {
+    line-height: 30px;
+  }
 }
 
 @mixin padding {
