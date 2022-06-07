@@ -320,6 +320,11 @@ ul {
       align-self: stretch;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 600px) {
+  .c-aboutme .c-aboutme__wrapper .c-aboutme__lefttop {
+    line-height: 30px;
+  }
+}
 .c-aboutme .c-aboutme__wrapper .c-aboutme__rightbottom {
   margin-top: 30px;
   -webkit-transform: translateX(300px);
@@ -334,6 +339,11 @@ ul {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 600px) {
+  .c-aboutme .c-aboutme__wrapper .c-aboutme__rightbottom {
+    line-height: 30px;
+  }
 }
 .c-aboutme .c-aboutme__wrapper .c-aboutme__linksWrapper {
   overflow: hidden;
@@ -378,6 +388,7 @@ ul {
   border-radius: 2px;
   padding: 15px 35px;
   margin: 15px 0;
+  width: 200px;
   cursor: pointer;
 }
 .c-aboutme .c-aboutme__wrapper a:hover {
@@ -408,6 +419,7 @@ ul {
   background-position: 115% -15px;
   min-height: 100vh;
   color: #a8a8b3;
+  border-bottom: 1px solid #323238;
   padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -661,6 +673,11 @@ ul {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 600px) {
+  .d-projects .d-projects__wrapper .d-projects__list p {
+    line-height: 30px;
+  }
 }
 .d-projects .d-projects__wrapper .d-projects__list .card-bottompart {
   width: 100%;
@@ -1000,6 +1017,11 @@ ul {
   font-size: 1.2rem;
   height: 250px;
 }
+@media screen and (max-width: 600px) {
+  .e-skills .e-skills__wrapper p {
+    line-height: 30px;
+  }
+}
 
 .f-services {
   padding: 50px;
@@ -1148,6 +1170,11 @@ ul {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 600px) {
+  .f-services .f-services__wrapper p {
+    line-height: 30px;
+  }
 }
 
 .g-email {
