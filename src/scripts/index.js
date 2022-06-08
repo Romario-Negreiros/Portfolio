@@ -1,5 +1,6 @@
 import texts from './texts.js'
 import Email from './email.js'
+import toggleToast from './toast.js'
 import '../styles/css/index.css'
 import '../../public/assets/arrow-up.svg'
 import '../../public/assets/code-solid.svg'
@@ -22,11 +23,14 @@ import '../../public/assets/sass-brands.svg'
 import '../../public/assets/share-square-solid.svg'
 import '../../public/assets/sitemap-solid.svg'
 import '../../public/assets/typescript-brands.svg'
+import '../../public/assets/circle-check-solid.svg'
+import '../../public/assets/circle-exclamation-solid.svg'
 
 /*************** Email sender ****************/
 const emailForm = document.querySelector('.emailForm')
 
 const handleFormSubmit = async event => {
+  console.log('oi')
   event.preventDefault()
   const templateParams = {
     [event.target[0].name]: event.target[0].value,
@@ -37,17 +41,18 @@ const handleFormSubmit = async event => {
   try {
     for (const param in templateParams) {
       if (!templateParams[param]) {
-        throw new Error(`Missing ${param} field!`)
+        throw new Error(`All fields needs to be filled in!`)
       }
     }
     await Email.send(templateParams)
     localStorage.setItem('hasSent', true)
-    alert('Email succesfully sent!')
-  } catch(err) {
-    alert(err.message)
+    toggleToast('success', 'Email succesfully sent!')
+  } catch (err) {
+    console.error('Exception while sending email => ' + err.message)
+    toggleToast('warning', err.message)
   }
 }
-emailForm.addEventListener('submit', handleFormSubmit)
+emailForm.onsubmit = handleFormSubmit
 
 /*************** Mobile menu ****************/
 const menuMechanisms = event => {
@@ -80,7 +85,10 @@ internLinks.forEach(link => {
     // Makes menu close
     menuMechanisms(event)
     // Smooth scroll
-    if (event.target.getAttribute('href') === '#header' || event.target.alt === 'back to top') {
+    if (
+      event.target.getAttribute('href') === '#header' ||
+      event.target.alt === 'back to top'
+    ) {
       window.scroll({
         top: 0,
         behavior: 'smooth'
@@ -100,21 +108,24 @@ const animations = () => {
   const { pageYOffset, innerHeight } = window
   const elementsToAnimate = [...document.querySelectorAll('[data-aos]')]
   elementsToAnimate.forEach(element => {
-    if (element.offsetTop - pageYOffset <= innerHeight - (element.offsetTop - pageYOffset) / 7) {
+    if (
+      element.offsetTop - pageYOffset <=
+      innerHeight - (element.offsetTop - pageYOffset) / 7
+    ) {
       element.classList.add('animated')
     }
   })
 }
 
-window.addEventListener('scroll', animations)
-window.addEventListener('load', animations)
+window.onscroll = animations
+window.onload = animations
 
 /*************** Animations on skills section  ****************/
 const insertContent = event => {
   const tec = event.target.getAttribute('data-skill')
   if (tec !== null) {
     const obj = texts.find(obj => obj.title === tec)
-    title.innerHTML = obj.title
+    title.textContent = obj.title
     content.innerHTML = obj.description
   }
 }
@@ -122,15 +133,15 @@ const skills = [...document.querySelectorAll('.skill')]
 const title = document.querySelector('.e-skills__contents h3')
 const content = document.querySelector('.e-skills__contents p')
 skills.forEach(skill => {
-  skill.addEventListener('mouseover', insertContent)
-  skill.addEventListener('click', insertContent)
-  skill.addEventListener('mouseout', () => {
-    title.innerHTML = 'Tecnologias'
+  skill.onmouseover = insertContent
+  skill.onclick = insertContent
+  skill.onmouseout = () => {
+    title.textContent = 'Technologies'
     content.innerHTML = `
     Hover over the cards to see a brief abstract about the technology. <br />
               If you are in a mobile device, just click on the cards to see the abstract.
     `
-  })
+  }
 })
 
 /*************** Display back to top button  ****************/
@@ -139,6 +150,8 @@ window.addEventListener('scroll', () => {
     document.querySelector('.back-to-top').classList.add('back-to-top--active')
   else {
     if (document.querySelector('.back-to-top--active'))
-      document.querySelector('.back-to-top--active').classList.remove('back-to-top--active')
+      document
+        .querySelector('.back-to-top--active')
+        .classList.remove('back-to-top--active')
   }
 })
