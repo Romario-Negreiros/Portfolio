@@ -626,8 +626,6 @@ ul {
   border-radius: 2px;
   border: 2px solid transparent;
   padding: 15px;
-  -webkit-transition: border 0.5s;
-  transition: border 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -904,11 +902,6 @@ ul {
   }
 }
 .e-skills .e-skills__wrapper li {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   padding: 20px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -923,8 +916,11 @@ ul {
   margin: 20px 10px;
   border-bottom: 2px solid transparent;
   background: #121214;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  visibility: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 .e-skills .e-skills__wrapper li:hover {
   border-bottom-color: #734bd1;
@@ -1129,8 +1125,6 @@ ul {
   border-radius: 2px;
   padding: 15px;
   background: #151519;
-  -webkit-transition: border 0.5s;
-  transition: border 0.5s;
   text-align: center;
   -webkit-transform: translateY(-300px);
           transform: translateY(-300px);
@@ -1179,7 +1173,7 @@ ul {
 
 .g-email {
   padding: 50px;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: #151519;
   border-bottom: 1px solid #323238;
@@ -1211,7 +1205,6 @@ ul {
 .g-email .g-email__wrapper {
   height: 100%;
   width: 100%;
-  overflow: hidden;
 }
 .g-email .g-email__wrapper h2 {
   -webkit-transform: translateX(-300px);
@@ -1268,8 +1261,11 @@ ul {
   border-radius: 2px;
   outline: 0;
   font-size: 1rem;
-  -webkit-transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
-  transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  visibility: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 .g-email .g-email__wrapper input:hover, .g-email .g-email__wrapper input:focus, .g-email .g-email__wrapper textarea:hover, .g-email .g-email__wrapper textarea:focus, .g-email .g-email__wrapper button:hover, .g-email .g-email__wrapper button:focus {
   color: #fff;
@@ -1511,15 +1507,12 @@ ul {
 }
 
 .toast {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  position: fixed;
   z-index: 1;
-  top: 60px;
-  left: 0;
-  right: 0;
-  -webkit-transform: translateY(-450px);
-          transform: translateY(-450px);
+  top: 10px;
+  right: 10px;
+  -webkit-transform: translateX(450px);
+          transform: translateX(450px);
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
@@ -1534,14 +1527,20 @@ ul {
   width: 100%;
   max-width: 400px;
   height: 150px;
-  background: #151519;
-  border-bottom: 1px solid;
-  border-right: 1px solid;
-  border-left: 1px solid;
-  border-color: #8257e5;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  background: #301a3a;
+  border: 1px solid #8257e5;
+  border-radius: 2px;
   color: #a8a8b3;
+}
+@media screen and (max-width: 600px) {
+  .toast {
+    right: 0;
+    left: 0;
+    -webkit-transform: translateY(-450px);
+            transform: translateY(-450px);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .toast .toast__title {
   height: -webkit-fit-content;
@@ -1566,10 +1565,13 @@ ul {
 }
 .toast .toast__title h3 {
   font-size: 1.4rem;
+  text-transform: capitalize;
 }
 .toast .toast__title img {
   width: 25px;
   height: 25px;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
 }
 .toast .toast__content {
   text-align: left;
@@ -1594,8 +1596,8 @@ ul {
 }
 
 .toast--active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translate(0);
+          transform: translate(0);
 }
 
 .animated {
