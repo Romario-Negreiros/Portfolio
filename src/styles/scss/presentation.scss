@@ -5,6 +5,7 @@
   background-position: 115% -15px;
   min-height: 100vh;
   color: $text;
+  border-bottom: 1px solid $borders;
   @include padding;
   @include flexbox-column;
   justify-content: center;
