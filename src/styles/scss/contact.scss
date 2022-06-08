@@ -1,6 +1,6 @@
 .g-email {
   @include padding;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background: $lighterBg;
   border-bottom: 1px solid $borders;
@@ -11,7 +11,6 @@
   .g-email__wrapper {
     height: 100%;
     width: 100%;
-    overflow: hidden;
     h2 {
       @include animateRight;
       @include sectitle;
@@ -36,7 +35,7 @@
       border-radius: 2px;
       outline: 0;
       font-size: 1rem;
-      transition: color 0.4s ease-in-out, border-color 0.4s ease-in-out;
+      @include animateRight;
       &:hover, &:focus {
         color: #fff;
         border-color: $underline;
