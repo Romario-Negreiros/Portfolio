@@ -1,26 +1,26 @@
 .toast {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  position: fixed;
   z-index: 1;
-  top: 60px;
-  left: 0;
-  right: 0;
-  transform: translateY(-450px);
+  top: 10px;
+  right: 10px;
+  transform: translateX(450px);
   transition: transform 0.4s ease-in-out;
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 400px;
   height: 150px;
-  background: $lighterBg;
-  border-bottom: 1px solid;
-  border-right: 1px solid;
-  border-left: 1px solid;
-  border-color: $underline;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
+  background: $toastBg;
+  border: 1px solid $underline;
+  border-radius: 2px;
   color: $text;
+  @include mQ(600px) {
+    right: 0;
+    left: 0;
+    transform: translateY(-450px);
+    margin-left: auto;
+    margin-right: auto;
+  }
   .toast__title {
     height: fit-content;
     display: flex;
@@ -32,10 +32,12 @@
     border-bottom: 1px solid $underline;
     h3 {
       font-size: 1.4rem;
+      text-transform: capitalize;
     }
     img {
       width: 25px;
       height: 25px;
+      text-decoration-color: red; 
     }
   }
   .toast__content {
@@ -60,5 +62,5 @@
 }
 
 .toast--active {
-  transform: translateY(0);
+  transform: translate(0);
 }
