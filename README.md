@@ -3,12 +3,13 @@
 
 This is my porfolio
 
-#### The portfolio contains
+#### Content
 * A presentational section
 * An about me section
 * A section for projects
 * A section for my knowledge
 * A section to share what I provided
+* A section to send me a email
 
 ### Snapshot
 ![Snapshot](./public/assets/snapshot.png)
@@ -22,3 +23,5 @@ This is my porfolio
 - [x] Download icons
 - [x] Animations
 - [x] Responsivity
+- [x] Email sender
+- [x] Custom alert (toast)
