@@ -36,14 +36,13 @@
       }
     }
     li {
-      @include animateRight;
       padding: 20px 15px;
       @include flexbox-center;
       overflow: hidden;
       margin: 20px 10px;
       border-bottom: 2px solid transparent;
       background: $darkerBg;
-      transition: 0.4s ease;
+      @include animateRight;
       &:hover {
         border-bottom-color: #734bd1;
         transform: scale(1.1);
