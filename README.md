@@ -1,7 +1,7 @@
 <h2 style="text-align: center; font-weight: bold;">Romario Negreiros</h2>
 <h2 style="text-align: center; font-weight: bold;">Front End Developer</h2>
 
-This is my porfolio
+Welcome to the portfólio of a front end development student ✌
 
 #### Content
 * A presentational section
