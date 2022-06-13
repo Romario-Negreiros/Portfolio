@@ -1,27 +1,12 @@
-<h2 style="text-align: center; font-weight: bold;">Romario Negreiros</h2>
-<h2 style="text-align: center; font-weight: bold;">Front End Developer</h2>
+<h2 style="text-align: center; font-weight: bold;">Romario Negreiros Baldarenas da Silva</h2>
+<h2 style="text-align: center; font-weight: bold;">Desenvolvedor Front End</h2>
 
-Welcome to the portfólio of a front end development student ✌
+## Bem vindo ao meu portfólio ✌
 
-#### Content
-* A presentational section
-* An about me section
-* A section for projects
-* A section for my knowledge
-* A section to share what I provided
-* A section to send me a email
+Aqui você vai encontrar um pouco sobre mim, sobre como eu escolhi essa área,
+assim como o que eu aprendi ao longo dos meus estudos e os projetos que eu
+construi para práticar.
+
 
 ### Snapshot
 ![Snapshot](./public/assets/snapshot.png)
-
------------------------------------------------------------------------------------------------------------------------------
-
-##### Progress
-- [x] Image to presentational section
-- [x] Image to about me section
-- [x] Sections' content
-- [x] Download icons
-- [x] Animations
-- [x] Responsivity
-- [x] Email sender
-- [x] Custom alert (toast)

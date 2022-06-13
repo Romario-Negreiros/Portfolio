@@ -8,7 +8,7 @@ class Email {
       send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
     } else {
       throw new Error(
-        'You have already sent a email, if you need to send another, here it is: <a href="mailto:nromario482@gmail.com">nromario482@gmail.com</a>'
+        'Você ja enviou um email, se precisar enviar outro, aqui está: <a href="mailto:nromario482@gmail.com">nromario482@gmail.com</a>'
       )
     }
   }

@@ -30,7 +30,6 @@ import '../../public/assets/circle-exclamation-solid.svg'
 const emailForm = document.querySelector('.emailForm')
 
 const handleFormSubmit = async event => {
-  console.log('oi')
   event.preventDefault()
   const templateParams = {
     [event.target[0].name]: event.target[0].value,
@@ -41,15 +40,15 @@ const handleFormSubmit = async event => {
   try {
     for (const param in templateParams) {
       if (!templateParams[param]) {
-        throw new Error(`All fields needs to be filled in!`)
+        throw new Error(`Todos campos precisam ser preenchidos!`)
       }
     }
     await Email.send(templateParams)
     localStorage.setItem('hasSent', true)
-    toggleToast('success', 'Email succesfully sent!')
+    toggleToast('sucesso', 'Email enviado com sucesso!')
   } catch (err) {
     console.error('Exception while sending email => ' + err.message)
-    toggleToast('warning', err.message)
+    toggleToast('aviso', err.message)
   }
 }
 emailForm.onsubmit = handleFormSubmit

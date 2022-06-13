@@ -1,6 +1,6 @@
 const severities = {
-  warning: 'assets/circle-exclamation-solid.svg',
-  success: 'assets/circle-check-solid.svg'
+  aviso: 'assets/circle-exclamation-solid.svg',
+  sucesso: 'assets/circle-check-solid.svg'
 }
 
 const toggleToast = (severity, content) => {

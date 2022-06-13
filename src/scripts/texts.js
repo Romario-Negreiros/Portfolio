@@ -2,67 +2,68 @@ const texts = [
   {
     title: 'HTML',
     description: `
-            Hyper text markup language. <br /> 
-            Creates all the page's body, texts, images etc. <br />
-            1 year and 1 month experience.
+            Linguagem de Marcação de Hipertexto. <br /> 
+            Cria todo o corpo da página, textos, imagens, videos etc. <br />
+            1 ano e 3 meses de experiência.
         `
   },
   {
     title: 'CSS',
     description: `
-            Cascading style sheets. <br />
-            Brings up a better visual to the website, as well as animations and effects. <br />
-            1 year and 1 month experience.
+            Folha de estilos em cascata. <br />
+            Traz um visual melhor, assim como animações e efeitos, torna o site atrativo. <br />
+            1 ano e 3 meses de experiência.
 
         `
   },
   {
     title: 'JavaScript',
     description: `
-            Programming language. <br />
-            Delivers dinamic to the website, making it more pleasant to the user. <br />
-            1 year and 1 month experience.
+            Linguagem de Programação. <br />
+            Entrega dinâmica ao site, deixando-o mais agradável ao usuário, e permitindo
+            seu funcionamento completo. <br />
+            1 ano e 3 meses de experiência.
         `
   },
   {
     title: 'Git',
     description: `
-            Code versionament system. <br />
-            Makes teamwork faster allowing organizing the code in a simply and fast way. <br />
-            8 Months experience.
+            Sistema de Versionamento de Código. <br />
+            Torna o desenvolvimento em equipe mais rapido, auxiliando na organização do código e no versionamento do mesmo. <br />
+            8 meses de experiência.
         `
   },
   {
     title: 'React',
     description: `
-            Javascript library. <br />
-            Eases the construction and expansion of the project while gives a better performance. <br />
-            11 months experience.
+            Biblioteca de Javascript. <br />
+            Facilita a construção e escalabilidade do projeto assim como entrega uma melhor performance. <br />
+            1 ano de experiência.
         `
   },
   {
     title: 'TypeScript',
     description: `
-            Programming language based on javascript. <br />
-            Adds static types to javascript, bringing benefits as the capture of errors during development. <br />
-            8 months experience.
+            Linguagem de Programação baseada no Javascript. <br />
+            Adiciona tipagem estática ao Javascript, trazendo benefícios como a captura de erros durante o desenvolvimento. <br />
+            10 meses de experiência.
         `
   },
   {
     title: 'SASS',
     description: `
-            CSS preprocessor. <br />
-            Auxiliates in the creation and organization of the style sheets. <br />
-            6 months experience.
+            Pré-processador de CSS. <br />
+            Auxilia na criação e organização das folhas de estilo. <br />
+            6 meses de experiência.
         `
   },
   {
     title: 'Jquery',
     description: `
-            Javascript library. <br />
-            Helps in DOM manipulation, also brings solutions to make animations,
-            or HTTP requests. <br />
-            2 months experience.
+            Biblioteca de Javascript. <br />
+            Ajuda na manipulação do DOM, assim como facilita na criação de animações
+            ou requisições HTTP. <br />
+            2 meses de experiência.
         `
   }
 ]
