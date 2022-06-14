@@ -65,6 +65,15 @@ const texts = [
             ou requisições HTTP. <br />
             2 meses de experiência.
         `
+  },
+  {
+    title: 'NextJS',
+    description: `
+            Framework de React. <br />
+            Traz melhorias ao react com funcionalidades como renderização do lado do servidor ou
+            geração de site estático, o que impacta positivamente na performance do site. <br />
+            2 meses de experiência
+        `
   }
 ]
 
