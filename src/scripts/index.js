@@ -138,8 +138,8 @@ skills.forEach(skill => {
   skill.onmouseout = () => {
     title.textContent = 'Technologies'
     content.innerHTML = `
-    Hover over the cards to see a brief abstract about the technology. <br />
-              If you are in a mobile device, just click on the cards to see the abstract.
+    Passe o mouse sobre os cards para ver um breve resumo da tecnologia. <br />
+              Se estiver em um dispositivo móvel, apenas clique nos cards para ver o resumo.
     `
   }
 })

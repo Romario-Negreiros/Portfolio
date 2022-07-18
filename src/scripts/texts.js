@@ -4,7 +4,7 @@ const texts = [
     description: `
             Linguagem de Marcação de Hipertexto. <br /> 
             Cria todo o corpo da página, textos, imagens, videos etc. <br />
-            1 ano e 3 meses de experiência.
+            1 ano e 3 meses de estudos.
         `
   },
   {
@@ -12,7 +12,7 @@ const texts = [
     description: `
             Folha de estilos em cascata. <br />
             Traz um visual melhor, assim como animações e efeitos, torna o site atrativo. <br />
-            1 ano e 3 meses de experiência.
+            1 ano e 3 meses de estudos.
 
         `
   },
@@ -22,7 +22,7 @@ const texts = [
             Linguagem de Programação. <br />
             Entrega dinâmica ao site, deixando-o mais agradável ao usuário, e permitindo
             seu funcionamento completo. <br />
-            1 ano e 3 meses de experiência.
+            1 ano e 3 meses de estudos.
         `
   },
   {
@@ -30,7 +30,7 @@ const texts = [
     description: `
             Sistema de Versionamento de Código. <br />
             Torna o desenvolvimento em equipe mais rapido, auxiliando na organização do código e no versionamento do mesmo. <br />
-            8 meses de experiência.
+            8 meses de estudos.
         `
   },
   {
@@ -38,7 +38,7 @@ const texts = [
     description: `
             Biblioteca de Javascript. <br />
             Facilita a construção e escalabilidade do projeto assim como entrega uma melhor performance. <br />
-            1 ano de experiência.
+            1 ano de estudos.
         `
   },
   {
@@ -46,7 +46,7 @@ const texts = [
     description: `
             Linguagem de Programação baseada no Javascript. <br />
             Adiciona tipagem estática ao Javascript, trazendo benefícios como a captura de erros durante o desenvolvimento. <br />
-            10 meses de experiência.
+            10 meses de estudos.
         `
   },
   {
@@ -54,7 +54,7 @@ const texts = [
     description: `
             Pré-processador de CSS. <br />
             Auxilia na criação e organização das folhas de estilo. <br />
-            6 meses de experiência.
+            6 meses de estudos.
         `
   },
   {
@@ -63,7 +63,7 @@ const texts = [
             Biblioteca de Javascript. <br />
             Ajuda na manipulação do DOM, assim como facilita na criação de animações
             ou requisições HTTP. <br />
-            2 meses de experiência.
+            2 meses de estudos.
         `
   },
   {
@@ -72,7 +72,7 @@ const texts = [
             Framework de React. <br />
             Traz melhorias ao react com funcionalidades como renderização do lado do servidor ou
             geração de site estático, o que impacta positivamente na performance do site. <br />
-            2 meses de experiência
+            2 meses de estudos.
         `
   }
 ]
