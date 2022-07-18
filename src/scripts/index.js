@@ -15,9 +15,7 @@ import '../../public/assets/jquery-brands.svg'
 import '../../public/assets/js-square-brands.svg'
 import '../../public/assets/link-solid.svg'
 import '../../public/assets/linkedin-brands.svg'
-import '../../public/assets/node-js-brands.svg'
 import '../../public/assets/palette-solid.svg'
-import '../../public/assets/postgresql-brands.svg'
 import '../../public/assets/react-brands.svg'
 import '../../public/assets/sass-brands.svg'
 import '../../public/assets/share-square-solid.svg'
@@ -26,6 +24,7 @@ import '../../public/assets/typescript-brands.svg'
 import '../../public/assets/circle-check-solid.svg'
 import '../../public/assets/circle-exclamation-solid.svg'
 import '../../public/assets/nextjs-original.svg'
+import '../../public/assets/python-brands.svg'
 
 /*************** Email sender ****************/
 const emailForm = document.querySelector('.emailForm')
