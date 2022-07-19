@@ -103,9 +103,25 @@ internLinks.forEach(link => {
 })
 
 /*************** Animate on scroll ****************/
-const animations = () => {
+const addAnimationClasses = () => {
+  const animateDirections = {
+    top: 'animate-top',
+    right: 'animate-right',
+    left: 'animate-left',
+    ['top&right']: 'animate-top-right',
+    ['right&top']: 'animate-right-top'
+  }
+
+  const elementsToAnimate = Array.from(document.querySelectorAll('[data-aos]'))
+  elementsToAnimate.forEach(element => {
+    const animateDirection = element.getAttribute('data-direction')
+    element.classList.add(animateDirections[animateDirection])
+  })
+}
+
+const animateOnScroll = () => {
   const { pageYOffset, innerHeight } = window
-  const elementsToAnimate = [...document.querySelectorAll('[data-aos]')]
+  const elementsToAnimate = Array.from(document.querySelectorAll('[data-aos]'))
   elementsToAnimate.forEach(element => {
     if (
       element.offsetTop - pageYOffset <=
@@ -116,8 +132,12 @@ const animations = () => {
   })
 }
 
-window.onscroll = animations
-window.onload = animations
+window.onscroll = animateOnScroll
+window.onload = () => {
+  addAnimationClasses()
+  // delay to allow seeing the animation in presentational section
+  setTimeout(() => animateOnScroll(), 200)
+}
 
 /*************** Animations on skills section  ****************/
 const insertContent = event => {
