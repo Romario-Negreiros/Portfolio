@@ -13,7 +13,6 @@
     overflow: hidden;
     @include flexbox-column;
     h2 {
-      @include animateRight;
       @include sectitle;
       text-align: center;
       margin-bottom: 100px;
@@ -31,12 +30,10 @@
       padding: 15px;
       background: $lighterBg;
       text-align: center;
-      @include animateTop;
       &:hover {
         border-color: $link;
       }
       @include mQ(700px) {
-        @include animateRight;
       }
     }
     img {

@@ -106,7 +106,7 @@
 @mixin animateRight {
   transform: translateX(-300px);
   visibility: hidden;
-  transition: 0.8s;
+  transition: transform 0.8s;
 }
 
 @mixin animateLeft {

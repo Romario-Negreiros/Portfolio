@@ -15,6 +15,32 @@
   @include animateEnd;
 }
 
+.animate-right {
+  @include animateRight;
+}
+
+.animate-top {
+  @include animateTop;
+}
+
+.animate-left {
+  @include animateLeft;
+}
+
+.animate-top-right {
+  @include animateTop;
+  @include mQ(700px) {
+    @include animateRight;
+  }
+}
+
+.animate-right-top {
+  @include animateRight;
+  @include mQ(700px) {
+    @include animateTop;
+  }
+}
+
 .back-to-top {
   @include animateLeft;
   position: fixed;
@@ -30,6 +56,7 @@
     }
   }
 }
+
 .back-to-top--active {
   @include animateEnd;
 }

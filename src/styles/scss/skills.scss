@@ -17,7 +17,6 @@
       @include flexbox-column;
     }
     h2 {
-      @include animateRight;
       @include sectitle;
       text-align: center;
       margin-bottom: 100px;
@@ -42,7 +41,6 @@
       margin: 20px 10px;
       border-bottom: 2px solid transparent;
       background: $darkerBg;
-      @include animateRight;
       &:hover {
         border-bottom-color: #734bd1;
         transform: scale(1.1);
@@ -57,7 +55,6 @@
       @include mQ(700px) {
         width: 50px;
         height: 50px;
-        @include animateTop;
       }
       @include mQ(350px) {
         width: 45px;
@@ -79,7 +76,6 @@
       }
     }
     .e-skills__contents {
-      @include animateLeft;
       color: $text;
       flex-basis: 45%;
       align-self: stretch;

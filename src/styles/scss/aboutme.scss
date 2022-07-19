@@ -16,7 +16,6 @@
     @include flexbox-row;
     flex-flow: row wrap;
     h2 {
-      @include animateRight;
       @include sectitle;
       margin-bottom: 100px;
       @include mQ(800px) {
@@ -36,12 +35,10 @@
       }
     }
     .c-aboutme__lefttop {
-      @include animateRight;
       @include texts;
     }
     .c-aboutme__rightbottom {
       margin-top: 30px;
-      @include animateLeft;
       @include texts;
     }
     .c-aboutme__linksWrapper {
@@ -54,7 +51,6 @@
         }
     }
     a {
-      @include animateRight;
       @include flexbox-row;
       @include buttons;
       padding: 15px 35px;

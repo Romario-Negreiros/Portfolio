@@ -248,11 +248,6 @@ ul {
           flex-flow: row wrap;
 }
 .c-aboutme .c-aboutme__wrapper h2 {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   color: #a8a8b3;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -307,11 +302,6 @@ ul {
   }
 }
 .c-aboutme .c-aboutme__wrapper .c-aboutme__lefttop {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   color: #a8a8b3;
   line-height: 35px;
   text-justify: distribute;
@@ -327,11 +317,6 @@ ul {
 }
 .c-aboutme .c-aboutme__wrapper .c-aboutme__rightbottom {
   margin-top: 30px;
-  -webkit-transform: translateX(300px);
-          transform: translateX(300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   color: #a8a8b3;
   line-height: 35px;
   text-justify: distribute;
@@ -368,11 +353,6 @@ ul {
   }
 }
 .c-aboutme .c-aboutme__wrapper a {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,11 +449,6 @@ ul {
   }
 }
 .b-presentation h1 {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   font-size: 3rem;
 }
 @media screen and (max-width: 1000px) {
@@ -493,11 +468,6 @@ ul {
   }
 }
 .b-presentation a {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -571,11 +541,6 @@ ul {
   overflow: hidden;
 }
 .d-projects .d-projects__wrapper h2 {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   color: #a8a8b3;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -636,22 +601,12 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transform: translateY(-300px);
-          transform: translateY(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
 }
 .d-projects .d-projects__wrapper .d-projects__list li:hover {
   border-color: #734bd1;
 }
 @media screen and (max-width: 700px) {
   .d-projects .d-projects__wrapper .d-projects__list li {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
-    visibility: hidden;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -837,11 +792,6 @@ ul {
   }
 }
 .e-skills .e-skills__wrapper h2 {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   color: #a8a8b3;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -916,11 +866,6 @@ ul {
   margin: 20px 10px;
   border-bottom: 2px solid transparent;
   background: #121214;
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
 }
 .e-skills .e-skills__wrapper li:hover {
   border-bottom-color: #734bd1;
@@ -940,11 +885,6 @@ ul {
   .e-skills .e-skills__wrapper li {
     width: 50px;
     height: 50px;
-    -webkit-transform: translateY(-300px);
-            transform: translateY(-300px);
-    visibility: hidden;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
   }
 }
 @media screen and (max-width: 350px) {
@@ -975,11 +915,6 @@ ul {
   }
 }
 .e-skills .e-skills__wrapper .e-skills__contents {
-  -webkit-transform: translateX(300px);
-          transform: translateX(300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   color: #a8a8b3;
   -ms-flex-preferred-size: 45%;
       flex-basis: 45%;
@@ -1068,11 +1003,6 @@ ul {
           align-items: center;
 }
 .f-services .f-services__wrapper h2 {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   color: #a8a8b3;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1126,23 +1056,9 @@ ul {
   padding: 15px;
   background: #151519;
   text-align: center;
-  -webkit-transform: translateY(-300px);
-          transform: translateY(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
 }
 .f-services .f-services__wrapper li:hover {
   border-color: #734bd1;
-}
-@media screen and (max-width: 700px) {
-  .f-services .f-services__wrapper li {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px);
-    visibility: hidden;
-    -webkit-transition: 0.8s;
-    transition: 0.8s;
-  }
 }
 .f-services .f-services__wrapper img {
   width: 25px;
@@ -1207,11 +1123,6 @@ ul {
   width: 100%;
 }
 .g-email .g-email__wrapper h2 {
-  -webkit-transform: translateX(-300px);
-          transform: translateX(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
   color: #a8a8b3;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1264,8 +1175,10 @@ ul {
   -webkit-transform: translateX(-300px);
           transform: translateX(-300px);
   visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
 }
 .g-email .g-email__wrapper input:hover, .g-email .g-email__wrapper input:focus, .g-email .g-email__wrapper textarea:hover, .g-email .g-email__wrapper textarea:focus, .g-email .g-email__wrapper button:hover, .g-email .g-email__wrapper button:focus {
   color: #fff;
@@ -1355,9 +1268,6 @@ ul {
 }
 .h-footer .h-footer__credits {
   text-align: right;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
 }
 .h-footer .h-footer__credits h2 {
   color: #a8a8b3;
@@ -1373,7 +1283,6 @@ ul {
 @media screen and (max-width: 800px) {
   .h-footer .h-footer__credits {
     margin-top: 30px;
-    text-align: center;
   }
 }
 .h-footer .h-footer__credits a {
@@ -1462,6 +1371,7 @@ ul {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  gap: 1rem;
   font-size: 1.2rem;
 }
 .h-footer .h-footer__contactme a:hover {
@@ -1604,6 +1514,70 @@ ul {
   -webkit-transform: translate(0px) !important;
           transform: translate(0px) !important;
   visibility: visible !important;
+}
+
+.animate-right {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  visibility: hidden;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.animate-top {
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px);
+  visibility: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.animate-left {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  visibility: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.animate-top-right {
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px);
+  visibility: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+@media screen and (max-width: 700px) {
+  .animate-top-right {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+    visibility: hidden;
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+  }
+}
+
+.animate-right-top {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  visibility: hidden;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+@media screen and (max-width: 700px) {
+  .animate-right-top {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+    visibility: hidden;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+  }
 }
 
 .back-to-top {
