@@ -86,7 +86,7 @@ internLinks.forEach(link => {
     // Smooth scroll
     if (
       event.target.getAttribute('href') === '#header' ||
-      event.target.alt === 'back to top'
+      event.target.alt === 'voltar ao topo'
     ) {
       window.scroll({
         top: 0,
