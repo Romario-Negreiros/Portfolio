@@ -10,7 +10,7 @@ const texts = [
   {
     title: 'CSS',
     description: `
-            Folha de estilos em cascata. <br />
+            Folha de Estilos em Cascata. <br />
             Traz um visual melhor, assim como animações e efeitos, torna o site atrativo. <br />
             1 ano e 5 meses de estudos.
 
