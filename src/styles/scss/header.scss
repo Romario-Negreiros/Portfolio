@@ -1,5 +1,5 @@
 .a-header {
-  background: $lighterBg;
+  background-color: $lighterBg;
   height: 60px;
   padding: 25px;
   overflow: hidden;
@@ -36,7 +36,7 @@
         height: 2px;
         display: block;
         margin-top: 3px;
-        background: $weakGray;
+        background-color: $weakGray;
         transition: all .4s ease-in-out
       }
     }
@@ -56,7 +56,7 @@
         justify-content: space-around;
         position: absolute;
         width: 100%;
-        background: $lighterBg;
+        background-color: $lighterBg;
         top: 0px;
         left: 0px;
         z-index: 10;
@@ -90,7 +90,7 @@
         left: 0;
         height: 2px;
         width: 0;
-        background: $underline;
+        background-color: $underline;
         transition: width 0.3s ease-in-out;
       }
       &:hover {

@@ -2,7 +2,7 @@
   @include padding;
   min-height: 100vh;
   width: 100%;
-  background: $lighterBg;
+  background-color: $lighterBg;
   border-bottom: 1px solid $borders;
   @include mQ(300px) {
     padding: 20px 0;
@@ -28,13 +28,12 @@
       width: 100%;
       max-width: 400px;
       padding: 13px 10px;
-      background: $darkerBg;
+      background-color: $darkerBg;
       color: $text;
       border: 2px solid transparent;
       border-radius: 2px;
       outline: 0;
       font-size: 1rem;
-      @include animateRight;
       &:hover, &:focus {
         color: #fff;
         border-color: $underline;

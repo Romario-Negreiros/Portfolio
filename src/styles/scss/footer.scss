@@ -2,7 +2,7 @@
   @include padding;
   min-height: 20vh;
   width: 100%;
-  background: $sectionsBg;
+  background-color: $sectionsBg;
   @include mQ(300px) {
     padding: 20px 0;
   }

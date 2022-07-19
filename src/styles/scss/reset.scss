@@ -30,10 +30,10 @@ ul {
 }
 
 ::-webkit-scrollbar-track {
-  background: $scrollbar-background;
+  background-color: $scrollbar-background;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: $scrollbar;
+  background-color: $scrollbar;
 }
