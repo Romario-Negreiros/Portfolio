@@ -24,7 +24,6 @@ import '../../public/assets/typescript-brands.svg'
 import '../../public/assets/circle-check-solid.svg'
 import '../../public/assets/circle-exclamation-solid.svg'
 import '../../public/assets/nextjs-original.svg'
-import '../../public/assets/python-brands.svg'
 
 /*************** Email sender ****************/
 const emailForm = document.querySelector('.emailForm')

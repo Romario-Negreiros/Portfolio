@@ -74,15 +74,6 @@ const texts = [
             geração de site estático, o que impacta positivamente na performance do site. <br />
             4 meses de estudos.
         `
-  },
-  {
-    title: 'Python',
-    description: `
-            Linguagem de Programação. <br />
-            Pode ser usada tanto na construção de websites, quanto na construção de códigos 
-            que rodam no lado do servidor, de maneira rápida e simples de se entender. <br />
-            1 semana de estudos.
-        `
   }
 ]
 
