@@ -74,6 +74,15 @@ const texts = [
             geração de site estático, o que impacta positivamente na performance do site. <br />
             4 meses de estudos.
         `
+  },
+  {
+    title: 'Bootstrap',
+    description: `
+            Biblioteca de HTML, CSS e JavaScript. <br />
+            Fornece componentes prontos para uso, já estilizados, agilizando o desenvolvimento e facilitando
+            na criação dos layouts, tudo de maneira simples e legível. <br />
+            1 semana de estudos.
+        `
   }
 ]
 
