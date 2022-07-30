@@ -804,6 +804,7 @@ ul {
   }
 }
 .e-skills .e-skills__wrapper li {
+  text-align: center;
   padding: 20px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -829,6 +830,11 @@ ul {
   width: 50px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.e-skills .e-skills__wrapper figcaption {
+  color: #a8a8b3;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 
 .f-services {
