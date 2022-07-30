@@ -1,4 +1,3 @@
-import texts from './texts.js'
 import Email from './email.js'
 import toggleToast from './toast.js'
 import '../styles/css/index.css'
@@ -138,30 +137,6 @@ window.onload = () => {
   // delay to allow seeing the animation in presentational section
   setTimeout(() => animateOnScroll(), 200)
 }
-
-/*************** Animations on skills section  ****************/
-const insertContent = event => {
-  const tec = event.target.getAttribute('data-skill')
-  if (tec !== null) {
-    const obj = texts.find(obj => obj.title === tec)
-    title.textContent = obj.title
-    content.innerHTML = obj.description
-  }
-}
-const skills = [...document.querySelectorAll('.skill')]
-const title = document.querySelector('.e-skills__contents h3')
-const content = document.querySelector('.e-skills__contents p')
-skills.forEach(skill => {
-  skill.onmouseover = insertContent
-  skill.onclick = insertContent
-  skill.onmouseout = () => {
-    title.textContent = 'Technologies'
-    content.innerHTML = `
-    Passe o mouse sobre os cards para ver um breve resumo da tecnologia. <br />
-              Se estiver em um dispositivo móvel, apenas clique nos cards para ver o resumo.
-    `
-  }
-})
 
 /*************** Display back to top button  ****************/
 window.addEventListener('scroll', () => {
