@@ -728,15 +728,6 @@ ul {
   width: 100%;
   background-color: #151519;
   border-bottom: 1px solid #323238;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media screen and (max-width: 600px) {
   .e-skills {
@@ -759,33 +750,16 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-@media screen and (max-width: 1024px) {
-  .e-skills .e-skills__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 .e-skills .e-skills__wrapper h2 {
   color: #a8a8b3;
@@ -811,8 +785,7 @@ ul {
   }
 }
 .e-skills .e-skills__wrapper ul {
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -830,23 +803,6 @@ ul {
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width: 1024px) {
-  .e-skills .e-skills__wrapper ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-  }
-}
 .e-skills .e-skills__wrapper li {
   padding: 20px 15px;
   display: -webkit-box;
@@ -859,7 +815,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
-  margin: 20px 10px;
+  margin: 10px;
   border-bottom: 2px solid transparent;
   background-color: #121214;
 }
@@ -869,149 +825,10 @@ ul {
           transform: scale(1.1);
   background-color: #252529;
 }
-@media screen and (max-width: 1024px) {
-  .e-skills .e-skills__wrapper li {
-    width: 75px;
-    height: 75px;
-    padding: 0px;
-    margin: 8px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .e-skills .e-skills__wrapper li {
-    width: 50px;
-    height: 50px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .e-skills .e-skills__wrapper li {
-    width: 45px;
-    height: 45px;
-    margin: 5px;
-  }
-}
 .e-skills .e-skills__wrapper img {
   width: 50px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media screen and (max-width: 1024px) {
-  .e-skills .e-skills__wrapper img {
-    width: 40px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .e-skills .e-skills__wrapper img {
-    width: 30px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .e-skills .e-skills__wrapper img {
-    width: 25px;
-  }
-}
-.e-skills .e-skills__wrapper .e-skills__contents {
-  color: #a8a8b3;
-  -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-}
-@media screen and (max-width: 1024px) {
-  .e-skills .e-skills__wrapper .e-skills__contents {
-    margin-top: 40px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .e-skills .e-skills__wrapper .e-skills__contents {
-    text-align: center;
-  }
-}
-.e-skills .e-skills__wrapper h3 {
-  color: #a8a8b3;
-  font-weight: 700;
-  font-size: 1.4rem;
-}
-.e-skills .e-skills__wrapper p {
-  margin-top: 40px;
-  color: #a8a8b3;
-  line-height: 35px;
-  text-justify: distribute;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-  font-size: 1.2rem;
-  height: 250px;
-}
-@media screen and (max-width: 600px) {
-  .e-skills .e-skills__wrapper p {
-    line-height: 30px;
-  }
-}
-.e-skills .e-skills__wrapper .e-skills__noscript-wrapper {
-  -ms-flex-preferred-size: unset;
-      flex-basis: unset;
-  margin-top: 1rem;
-  gap: 30px;
-  padding: 1rem;
-}
-.e-skills .e-skills__wrapper .e-skills__noscript-wrapper li {
-  width: 100%;
-  height: unset;
-  padding: 15px;
-  margin: 0;
-  overflow: visible;
-  border: 2px solid transparent;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-.e-skills .e-skills__wrapper .e-skills__noscript-wrapper li:hover {
-  border-color: #734bd1;
-  -webkit-transform: none;
-          transform: none;
-  background-color: unset;
-}
-@media screen and (max-width: 700px) {
-  .e-skills .e-skills__wrapper .e-skills__noscript-wrapper li {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-.e-skills .e-skills__wrapper .e-skills__noscript-wrapper h3 {
-  margin-bottom: 5px;
-}
-.e-skills .e-skills__wrapper .e-skills__noscript-wrapper h4 {
-  color: #a8a8b3;
-  font-weight: 500;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-}
-.e-skills .e-skills__wrapper .e-skills__noscript-wrapper p {
-  font-size: 1.2rem;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 0;
-}
-.e-skills .e-skills__wrapper .e-skills__noscript-wrapper span {
-  color: #e1e1e6;
 }
 
 .f-services {
