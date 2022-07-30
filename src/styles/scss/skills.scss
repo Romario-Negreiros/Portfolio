@@ -24,6 +24,7 @@
       @include three-col-grid;
     }
     li {
+      text-align: center;
       padding: 20px 15px;
       @include flexbox-center;
       overflow: hidden;
@@ -39,6 +40,9 @@
     img {
       width: 50px;
       object-fit: cover;
+    }
+    figcaption {
+      @include cardtitle;
     }
   }
 }
