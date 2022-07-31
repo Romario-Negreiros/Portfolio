@@ -80,9 +80,6 @@ const internLinks = [...document.querySelectorAll('[href^="#')]
 internLinks.forEach(link => {
   link.onclick = event => {
     event.preventDefault()
-    // Makes menu close
-    menuMechanisms(event)
-    // Smooth scroll
     if (
       event.target.getAttribute('href') === '#header' ||
       event.target.alt === 'voltar ao topo'
@@ -92,6 +89,8 @@ internLinks.forEach(link => {
         behavior: 'smooth'
       })
     } else {
+      // Makes menu close when click occurs on mobile
+      menuMechanisms(event)
       const element = document.querySelector(event.target.getAttribute('href'))
       window.scroll({
         top: element.offsetTop,
