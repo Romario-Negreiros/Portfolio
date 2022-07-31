@@ -41,6 +41,27 @@
   }
 }
 
+.animate-top-left {
+  @include animateTop;
+  @include mQ(700px) {
+    @include animateLeft;
+  }
+}
+
+.animate-left-right {
+  @include animateLeft;
+  @include mQ(700px) {
+    @include animateRight;
+  }
+}
+
+.animate-right-left {
+  @include animateRight;
+  @include mQ(700px) {
+    @include animateLeft;
+  }
+}
+
 .back-to-top {
   @include animateLeft;
   position: fixed;
