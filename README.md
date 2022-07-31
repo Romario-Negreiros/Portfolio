@@ -1,5 +1,6 @@
 <div align=center>
   <div>
+     <img src="./public/assets/code-solid.svg" alt="Code illustration" width="40px" height="40px">
      <h2>
         Romario Negreiros Baldarenas da Silva <br />
         Desenvolvedor Front End
@@ -15,13 +16,16 @@
       construi para práticar.
     </p>
   </div>
+  
+  <hr>
   <div>
       <div>
-        <h3>Preview do inicio do site</h3>
+        <h4>Preview do inicio do site</h3>
         <img src="./public/assets/snapshot.png" alt="Preview do inicio do site" />
       </div>
+      <hr>
       <div>
-        <h3>Métricas do lighthouse</h3>
+        <h4>Métricas do lighthouse</h3>
         <img src="./public/assets/lighthouse-metrics-preview.png" alt="Métricas do lighthouse" />
       </div>
    </div>
