@@ -1004,6 +1004,7 @@ ul {
 .g-email .g-email__wrapper {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 .g-email .g-email__wrapper h2 {
   color: #a8a8b3;
