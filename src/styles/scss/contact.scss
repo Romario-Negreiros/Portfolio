@@ -11,6 +11,7 @@
   .g-email__wrapper {
     height: 100%;
     width: 100%;
+    overflow: hidden;
     h2 {
       @include sectitle;
       text-align: center;
