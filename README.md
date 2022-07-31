@@ -8,5 +8,8 @@ assim como o que eu aprendi ao longo dos meus estudos e os projetos que eu
 construi para práticar.
 
 
-### Snapshot
-![Snapshot](./public/assets/snapshot.png)
+### Snapshots
+![Main content](./public/assets/snapshot.png)
+
+Lighthouse metrics
+![Metrics](./public/assets/lighthouse-metrics-preview.png)
