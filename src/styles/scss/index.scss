@@ -34,20 +34,6 @@
   }
 }
 
-.animate-right-top {
-  @include animateRight;
-  @include mQ(700px) {
-    @include animateTop;
-  }
-}
-
-.animate-top-left {
-  @include animateTop;
-  @include mQ(700px) {
-    @include animateLeft;
-  }
-}
-
 .animate-left-right {
   @include animateLeft;
   @include mQ(700px) {
