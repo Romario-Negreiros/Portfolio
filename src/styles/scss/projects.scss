@@ -4,7 +4,7 @@
   width: 100%;
   background-color: $darkerBg;
   border-bottom: 1px solid $borders;
-  @include mQ(300px) {
+  @include mQ(576px) {
     padding: 20px 0px;
   }
   @include flexbox-center;
@@ -19,7 +19,11 @@
       }
     }
     .d-projects__list {
-      @include three-col-grid;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      @include mQ(996px) {
+        grid-template-columns: 1fr;
+      }
       li {
         margin: 10px;
         background-color: $lighterBg;

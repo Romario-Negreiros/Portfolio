@@ -4,7 +4,7 @@
   width: 100%;
   background-color: $darkerBg;
   border-bottom: 1px solid $borders;
-  @include mQ(300px) {
+  @include mQ(576px) {
     padding: 20px 0px;
   }
   @include flexbox-center;
@@ -21,7 +21,17 @@
       }
     }
     ul {
-      @include four-col-grid;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      @include mQ(1100px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @include mQ(900px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @include mQ(600px) {
+        grid-template-columns: 1fr;
+      }
     }
     li {
       margin: 15px;
