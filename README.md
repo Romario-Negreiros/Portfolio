@@ -16,7 +16,6 @@
       construi para práticar.
     </p>
   </div>
-  
   <hr>
   <div>
       <div>
