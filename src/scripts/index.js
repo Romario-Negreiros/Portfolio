@@ -103,12 +103,9 @@ internLinks.forEach(link => {
 /*************** Animate on scroll ****************/
 const addAnimationClasses = () => {
   const animateDirections = {
-    top: 'animate-top',
     right: 'animate-right',
     left: 'animate-left',
     'top&right': 'animate-top-right',
-    'right&top': 'animate-right-top',
-    'top&left': 'animate-top-left',
     'left&right': 'animate-left-right',
     'right&left': 'animate-right-left'
   }
