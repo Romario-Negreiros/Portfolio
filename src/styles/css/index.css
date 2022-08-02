@@ -532,7 +532,7 @@ ul {
     padding: 20px 10px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 576px) {
   .d-projects {
     padding: 20px 0px;
   }
@@ -566,16 +566,10 @@ ul {
 .d-projects .d-projects__wrapper .d-projects__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-@media screen and (max-width: 1000px) {
-  .d-projects .d-projects__wrapper .d-projects__list {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 996px) {
   .d-projects .d-projects__wrapper .d-projects__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -746,9 +740,9 @@ ul {
     padding: 20px 10px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 576px) {
   .e-skills {
-    padding: 20px 5px;
+    padding: 20px 0px;
   }
 }
 .e-skills .e-skills__wrapper {
@@ -795,16 +789,28 @@ ul {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
+  .e-skills .e-skills__wrapper ul {
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 900px) {
+  .e-skills .e-skills__wrapper ul {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
   .e-skills .e-skills__wrapper ul {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 470px) {
   .e-skills .e-skills__wrapper ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -870,7 +876,7 @@ ul {
     padding: 20px 10px;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 576px) {
   .f-services {
     padding: 20px 0px;
   }
