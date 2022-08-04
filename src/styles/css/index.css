@@ -723,10 +723,6 @@ ul {
     text-align: center;
   }
 }
-.d-projects .d-projects__wrapper .d-projects__list .under-refactoring {
-  -webkit-transition: unset;
-  transition: unset;
-}
 .d-projects .d-projects__wrapper .d-projects__list .under-refactoring:hover {
   border-color: transparent;
 }
