@@ -24,6 +24,18 @@ import '../../public/assets/circle-check-solid.svg'
 import '../../public/assets/circle-exclamation-solid.svg'
 import '../../public/assets/nextjs-original.svg'
 import '../../public/assets/bootstrap-brands.svg'
+import '../../public/assets/retrogames-snapshot.png24'
+import '../../public/assets/changix-snapshot.png24'
+import '../../public/assets/easybank-snapshot.png24'
+import '../../public/assets/fylo-snapshot.png24'
+import '../../public/assets/fireblog-snapshot.png24'
+import '../../public/assets/fireswift-snapshot.png24'
+import '../../public/assets/ip-address-tracker-snapshot.png24'
+import '../../public/assets/country-searcher-snapshot.png24'
+import '../../public/assets/reactcommerce-snapshot.png24'
+import '../../public/assets/space-tourism-snapshot.png24'
+import '../../public/assets/yourjob-snapshot.png24'
+
 
 /*************** Email sender ****************/
 const emailForm = document.querySelector('.emailForm')
