@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -721,6 +722,45 @@ ul {
     padding: 10px;
     text-align: center;
   }
+}
+.d-projects .d-projects__wrapper .d-projects__list .under-refactoring {
+  -webkit-transition: unset;
+  transition: unset;
+}
+.d-projects .d-projects__wrapper .d-projects__list .under-refactoring:hover {
+  border-color: transparent;
+}
+.d-projects .d-projects__wrapper .d-projects__list .under-refactoring .card-image {
+  position: relative;
+}
+.d-projects .d-projects__wrapper .d-projects__list .under-refactoring .card-image img {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+.d-projects .d-projects__wrapper .d-projects__list .under-refactoring .card-image::after {
+  content: "Em refatoração";
+  display: block;
+  position: absolute;
+  top: calc(50% - 22.5px);
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #a8a8b3;
+  background-color: #121214;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+.d-projects .d-projects__wrapper .d-projects__list .under-refactoring .card-bottompart a {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+.d-projects .d-projects__wrapper .d-projects__list .under-refactoring .card-bottompart .d-projects__tags span {
+  -webkit-transition: unset;
+  transition: unset;
+}
+.d-projects .d-projects__wrapper .d-projects__list .under-refactoring .card-bottompart .d-projects__tags span:hover {
+  background-color: #121214;
 }
 
 .e-skills {
