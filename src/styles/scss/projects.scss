@@ -89,14 +89,54 @@
             color: $text;
             border-radius: 2px;
             font-size: 1rem;
-            transition: background-color .4s;
+            transition: background-color 0.4s;
             &:hover {
-              background-color: lighten($color: $darkerBg, $amount: 9)
+              background-color: lighten($color: $darkerBg, $amount: 9);
             }
             @include mQ(400px) {
               flex-basis: 100%;
               padding: 10px;
               text-align: center;
+            }
+          }
+        }
+      }
+      .under-refactoring {
+        transition: unset;
+        &:hover {
+          border-color: transparent;
+        }
+        .card-image {
+          position: relative;
+        }
+        .card-image img {
+          filter: opacity(0.5);
+        }
+        .card-image::after {
+          content: 'Em refatoração';
+          display: block;
+          position: absolute;
+          top: calc(50% - 22.5px);
+          width: 100%;
+          padding: 10px 0;
+          text-align: center;
+          font-weight: bold;
+          color: $text;
+          background-color: $darkerBg;
+          border-top: 2px solid red;
+          border-bottom: 2px solid red;
+        }
+        .card-bottompart {
+          a {
+            cursor: not-allowed;
+            opacity: 0.4;
+          }
+          .d-projects__tags {
+            span {
+              transition: unset;
+              &:hover {
+                background-color: $darkerBg;
+              }
             }
           }
         }
