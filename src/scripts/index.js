@@ -116,10 +116,7 @@ internLinks.forEach(link => {
 const addAnimationClasses = () => {
   const animateDirections = {
     right: 'animate-right',
-    left: 'animate-left',
-    'top&right': 'animate-top-right',
-    'left&right': 'animate-left-right',
-    'right&left': 'animate-right-left'
+    left: 'animate-left'
   }
 
   const elementsToAnimate = Array.from(document.querySelectorAll('[data-aos]'))
