@@ -4,12 +4,12 @@
   width: 100%;
   background-color: $darkerBg;
   border-bottom: 1px solid $borders;
+  overflow: hidden;
   @include mQ(576px) {
     padding: 20px 0px;
   }
   @include flexbox-center;
   .d-projects__wrapper {
-    overflow: hidden;
     h2 {
       @include sectitle;
       text-align: center;

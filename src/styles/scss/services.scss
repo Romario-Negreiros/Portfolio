@@ -4,13 +4,13 @@
   width: 100%;
   background-color: $darkerBg;
   border-bottom: 1px solid $borders;
+  overflow: hidden;
   @include mQ(576px) {
     padding: 20px 0px;
   }
   @include flexbox-center;
   .f-services__wrapper {
     width: 100%;
-    overflow: hidden;
     @include flexbox-column;
     h2 {
       @include sectitle;
