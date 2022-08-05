@@ -19,33 +19,8 @@
   @include animateRight;
 }
 
-.animate-top {
-  @include animateTop;
-}
-
 .animate-left {
   @include animateLeft;
-}
-
-.animate-top-right {
-  @include animateTop;
-  @include mQ(700px) {
-    @include animateRight;
-  }
-}
-
-.animate-left-right {
-  @include animateLeft;
-  @include mQ(700px) {
-    @include animateRight;
-  }
-}
-
-.animate-right-left {
-  @include animateRight;
-  @include mQ(700px) {
-    @include animateLeft;
-  }
 }
 
 .back-to-top {
