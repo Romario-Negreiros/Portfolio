@@ -516,6 +516,7 @@ ul {
   width: 100%;
   background-color: #121214;
   border-bottom: 1px solid #323238;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,9 +541,6 @@ ul {
   .d-projects {
     padding: 20px 0px;
   }
-}
-.d-projects .d-projects__wrapper {
-  overflow: hidden;
 }
 .d-projects .d-projects__wrapper h2 {
   color: #a8a8b3;
@@ -895,6 +893,7 @@ ul {
   width: 100%;
   background-color: #121214;
   border-bottom: 1px solid #323238;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -922,7 +921,6 @@ ul {
 }
 .f-services .f-services__wrapper {
   width: 100%;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1453,14 +1451,6 @@ ul {
   transition: -webkit-transform 0.8s;
   transition: transform 0.8s;
   transition: transform 0.8s, -webkit-transform 0.8s;
-}
-
-.animate-top {
-  -webkit-transform: translateY(-300px);
-          transform: translateY(-300px);
-  visibility: hidden;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
 }
 
 .animate-left {
