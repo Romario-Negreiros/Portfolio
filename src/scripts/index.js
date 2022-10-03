@@ -39,6 +39,7 @@ import '../../public/assets/yourjob-snapshot.png24'
 
 /*************** Email sender ****************/
 const emailForm = document.querySelector('.emailForm')
+const resetBtn = document.querySelector('.resetBtn')
 
 const handleFormSubmit = async event => {
   event.preventDefault()
@@ -57,6 +58,7 @@ const handleFormSubmit = async event => {
     await Email.send(templateParams)
     localStorage.setItem('hasSent', true)
     toggleToast('sucesso', 'Email enviado com sucesso!')
+    resetBtn.click()
   } catch (err) {
     console.error('Exception while sending email => ' + err.message)
     toggleToast('aviso', err.message)
