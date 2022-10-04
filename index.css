@@ -471,6 +471,25 @@ ul {
     font-size: 1.6rem;
   }
 }
+.b-presentation h2 {
+  font-size: 2.5rem;
+}
+@media screen and (max-width: 1000px) {
+  .b-presentation h2 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .b-presentation h2 {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 250px) {
+  .b-presentation h2 {
+    font-size: 1.2rem;
+  }
+}
 .b-presentation a {
   display: -webkit-box;
   display: -ms-flexbox;
