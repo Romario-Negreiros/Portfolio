@@ -32,6 +32,19 @@
       font-size: 1.6rem;
     }
   }
+  h2 {
+    font-size: 2.5rem;
+    @include mQ(1000px) {
+      font-size: 1.8rem;
+    }
+    @include mQ(400px) {
+      text-align: center;
+      font-size: 1.4rem;
+    }
+    @include mQ(250px) {
+      font-size: 1.2rem;
+    }
+  }
   a {
     @include flexbox-row;
     @include buttons;
