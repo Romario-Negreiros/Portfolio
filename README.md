@@ -3,7 +3,7 @@
      <img src="./public/assets/code-solid.svg" alt="Code illustration" width="40px" height="40px">
      <h2>
         Romario Negreiros Baldarenas da Silva <br />
-        Desenvolvedor Front End
+        Desenvolvedor de Software
      </h2>
   </div>
   <div>
