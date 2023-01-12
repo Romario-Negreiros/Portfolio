@@ -1299,13 +1299,14 @@ ul {
 }
 .h-footer .h-footer__contactme a {
   margin: 4px 0;
+  padding-bottom: 3px;
   color: #a8a8b3;
   -ms-flex-item-align: stretch;
       -ms-grid-row-align: stretch;
       align-self: stretch;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border-left: 2px solid transparent;
+  border-bottom: 2px solid transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1330,9 +1331,6 @@ ul {
 @media screen and (max-width: 800px) {
   .h-footer .h-footer__contactme a {
     font-size: 1rem;
-    padding-bottom: 3px;
-    border-left: 0 none;
-    border-bottom: 2px solid transparent;
   }
 }
 .h-footer .h-footer__contactme img {
@@ -1426,8 +1424,7 @@ ul {
 .toast .toast__title img {
   width: 25px;
   height: 25px;
-  -webkit-text-decoration-color: red;
-          text-decoration-color: red;
+  text-decoration-color: red;
 }
 .toast .toast__content {
   text-align: left;
@@ -1447,8 +1444,7 @@ ul {
 }
 .toast .toast__content a:hover {
   color: #734bd1;
-  -webkit-text-decoration-color: #734bd1;
-          text-decoration-color: #734bd1;
+  text-decoration-color: #734bd1;
 }
 
 .toast--active {

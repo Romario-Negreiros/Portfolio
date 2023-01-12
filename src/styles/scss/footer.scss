@@ -67,10 +67,11 @@
     }
     a {
       margin: 4px 0;
+      padding-bottom: 3px;
       color: $text;
       align-self: stretch;
       transition: all 0.3s;
-      border-left: 2px solid transparent;
+      border-bottom: 2px solid transparent;
       @include flexbox-row;
       justify-content: space-around;
       gap: 1rem;
@@ -84,9 +85,6 @@
       }
       @include mQ(800px) {
         font-size: 1rem;
-        padding-bottom: 3px;
-        border-left: 0 none;
-        border-bottom: 2px solid transparent;
       }
     }
     img {
