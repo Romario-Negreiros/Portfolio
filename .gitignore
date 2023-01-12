@@ -1,4 +1,5 @@
 *.txt
 *.docx
 *.env
+*.jpg
 node_modules
