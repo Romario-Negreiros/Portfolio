@@ -2,4 +2,5 @@
 *.docx
 *.env
 *.jpg
+*.pdf
 node_modules
