@@ -35,7 +35,8 @@ import '../../public/assets/country-searcher-snapshot.png24'
 import '../../public/assets/reactcommerce-snapshot.png24'
 import '../../public/assets/space-tourism-snapshot.png24'
 import '../../public/assets/yourjob-snapshot.png24'
-
+import '../../public/assets/icons8-mysql.svg'
+import '../../public/assets/icons8-python.svg'
 
 /*************** Email sender ****************/
 const emailForm = document.querySelector('.emailForm')
