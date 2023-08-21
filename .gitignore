@@ -1,6 +1,5 @@
 *.txt
-*.docx
 *.env
 *.jpg
-*.pdf
+public/documents
 node_modules
