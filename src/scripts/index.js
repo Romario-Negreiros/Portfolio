@@ -9,6 +9,7 @@ import "../../public/assets/file-download-solid.svg";
 import "../../public/assets/git-alt-brands.svg";
 import "../../public/assets/github-square-brands.svg";
 import "../../public/assets/hand-point-up-regular.svg";
+import "../../public/assets/whatsapp.svg";
 import "../../public/assets/html5-brands.svg";
 import "../../public/assets/icons8-node-js.svg";
 import "../../public/assets/js-square-brands.svg";
@@ -147,6 +148,11 @@ window.onload = () => {
   addAnimationClasses();
   // Delay to allow seeing the animation in presentational section
   setTimeout(() => animateOnScroll(), 200);
+
+  // Force animate on whatsapp-me button
+  const whatsappMe = document.querySelector(".whatsapp-me");
+
+  whatsappMe.classList.add("animated");
 };
 
 /*************** Display back to top button  ****************/

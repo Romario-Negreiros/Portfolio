@@ -24,11 +24,10 @@
   @include animateLeft;
 }
 
-.back-to-top {
+.back-to-top, .whatsapp-me {
   @include animateLeft;
   position: fixed;
-  bottom: 6px;
-  right: 6px;
+  bottom: 0px;
   z-index: 20;
   border-radius: 50%;
   img {
@@ -40,6 +39,16 @@
   }
 }
 
+.back-to-top {
+  @include animateLeft;
+  right: 6px;
+}
+
 .back-to-top--active {
   @include animateEnd;
+}
+
+.whatsapp-me {
+  @include animateRight;
+  left: 6px;
 }
