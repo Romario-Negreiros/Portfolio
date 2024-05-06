@@ -3,6 +3,9 @@
   min-height: 20vh;
   width: 100%;
   background-color: $lighterBg;
+  @include mQ(600px) {
+    padding: 35px 0;
+  }
   @include mQ(300px) {
     padding: 20px 0;
   }
@@ -15,10 +18,12 @@
     }
   }
   .footer__credits {
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     h2 {
       color: $text;
-      margin-bottom: 30px;
+      margin-bottom: 5px;
       font-size: 1.3rem;
       @include mQ(800px) {
         text-align: center;
@@ -27,20 +32,21 @@
     }
     @include mQ(800px) {
       margin-top: 30px;
+      align-items: center;
     }
     a {
       color: $text;
       display: block;
       font-size: 1.1rem;
       border-bottom: 1px solid transparent;
+      border-color: $link;
       padding: 10px 0 2px 0;
+      width: fit-content;
       @include mQ(800px) {
-        width: fit-content;
         margin: auto;
         font-size: 1rem;
       }
       &:hover {
-        border-color: $link;
         color: $weakGray;
       }
     }
@@ -58,7 +64,7 @@
     h2 {
       width: 100%;
       color: $text;
-      margin-bottom: 30px;
+      margin-bottom: 5px;
       font-size: 1.3rem;
       @include mQ(800px) {
         text-align: center;
@@ -67,24 +73,27 @@
     }
     a {
       margin: 4px 0;
-      padding-bottom: 3px;
+      padding-bottom: 5px;
       color: $text;
       align-self: stretch;
       transition: all 0.3s;
-      border-bottom: 2px solid transparent;
+      border-bottom: 1px solid transparent;
       @include flexbox-row;
       justify-content: space-around;
       gap: 1rem;
       font-size: 1.2rem;
+      border-color: $link;
       &:hover {
         color: $weakGray;
-        border-color: $link;
         .footer__circle {
           border-color: $link;
         }
       }
       @include mQ(800px) {
         font-size: 1rem;
+      }
+      @include mQ(450px) {
+        align-self: auto;
       }
     }
     img {
