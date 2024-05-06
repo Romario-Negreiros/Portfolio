@@ -1620,31 +1620,50 @@ ul {
   transition: 0.8s;
 }
 
-.back-to-top {
+.back-to-top, .whatsapp-me {
   -webkit-transform: translateX(300px);
           transform: translateX(300px);
   visibility: hidden;
   -webkit-transition: 0.8s;
   transition: 0.8s;
   position: fixed;
-  bottom: 6px;
-  right: 6px;
+  bottom: 0px;
   z-index: 20;
   border-radius: 50%;
 }
-.back-to-top img {
+.back-to-top img, .whatsapp-me img {
   width: 40px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media screen and (max-width: 800px) {
-  .back-to-top img {
+  .back-to-top img, .whatsapp-me img {
     width: 28px;
   }
+}
+
+.back-to-top {
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
+  visibility: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  right: 6px;
 }
 
 .back-to-top--active {
   -webkit-transform: translate(0px) !important;
           transform: translate(0px) !important;
   visibility: visible !important;
+}
+
+.whatsapp-me {
+  -webkit-transform: translateX(-300px);
+          transform: translateX(-300px);
+  visibility: hidden;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  left: 6px;
 }
