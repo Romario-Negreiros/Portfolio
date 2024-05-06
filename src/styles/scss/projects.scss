@@ -1,4 +1,4 @@
-.d-projects {
+.projects {
   @include padding;
   min-height: 100vh;
   width: 100%;
@@ -9,7 +9,7 @@
     padding: 20px 0px;
   }
   @include flexbox-center;
-  .d-projects__wrapper {
+  .projects__wrapper {
     h2 {
       @include sectitle;
       text-align: center;
@@ -18,7 +18,7 @@
         margin-bottom: 40px;
       }
     }
-    .d-projects__list {
+    .projects__list {
       display: grid;
       grid-template-columns: 1fr 1fr;
       @include mQ(996px) {
@@ -73,7 +73,7 @@
         img {
           @include smallerIcons;
         }
-        .d-projects__tags {
+        .projects__tags {
           margin-top: 25px;
           @include flexbox-row;
           justify-content: unset;
@@ -101,7 +101,7 @@
           }
         }
       }
-      .under-refactoring {
+      .under-maintenance {
         &:hover {
           border-color: transparent;
         }
@@ -112,7 +112,7 @@
           filter: opacity(0.5);
         }
         .card-image::after {
-          content: 'Em refatoração';
+          content: 'Em manutenção';
           display: block;
           position: absolute;
           top: calc(50% - 22.5px);
@@ -130,7 +130,7 @@
             cursor: not-allowed;
             opacity: 0.4;
           }
-          .d-projects__tags {
+          .projects__tags {
             span {
               transition: unset;
               &:hover {

@@ -26,7 +26,7 @@ ul {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
@@ -34,6 +34,5 @@ ul {
 }
 
 ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
   background-color: $scrollbar;
 }

@@ -1,14 +1,14 @@
-.g-email {
+.contact {
   @include padding;
   min-height: 100vh;
   width: 100%;
-  background-color: $lighterBg;
+  background-color: $darkerBg;
   border-bottom: 1px solid $borders;
   @include mQ(300px) {
     padding: 20px 0;
   }
   @include flexbox-center;
-  .g-email__wrapper {
+  .contact__wrapper {
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -29,7 +29,7 @@
       width: 100%;
       max-width: 400px;
       padding: 13px 10px;
-      background-color: $darkerBg;
+      background-color: $lighterBg;
       color: $text;
       border: 2px solid transparent;
       border-radius: 2px;

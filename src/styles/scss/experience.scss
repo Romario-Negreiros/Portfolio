@@ -1,0 +1,48 @@
+.experience {
+  @include padding;
+  min-height: 100vh;
+  width: 100%;
+  background-color: $darkerBg;
+  border-bottom: 1px solid $borders;    
+  .experience__wrapper {
+    width: 100%;
+    overflow: hidden;
+    @include flexbox-column;
+    h2 {
+      @include sectitle;
+      text-align: center;
+      margin-bottom: 100px;
+      @include mQ(800px) {
+        margin-bottom: 40px;
+      }
+    }
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        @include mQ(800px) {
+            flex-direction: column;
+        }
+    }
+    li {
+        padding: 20px;
+        border: 2px solid transparent;
+        background-color: $lighterBg;
+        &:hover {
+          border-color: $link;
+        }
+    }
+    h3 {
+        @include cardtitle;
+    }
+    p {
+        @include texts;
+        font-size: 1.1rem;
+    }
+    :last-child {
+        @include texts;
+        line-height: normal;
+    }
+  }
+}
