@@ -1,4 +1,4 @@
-.e-skills {
+.skills {
   @include padding;
   min-height: 100vh;
   width: 100%;
@@ -7,7 +7,7 @@
   @include mQ(576px) {
     padding: 20px 0px;
   }
-  .e-skills__wrapper {
+  .skills__wrapper {
     width: 100%;
     overflow: hidden;
     @include flexbox-column;
@@ -45,8 +45,7 @@
       border-bottom: 2px solid transparent;
       background-color: $darkerBg;
       &:hover {
-        border-bottom-color: #734bd1;
-        transform: scale(1.1);
+        border-bottom-color: $link;
         background-color: lighten($color: $darkerBg, $amount: 8);
       }
     }

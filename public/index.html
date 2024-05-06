@@ -16,18 +16,18 @@
 </head>
 
 <body>
-  <header class="a-header">
-    <h2 class="a-header__left">
+  <header class="header">
+    <h2 class="header__left">
       Portfólio
       <img src="assets/code-solid.svg" />
     </h2>
-    <nav class="a-header__nav">
+    <nav class="header__nav">
       <div class="mobile-menu__container">
         <span class="burguer"></span>
         <span class="burguer"></span>
         <span class="burguer"></span>
       </div>
-      <ul class="a-header__navList">
+      <ul class="header__navList">
         <li>
           <a href="#aboutme">Sobre mim</a>
         </li>
@@ -36,6 +36,9 @@
         </li>
         <li>
           <a href="#skills">Conhecimentos</a>
+        </li>
+        <li>
+          <a href="#experience">Experiência</a>
         </li>
         <li>
           <a href="#services">Serviços</a>
@@ -47,7 +50,7 @@
     </nav>
   </header>
   <main>
-    <section class="b-presentation">
+    <section class="presentation">
       <h1 data-aos data-direction="right">
         Romario Negreiros
       </h1>
@@ -60,18 +63,18 @@
         <img src="assets/github-square-brands.svg" alt="github" />
       </a>
     </section>
-    <section class="c-aboutme" id="aboutme">
-      <article data-aos data-direction="right" class="c-aboutme__wrapper">
+    <section class="aboutme" id="aboutme">
+      <article data-aos data-direction="right" class="aboutme__wrapper">
         <h2>Sobre mim</h2>
-        <div class="c-aboutme__innerwrapper">
-          <div class="c-aboutme__lefttop">
+        <div class="aboutme__innerwrapper">
+          <div class="aboutme__lefttop">
             <p>
               Meu nome é Romario Negreiros Baldarenas da Silva, tenho 19 anos e atualmente
               eu estou cursando um bacharelado em Ciência e Tecnologia na UFABC, curso multidisciplinar baseado em
               diversas áreas de conhecimento, como ciência da computação, engenharia, matemática e outras.
             </p>
           </div>
-          <div class="c-aboutme__rightbottom">
+          <div class="aboutme__rightbottom">
             <p>
               Devido ao meu interesse em tecnologia, eu comecei a estudar
               programação ainda no ensino médio, desde então eu aprendi diferentes
@@ -79,7 +82,7 @@
               que já era capaz de fazer.
             </p>
           </div>
-          <div class="c-aboutme__linksWrapper">
+          <div class="aboutme__linksWrapper">
             <a href="https://www.linkedin.com/in/romario-negreiros-baldarenas-da-silva-8591b6214/" target="_blank"
               rel="noopener noreferrer">
               LinkedIn
@@ -93,10 +96,10 @@
         </div>
       </article>
     </section>
-    <section class="d-projects" id="projects">
-      <article data-aos data-direction="left" class="d-projects__wrapper">
+    <section class="projects" id="projects">
+      <article data-aos data-direction="left" class="projects__wrapper">
         <h2>Projetos</h2>
-        <ul class="d-projects__list">
+        <ul class="projects__list">
           <li>
             <div class="card-image">
               <img src="assets/retrogames-snapshot.png24" alt="retrogames snapshot" loading="lazy" />
@@ -112,7 +115,7 @@
                 Visitar
                 <img src="assets/link-solid.svg" alt="link" />
               </a>
-              <div class="d-projects__tags">
+              <div class="projects__tags">
                 <span>NextJs</span>
                 <span>TypeScript</span>
                 <span>CSS Modules</span>
@@ -136,7 +139,7 @@
                 Visitar
                 <img src="assets/link-solid.svg" alt="link" />
               </a>
-              <div class="d-projects__tags">
+              <div class="projects__tags">
                 <span>NextJs</span>
                 <span>TypeScript</span>
                 <span>CSS Modules</span>
@@ -157,14 +160,14 @@
                 Visitar
                 <img src="assets/link-solid.svg" alt="link" />
               </a>
-              <div class="d-projects__tags">
+              <div class="projects__tags">
                 <span>HTML</span>
                 <span>SASS</span>
                 <span>JavaScript</span>
               </div>
             </div>
           </li>
-          <li>
+          <li class="under-maintenance">
             <div class="card-image">
               <img src="assets/yourjob-snapshot.png24" alt="yourjob snapshot" loading="lazy" />
             </div>
@@ -173,11 +176,11 @@
               <p>Um site para anúncio e procura de ofertas de emprego.</p>
             </div>
             <div class="card-bottompart">
-              <a href="https://yourjob.vercel.app" target="_blank" rel="noopener noreferrer">
+              <a data-href="https://yourjob.vercel.app" target="_blank" rel="noopener noreferrer">
                 Visitar
                 <img src="assets/link-solid.svg" alt="link" />
               </a>
-              <div class="d-projects__tags">
+              <div class="projects__tags">
                 <span>React</span>
                 <span>Material UI</span>
                 <span>Typescript</span>
@@ -201,7 +204,7 @@
                 Visitar
                 <img src="assets/link-solid.svg" alt="link" />
               </a>
-              <div class="d-projects__tags">
+              <div class="projects__tags">
                 <span>React</span>
                 <span>Styled Components</span>
                 <span>Typescript</span>
@@ -224,7 +227,7 @@
                 Visitar
                 <img src="assets/link-solid.svg" alt="link" />
               </a>
-              <div class="d-projects__tags">
+              <div class="projects__tags">
                 <span>React</span>
                 <span>Styled Components</span>
                 <span>Typescript</span>
@@ -247,7 +250,7 @@
                 Visitar
                 <img src="assets/link-solid.svg" alt="link" />
               </a>
-              <div class="d-projects__tags">
+              <div class="projects__tags">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>Javascript</span>
@@ -267,7 +270,7 @@
                 Visitar
                 <img src="assets/link-solid.svg" alt="link" />
               </a>
-              <div class="d-projects__tags">
+              <div class="projects__tags">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>Javascript</span>
@@ -287,7 +290,7 @@
                 Visitar
                 <img src="assets/link-solid.svg" alt="link" />
               </a>
-              <div class="d-projects__tags">
+              <div class="projects__tags">
                 <span>HTML</span>
                 <span>CSS</span>
                 <span>Javascript</span>
@@ -308,7 +311,7 @@
                 Visitar
                 <img src="assets/link-solid.svg" alt="link" />
               </a>
-              <div class="d-projects__tags">
+              <div class="projects__tags">
                 <span>HTML</span>
                 <span>SASS</span>
                 <span>Jquery</span>
@@ -319,8 +322,8 @@
         </ul>
       </article>
     </section>
-    <section class="e-skills" id="skills">
-      <article data-aos data-direction="right" class="e-skills__wrapper">
+    <section class="skills" id="skills">
+      <article data-aos data-direction="right" class="skills__wrapper">
         <h2>Conhecimentos</h2>
         <ul>
           <li class="skill">
@@ -398,8 +401,29 @@
         </ul>
       </article>
     </section>
-    <section class="f-services" id="services">
-      <article data-aos data-direction="left" class="f-services__wrapper">
+    <section class="experience" id="experience">
+      <article data-aos data-direction="left" class="experience__wrapper">
+        <h2>Experiência</h2>
+        <ul>
+            <li>
+              <h3>Estágio em Analise de Sistemas</h3>
+              <p>Prefeitura de Santo André</p>
+              <p>De 04/12/2023 a 12/04/2024 - 5 meses</p>
+              <p>Santo André, São Paulo - Brasil</p>
+              <p>Desenvolver e manter APIs feitas com FastAPI, junto com gerenciamento e conexão com banco de dados ORACLE. Deploy das APIs em servidor Linux, utilizando NGINX. Versionamento de código através de Git e GitLab.</p>
+            </li>
+            <li>
+              <h3>Analista de Sistemas Junior</h3>
+              <p>Tecnocomp</p>
+              <p>De <span class="experience_2_from">15/04/2024</span> a atual - <span class="experience_2_from_to_diff"></span></p>
+              <p>Santo André, São Paulo - Brasil</p>
+              <p>Desenvolver e manter APIs feitas com ASP.CORE, junto com gerenciamento e conexão com banco de dados ORACLE. Deploy das APIs em servidor Linux, utilizando NGINX. Versionamento de código através de Git e GitLab.</p>
+            </li>
+        </ul>
+      </article>
+    </section>
+    <section class="services" id="services">
+      <article data-aos data-direction="right" class="services__wrapper">
         <h2>Serviços</h2>
         <ul>
           <li>
@@ -429,8 +453,8 @@
         </ul>
       </article>
     </section>
-    <section class="g-email" id="contact">
-      <article data-aos data-direction="right" class="g-email__wrapper">
+    <section class="contact" id="contact">
+      <article data-aos data-direction="left" class="contact__wrapper">
         <h2>Entre em contato</h2>
         <noscript style="color: #e1e1e6;">
           <div style="text-align: center;">
@@ -452,18 +476,18 @@
       <img src="assets/arrow-up.svg" alt="voltar ao topo" />
     </a>
   </main>
-  <footer class="h-footer">
-    <article class="h-footer__wrapper">
-      <div class="h-footer__contactme">
+  <footer class="footer">
+    <article class="footer__wrapper">
+      <div class="footer__contactme">
         <h2>Contatos</h2>
         <a href="mailto:nromario482@gmail.com">
           Email
-          <div class="h-footer__circle">
+          <div class="footer__circle">
             <img src="assets/share-square-solid.svg" alt="email" />
           </div>
         </a>
       </div>
-      <div class="h-footer__credits">
+      <div class="footer__credits">
         <h2>Créditos</h2>
         <a href="https://icons8.com" target="_blank" rel="noopener noreferrer">
           Icons8

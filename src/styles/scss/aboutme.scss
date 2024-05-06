@@ -1,5 +1,5 @@
-.c-aboutme {
-  background: $sectionsBg url(../css/thinking.svg) no-repeat;
+.aboutme {
+  background: $lighterBg url(../css/thinking.svg) no-repeat;
   background-position:95%;
   background-size: 50%;
   min-height: 100vh;
@@ -11,7 +11,7 @@
   @include mQ(1050px) {
     background-image: unset;
   }
-  .c-aboutme__wrapper {
+  .aboutme__wrapper {
     overflow: hidden;
     @include flexbox-row;
     flex-flow: row wrap;
@@ -22,7 +22,7 @@
         margin-bottom: 40px;
       }
     }
-    .c-aboutme__innerwrapper {
+    .aboutme__innerwrapper {
       overflow: hidden;
       align-self: baseline;
       @include flexbox-column;
@@ -34,14 +34,14 @@
         flex-basis: 100%;
       }
     }
-    .c-aboutme__lefttop {
+    .aboutme__lefttop {
       @include texts;
     }
-    .c-aboutme__rightbottom {
+    .aboutme__rightbottom {
       margin-top: 30px;
       @include texts;
     }
-    .c-aboutme__linksWrapper {
+    .aboutme__linksWrapper {
       overflow: hidden;
         width: 100%;
         @include flexbox-row;

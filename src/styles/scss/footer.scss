@@ -1,20 +1,20 @@
-.h-footer {
+.footer {
   @include padding;
   min-height: 20vh;
   width: 100%;
-  background-color: $sectionsBg;
+  background-color: $lighterBg;
   @include mQ(300px) {
     padding: 20px 0;
   }
   @include flexbox-center;
-  .h-footer__wrapper {
+  .footer__wrapper {
     width: 100%;
     @include flexbox-row;
     @include mQ(800px) {
       @include flexbox-column;
     }
   }
-  .h-footer__credits {
+  .footer__credits {
     text-align: right;
     h2 {
       color: $text;
@@ -45,7 +45,7 @@
       }
     }
   }
-  .h-footer__contactme {
+  .footer__contactme {
     @include flexbox-column;
     @include mQ(800px) {
       width: 100%;
@@ -79,7 +79,7 @@
       &:hover {
         color: $weakGray;
         border-color: $link;
-        .g-footer__circle {
+        .footer__circle {
           border-color: $link;
         }
       }
@@ -91,7 +91,7 @@
       width: 15px;
       object-fit: cover;
     }
-    .h-footer__circle {
+    .footer__circle {
       padding: 14px;
       border-radius: 50%;
       @include flexbox-center;

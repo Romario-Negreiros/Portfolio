@@ -1,15 +1,15 @@
-.f-services {
+.services {
   @include padding;
   min-height: 100vh;
   width: 100%;
-  background-color: $darkerBg;
+  background-color: $lighterBg;
   border-bottom: 1px solid $borders;
   overflow: hidden;
   @include mQ(576px) {
     padding: 20px 0px;
   }
   @include flexbox-center;
-  .f-services__wrapper {
+  .services__wrapper {
     width: 100%;
     @include flexbox-column;
     h2 {
@@ -38,7 +38,7 @@
       border: 2px solid transparent;
       border-radius: 2px;
       padding: 15px;
-      background-color: $lighterBg;
+      background-color: $darkerBg;
       text-align: center;
       &:hover {
         border-color: $link;
