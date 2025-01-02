@@ -1,558 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Romario Negreiros" />
+    <meta
+      name="description"
+      content="Meu portfólio como desenvolvedor de sistemas"
+    />
+    <meta name="keywords" content="Portfólio, Programação, Freelancer" />
+    <meta name="theme-color" content="#0a192f" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Romario Negreiros" />
-  <meta name="description" content="Meu portfólio como estudante de desenvolvimento de software" />
-  <meta name="keywords" content="Portfólio, Programação, HTML, CSS, SASS, JavaScript" />
-  <meta name="theme-color" content="#8257e5" />
-
-  <link rel="icon" type="image/x-icon" href="assets/code-solid.svg" />
-  <link rel="stylesheet" href="../src/v2/styles/index.css" />
-  <title>Romario Negreiros</title>
-</head>
-
-<body>
-  <header class="header">
-    <h2 class="header__left">
-      Portfólio
-      <img src="assets/code-solid.svg" />
-    </h2>
-    <nav class="header__nav">
-      <div class="mobile-menu__container">
-        <span class="burguer"></span>
-        <span class="burguer"></span>
-        <span class="burguer"></span>
-      </div>
-      <ul class="header__navList">
-        <li>
-          <a href="#aboutme">Sobre mim</a>
-        </li>
-        <li>
-          <a href="#projects">Projetos</a>
-        </li>
-        <li>
-          <a href="#skills">Conhecimentos</a>
-        </li>
-        <li>
-          <a href="#experience">Experiência</a>
-        </li>
-        <li>
-          <a href="#services">Serviços</a>
-        </li>
-        <li>
-          <a href="#contact">Contatos</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="presentation">
-      <h1 data-aos data-direction="right">
-        Romario Negreiros
-      </h1>
-      <h2 data-aos data-direction="right">
-        Desenvolvedor de Software
-      </h2>
-      <a data-aos data-direction="right" href="https://github.com/Romario-Negreiros" target="_blank"
-        rel="noopener noreferrer">
-        Github
-        <img src="assets/github-square-brands.svg" alt="github" />
-      </a>
-    </section>
-    <section class="aboutme" id="aboutme">
-      <article data-aos data-direction="right" class="aboutme__wrapper">
-        <h2>Sobre mim</h2>
-        <div class="aboutme__innerwrapper">
-          <div class="aboutme__lefttop">
-            <p>
-              Meu nome é Romario Negreiros Baldarenas da Silva, tenho 19 anos e atualmente
-              eu estou cursando um bacharelado em Ciência e Tecnologia na UFABC, curso multidisciplinar baseado em
-              diversas áreas de conhecimento, como ciência da computação, engenharia, matemática e outras.
-            </p>
-          </div>
-          <div class="aboutme__rightbottom">
-            <p>
-              Devido ao meu interesse em tecnologia, eu comecei a estudar
-              programação ainda no ensino médio, desde então eu aprendi diferentes
-              tecnologias e conceitos, assim como construi projetos para praticar minhas habilidades e mostar o
-              que já era capaz de fazer.
-            </p>
-          </div>
-          <div class="aboutme__linksWrapper">
-            <a href="https://www.linkedin.com/in/romario-negreiros-baldarenas-da-silva-8591b6214/" target="_blank"
-              rel="noopener noreferrer">
-              LinkedIn
-              <img src="assets/linkedin-brands.svg" alt="linkedin" />
-            </a>
-            <a href="documents/pdf/Currículo Romario Negreiros.pdf" download>
-              Curriculo
-              <img src="assets/file-download-solid.svg" alt="baixar arquivo" />
-            </a>
-          </div>
+    <link rel="icon" type="image/x-icon" href="assets/code-solid.svg" />
+    <link rel="stylesheet" href="../src/v2/styles/index.css" />
+    <title>Romario Negreiros</title>
+  </head>
+  <body>
+    <header id="header" class="header-container">
+      <nav>
+        <div class="header-logo">
+          <a href="#header">
+            <svg
+              width="65"
+              height="65"
+              viewBox="0 0 65 65"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="1440"
+                height="1024"
+                transform="translate(-599 -361)"
+                fill="#0A192F"
+              />
+              <circle
+                cx="32"
+                cy="32"
+                r="23"
+                fill="#0A192F"
+                stroke="#64FFDA"
+                stroke-width="4"
+              />
+              <path
+                d="M39.5903 27.16C39.5903 28.7387 39.0996 30.0507 38.1183 31.096C37.1369 32.12 35.8356 32.8347 34.2143 33.24L40.7743 43H37.4463L31.3983 33.56H28.4223V43H25.6703V20.952H31.3023C34.0329 20.952 36.0916 21.4747 37.4783 22.52C38.8863 23.5653 39.5903 25.112 39.5903 27.16ZM36.6463 27.16C36.6463 25.752 36.2409 24.7387 35.4303 24.12C34.6196 23.5013 33.3503 23.192 31.6223 23.192H28.4223V31.384H31.6543C33.2969 31.384 34.5343 31.0533 35.3663 30.392C36.2196 29.7093 36.6463 28.632 36.6463 27.16Z"
+                fill="#64FFDA"
+              />
+            </svg>
+          </a>
         </div>
-      </article>
-    </section>
-    <section class="projects" id="projects">
-      <article data-aos data-direction="left" class="projects__wrapper">
-        <h2>Projetos</h2>
-        <ul class="projects__list">
+        <ul class="header-linkList">
           <li>
-            <div class="card-image">
-              <img src="assets/retrogames-snapshot.png24" alt="retrogames snapshot" loading="lazy" />
-            </div>
-            <div>
-              <h3>Retrogames</h3>
-              <p>
-                Site de jogos clássicos (no momento apenas um), porém online.
-              </p>
-            </div>
-            <div class="card-bottompart">
-              <a href="https://retrogames-green.vercel.app" target="_blank" rel="noopener noreferrer">
-                Visitar
-                <img src="assets/link-solid.svg" alt="link" />
-              </a>
-              <div class="projects__tags">
-                <span>NextJs</span>
-                <span>TypeScript</span>
-                <span>CSS Modules</span>
-                <span>Firebase</span>
+            <a href="#about">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M96 0C43 0 0 43 0 96L0 416c0 53 43 96 96 96l288 0 32 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l0-64c17.7 0 32-14.3 32-32l0-320c0-17.7-14.3-32-32-32L384 0 96 0zm0 384l256 0 0 64L96 448c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16zm16 48l192 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                  />
+                </svg>
               </div>
-            </div>
+              Sobre mim</a
+            >
           </li>
           <li>
-            <div class="card-image">
-              <img src="assets/changix-snapshot.png24" alt="changix snapshot" loading="lazy" />
-            </div>
-            <div>
-              <h3>Changix</h3>
-              <p>
-                Um site os usuários compartilharem produtos que não desejam mais,
-                e trocarem por algo que lhe interessem.
-              </p>
-            </div>
-            <div class="card-bottompart">
-              <a href="https://changix.vercel.app" target="_blank" rel="noopener noreferrer">
-                Visitar
-                <img src="assets/link-solid.svg" alt="link" />
-              </a>
-              <div class="projects__tags">
-                <span>NextJs</span>
-                <span>TypeScript</span>
-                <span>CSS Modules</span>
-                <span>Firebase</span>
+            <a href="#experience">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z"
+                  />
+                </svg>
               </div>
-            </div>
+              Experiência</a
+            >
           </li>
           <li>
-            <div class="card-image">
-              <img src="assets/space-tourism-snapshot.png24" alt="space tourism snapshot" loading="lazy" />
-            </div>
-            <div>
-              <h3>Space Tourism</h3>
-              <p>Site de múltiplas paginas com informações relacionadas ao espaço, desafio do front end mentor.</p>
-            </div>
-            <div class="card-bottompart">
-              <a href="https://romario-negreiros.github.io/Space-Tourism/" target="_blank" rel="noopener noreferrer">
-                Visitar
-                <img src="assets/link-solid.svg" alt="link" />
-              </a>
-              <div class="projects__tags">
-                <span>HTML</span>
-                <span>SASS</span>
-                <span>JavaScript</span>
+            <a href="#projects">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M413.5 237.5c-28.2 4.8-58.2-3.6-80-25.4l-38.1-38.1C280.4 159 272 138.8 272 117.6l0-12.1L192.3 62c-5.3-2.9-8.6-8.6-8.3-14.7s3.9-11.5 9.5-14l47.2-21C259.1 4.2 279 0 299.2 0l18.1 0c36.7 0 72 14 98.7 39.1l44.6 42c24.2 22.8 33.2 55.7 26.6 86L503 183l8-8c9.4-9.4 24.6-9.4 33.9 0l24 24c9.4 9.4 9.4 24.6 0 33.9l-88 88c-9.4 9.4-24.6 9.4-33.9 0l-24-24c-9.4-9.4-9.4-24.6 0-33.9l8-8-17.5-17.5zM27.4 377.1L260.9 182.6c3.5 4.9 7.5 9.6 11.8 14l38.1 38.1c6 6 12.4 11.2 19.2 15.7L134.9 484.6c-14.5 17.4-36 27.4-58.6 27.4C34.1 512 0 477.8 0 435.7c0-22.6 10.1-44.1 27.4-58.6z"
+                  />
+                </svg>
               </div>
-            </div>
-          </li>
-          <li class="under-maintenance">
-            <div class="card-image">
-              <img src="assets/yourjob-snapshot.png24" alt="yourjob snapshot" loading="lazy" />
-            </div>
-            <div>
-              <h3>YourJob</h3>
-              <p>Um site para anúncio e procura de ofertas de emprego.</p>
-            </div>
-            <div class="card-bottompart">
-              <a data-href="https://yourjob.vercel.app" target="_blank" rel="noopener noreferrer">
-                Visitar
-                <img src="assets/link-solid.svg" alt="link" />
-              </a>
-              <div class="projects__tags">
-                <span>React</span>
-                <span>Material UI</span>
-                <span>Typescript</span>
-                <span>NodeJs</span>
-                <span>PostgreSQL</span>
-              </div>
-            </div>
+              Projetos</a
+            >
           </li>
           <li>
-            <div class="card-image">
-              <img src="assets/fireswift-snapshot.png24" alt="fireswift snapshot" loading="lazy">
-            </div>
-            <div>
-              <h3>FireSwift</h3>
-              <p>
-                Uma rede social estilo facebook, mas só estilo, não é uma cópia, contendo também um chat em tempo real de fácil uso.
-              </p>
-            </div>
-            <div class="card-bottompart">
-              <a href="https://fire-swift.vercel.app/home" aria-disabled="true" role="link">
-                Visitar
-                <img src="assets/link-solid.svg" alt="link" />
-              </a>
-              <div class="projects__tags">
-                <span>React</span>
-                <span>Styled Components</span>
-                <span>Typescript</span>
-                <span>Firebase</span>
+            <a href="#contact">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                  <path
+                    d="M96 0C60.7 0 32 28.7 32 64l0 384c0 35.3 28.7 64 64 64l288 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L96 0zM208 288l64 0c44.2 0 80 35.8 80 80c0 8.8-7.2 16-16 16l-192 0c-8.8 0-16-7.2-16-16c0-44.2 35.8-80 80-80zm-32-96a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM512 80c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 64c0 8.8 7.2 16 16 16s16-7.2 16-16l0-64zM496 192c-8.8 0-16 7.2-16 16l0 64c0 8.8 7.2 16 16 16s16-7.2 16-16l0-64c0-8.8-7.2-16-16-16zm16 144c0-8.8-7.2-16-16-16s-16 7.2-16 16l0 64c0 8.8 7.2 16 16 16s16-7.2 16-16l0-64z"
+                  />
+                </svg>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="card-image">
-              <img src="assets/fireblog-snapshot.png24" alt="fireblog snapshot" loading="lazy">
-            </div>
-            <div>
-              <h3>FireBlog</h3>
-              <p>
-                Um site para criação de blogs, que permite aos usuários criarem seus próprios posts.
-              </p>
-            </div>
-            <div class="card-bottompart">
-              <a href="https://blog-ruddy-kappa.vercel.app/home" aria-disabled="true" role="link">
-                Visitar
-                <img src="assets/link-solid.svg" alt="link" />
-              </a>
-              <div class="projects__tags">
-                <span>React</span>
-                <span>Styled Components</span>
-                <span>Typescript</span>
-                <span>Firebase</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card-image">
-              <img src="assets/country-searcher-snapshot.png24" alt="country searcher snapshot" loading="lazy">
-            </div>
-            <div>
-              <h3>Country Searcher</h3>
-              <p>
-                Um site para buscar informações sobre os países, desafio do front end mentor.
-              </p>
-            </div>
-            <div class="card-bottompart">
-              <a href="#" aria-disabled="true" role="link">
-                Visitar
-                <img src="assets/link-solid.svg" alt="link" />
-              </a>
-              <div class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Javascript</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card-image">
-              <img src="assets/easybank-snapshot.png24" alt="easybank snapshot" loading="lazy">
-            </div>
-            <div>
-              <h3>Easybank</h3>
-              <p>Landing page desenvolvida a partir de um desafio do front end mentor.</p>
-            </div>
-            <div class="card-bottompart">
-              <a href="https://romario-negreiros.github.io/Easybank/" target="_blank" rel="noopener noreferrer">
-                Visitar
-                <img src="assets/link-solid.svg" alt="link" />
-              </a>
-              <div class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Javascript</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card-image">
-              <img src="assets/fylo-snapshot.png24" alt="fylo snapshot" loading="lazy">
-            </div>
-            <div>
-              <h3>Fylo</h3>
-              <p>Landing page desenvolvida a partir de um desafio do front end mentor, com tema escuro.</p>
-            </div>
-            <div class="card-bottompart">
-              <a href="https://romario-negreiros.github.io/Fylo/" target="_blank" rel="noopener noreferrer">
-                Visitar
-                <img src="assets/link-solid.svg" alt="link" />
-              </a>
-              <div class="projects__tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>Javascript</span>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card-image">
-              <img src="assets/ip-address-tracker-snapshot.png24" alt="ip address tracker snapshot" loading="lazy">
-            </div>
-            <div>
-              <h3>Ip address tracker</h3>
-              <p>Uma ferramenta para buscar dados sobre websites, através do seu endereço IP ou domínio.</p>
-            </div>
-            <div class="card-bottompart">
-              <a href="https://romario-negreiros.github.io/Ip-address-tracker/" target="_blank"
-                rel="noopener noreferrer">
-                Visitar
-                <img src="assets/link-solid.svg" alt="link" />
-              </a>
-              <div class="projects__tags">
-                <span>HTML</span>
-                <span>SASS</span>
-                <span>Jquery</span>
-                <span>Javascript</span>
-              </div>
-            </div>
+              Contato</a
+            >
           </li>
         </ul>
-      </article>
+        <div class="header-mobileMenu">
+          <span class="burguer"></span>
+          <span class="burguer"></span>
+          <span class="burguer"></span>
+        </div>
+      </nav>
+    </header>
+    <section id="about" class="about-container">
+      <h1>Romario Negreiros.</h1>
+      <h2>Construindo o que você poder imaginar.</h2>
+      <p>
+        Eu sou um desenvolvedor de sistemas com experiência no mercado de
+        trabalho e, atualmente, buscando novos projetos para tirar do papel.
+      </p>
     </section>
-    <section class="skills" id="skills">
-      <article data-aos data-direction="right" class="skills__wrapper">
-        <h2>Conhecimentos</h2>
-        <ul>
-          <li class="skill">
-            <figure>
-              <img src="assets/html5-brands.svg" alt="html5" />
-              <figcaption>HTML</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/css3-alt-brands.svg" alt="css3" />
-              <figcaption>CSS</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/js-square-brands.svg" alt="javascript" />
-              <figcaption>JavaScript</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/git-alt-brands.svg" alt="git" />
-              <figcaption>GIT</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/react-brands.svg" alt="react" />
-              <figcaption>React</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/typescript-brands.svg" alt="typescript" />
-              <figcaption>TypeScript</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/sass-brands.svg" alt="sass" />
-              <figcaption>SASS</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/icons8-node-js.svg" alt="nodejs" />
-              <figcaption>NodeJS</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/nextjs-original.svg" alt="nextjs" />
-              <figcaption>NextJS</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/bootstrap-brands.svg" alt="bootstrap" />
-              <figcaption>Bootstrap</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/icons8-mysql.svg" alt="mysql" />
-              <figcaption>Mysql</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/icons8-python.svg" alt="python" />
-              <figcaption>Python</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/postgresql-brands.svg" alt="postgresql" />
-              <figcaption>Postgresql</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/linux.svg" alt="linux" />
-              <figcaption>Linux</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/nginx.svg" alt="nginx" />
-              <figcaption>Nginx</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/csharp.svg" alt="c#" />
-              <figcaption>C#</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/oracle.svg" alt="oracle" />
-              <figcaption>Oracle</figcaption>
-            </figure>
-          </li>
-          <li class="skill">
-            <figure>
-              <img src="assets/docker.svg" alt="docker" />
-              <figcaption>Docker</figcaption>
-            </figure>
-          </li>
-        </ul>
-      </article>
-    </section>
-    <section class="experience" id="experience">
-      <article data-aos data-direction="left" class="experience__wrapper">
-        <h2>Experiência</h2>
-        <ul>
-            <li>
-              <h3>Estágio em Analise de Sistemas</h3>
-              <p>Prefeitura de Santo André</p>
-              <p>De 04/12/2023 a 12/04/2024 - 5 meses</p>
-              <p>Santo André, São Paulo - Brasil</p>
-              <p>Desenvolver e manter APIs feitas com FastAPI, junto com gerenciamento e conexão com banco de dados ORACLE. Deploy das APIs em servidor Linux, utilizando NGINX. Versionamento de código através de Git e GitLab.</p>
-            </li>
-            <li>
-              <h3>Analista de Sistemas Junior</h3>
-              <p>Tecnocomp</p>
-              <p>De <span class="experience_2_from">15/04/2024</span> a atual - <span class="experience_2_from_to_diff"></span></p>
-              <p>Santo André, São Paulo - Brasil</p>
-              <p>Desenvolver e manter APIs feitas com ASP.CORE, junto com gerenciamento e conexão com banco de dados ORACLE. Deploy das APIs em servidor Linux, utilizando NGINX. Versionamento de código através de Git e GitLab.</p>
-            </li>
-        </ul>
-      </article>
-    </section>
-    <section class="services" id="services">
-      <article data-aos data-direction="right" class="services__wrapper">
-        <h2>Serviços</h2>
-        <ul>
-          <li>
-            <img src="assets/sitemap-solid.svg" />
-            <h3>Criação de sites</h2>
-              <p>
-                Desenvolvimento de landing pages, ecommerces, blogs, tudo que você imaginar.
-              </p>
-          </li>
-          <li>
-            <img src="assets/palette-solid.svg" />
-            <h3>Design</h3>
-            <p>Produção de interfaces fiéis ao design provido.</p>
-          </li>
-          <li>
-            <img src="assets/expand-arrows-alt-solid.svg" />
-            <h3>Responsividade</h3>
-            <p>
-              Sites que se adaptam a todas as resoluções de tela, seja em dispositivos móveis ou computadores.
-            </p>
-          </li>
-          <li>
-            <img src="assets/hand-point-up-regular.svg" />
-            <h3>Interatividade</h3>
-            <p>Criação de animações suaves que realçam a experiência do usuário.</p>
-          </li>
-        </ul>
-      </article>
-    </section>
-    <section class="contact" id="contact">
-      <article data-aos data-direction="left" class="contact__wrapper">
-        <h2>Entre em contato</h2>
-        <noscript style="color: #e1e1e6;">
-          <div style="text-align: center;">
-            Funcionalidade indisponivel!
-          </div>
-          <br />
-        </noscript>
-        <form class="emailForm">
-          <input type="email" name="fromEmail" placeholder="Seu email..." />
-          <input name="fromName" placeholder="Seu nome..." />
-          <input name="subject" placeholder="Assunto..." />
-          <textarea name="message" placeholder="Mensagem..." rows="5"></textarea>
-          <button type="submit">Enviar email</button>
-          <button type="reset" class="resetBtn"></button>
-        </form>
-      </article>
-    </section>
-    <a class="back-to-top" href="#header">
-      <img src="assets/arrow-up.svg" alt="voltar ao topo" />
-    </a>
-    <a data-aos data-direction="right" class="whatsapp-me" href="https://wa.me/5511966383965">
-      <img src="assets/whatsapp.svg" alt="entre em contato pelo whatsapp!" />
-    </a>
-  </main>
-  <footer class="footer">
-    <article class="footer__wrapper">
-      <div class="footer__contactme">
-        <h2>Contatos</h2>
-        <a href="mailto:nromario482@gmail.com">
-          Email
-          <div class="footer__circle">
-            <img src="assets/share-square-solid.svg" alt="email" />
-          </div>
-        </a>
-      </div>
-      <div class="footer__credits">
-        <h2>Créditos</h2>
-        <a href="https://icons8.com" target="_blank" rel="noopener noreferrer">
-          Icons8
-        </a>
-        <a href="https://fontawesome.com/" target="_blank" rel="noopener noreferrer">
-          Font Awesome
-        </a>
-        <a href="https://freepik.com/" target="_blank" rel="noopener noreferrer">
-          Freepik
-        </a>
-        <a href="https://boxy-svg.com/" target="_blank" rel="noopener noreferrer">
-          Boxy SVG Editor
-        </a>
-      </div>
-    </article>
-  </footer>
-  <div class="toast" role="alert">
-    <div class="toast__title">
-      <img src="" alt="" />
-      <h3></h3>
-      <img src="" alt="" />
+    <div class="float-left-container">
+      <ul>
+        <li>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Github"
+            href="https://github.com/Romario-Negreiros"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              /></svg
+          ></a>
+        </li>
+        <li>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            title="LinkedIn"
+            href="https://www.linkedin.com/in/romario-negreiros-baldarenas-da-silva-8591b6214/"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              /></svg
+          ></a>
+        </li>
+        <!-- <li>
+          <a
+            title="Currículo"
+            href="documents/pdf/Currículo Romario Negreiros.pdf"
+            download
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              !Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.
+              <path
+                d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM216 232l0 102.1 31-31c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-72 72c-9.4 9.4-24.6 9.4-33.9 0l-72-72c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l31 31L168 232c0-13.3 10.7-24 24-24s24 10.7 24 24z"
+              /></svg
+          ></a>
+        </li> -->
+      </ul>
     </div>
-    <div class="toast__content">
-      <p></p>
+    <div class="float-right-container">
+      <a href="mailto:nromario482@gmail.com">nromario482@gmail.com</>
     </div>
-  </div>
-</body>
-<script src="../src/v2/scripts/index.js" type="module"></script>
+  </body>
+  <script src="../src/v2/scripts/index.js" type="module"></script>
 </html>
