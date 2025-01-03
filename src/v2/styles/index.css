@@ -75,12 +75,29 @@ a:hover {
 body {
   background-color: var(--navy);
   font-family: var(--font-sans);
-  font-size: clamp(1rem, 0.934rem + 0.351vw, 1.25rem);
+  font-size: clamp(1.125rem, 1.036rem + 0.238vw, 1.25rem);
   color: var(--slate);
+  line-height: 1.3;
 }
 
 body.body--active {
   overflow-y: hidden;
+}
+
+main {
+  padding: 0 25px;
+}
+
+@media screen and (min-width: 480px) {
+  main {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0 100px;
+  }
 }
 
 /*#region Header*/
@@ -226,7 +243,11 @@ body.body--active {
   opacity: 0;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding: var(--nav-paddingY) var(--page-paddingXLG);
+  }
+
   .header-linkList {
     all: unset;
     list-style: none;
@@ -250,8 +271,8 @@ body.body--active {
 }
 /*#endregion*/
 
-/*#region About*/
-.about-container {
+/*#region Landing*/
+.landing-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -261,7 +282,7 @@ body.body--active {
   padding: 0 var(--page-paddingX);
 }
 
-.about-container h1 {
+.landing-container h1 {
   font-family: var(--font-sans);
   font-size: clamp(30px, 8vw, 80px);
   font-weight: 600;
@@ -270,7 +291,7 @@ body.body--active {
   width: 100%;
 }
 
-.about-container h2 {
+.landing-container h2 {
   font-family: var(--font-sans);
   font-size: clamp(30px, 8vw, 80px);
   font-weight: 600;
@@ -280,7 +301,7 @@ body.body--active {
   line-height: 0.8;
 }
 
-.about-container p {
+.landing-container p {
   width: 100%;
   max-width: 600px;
   margin-top: 50px;
@@ -310,10 +331,9 @@ body.body--active {
 
 .float-left-container svg {
   width: 20px;
-  fill: var(--lightest-slate);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .float-left-container {
     position: fixed;
     bottom: 0;
@@ -341,7 +361,7 @@ body.body--active {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .float-right-container {
     position: fixed;
     bottom: 0;
@@ -363,6 +383,85 @@ body.body--active {
     height: 150px;
     background-color: var(--lightest-slate);
     margin: auto;
+  }
+}
+/*#endregion*/
+
+/*#region About*/
+.about-container {
+  min-height: 100vh;
+  padding: 0 var(--page-paddingX);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  color: var(--lightest-slate);
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-text span {
+  display: block;
+  width: fit-content;
+}
+
+.about-text h2::after {
+  content: " ";
+  display: block;
+  height: 1px;
+  flex-grow: 1;
+  transform: translateY(-3px);
+  background-color: var(--lightest-navy);
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  position: relative;
+  text-indent: 15px;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+.about-text p::before {
+  content: "▹";
+  position: absolute;
+  top: 1.2%;
+  left: -15px;
+  color: var(--green);
+  font-size: 14px;
+}
+
+.about-image {
+  width: 100%;
+  flex-grow: 1;
+  max-width: 300px;
+  background-image: url("../../../public/assets/lamp-idea.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .about-image {
+    height: 500px;
+    background-position: center center;
+    background-size: 100%;
   }
 }
 /*#endregion*/

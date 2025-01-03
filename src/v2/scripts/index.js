@@ -4,7 +4,7 @@
 
 //#region Mobile menu
 const menuMechanisms = (event) => {
-  if (window.innerWidth <= 700) {
+  if (window.innerWidth <= 768) {
     window.document.body.classList.toggle("body--active");
 
     const spans = [...document.querySelectorAll(".burguer")];
