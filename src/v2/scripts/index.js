@@ -59,3 +59,37 @@ const handleHeaderScrollEffect = () => {
 
 window.onscroll = handleHeaderScrollEffect;
 //#endregion
+
+//#region Switch experience content
+const expOptions = [...document.querySelectorAll(".exp-list li")];
+
+let selectedIndex = 0;
+
+const handleExperienceSelect = (ev) => {
+  const optTxt = ev.target.innerText;
+
+  const optIdx = expOptions.findIndex((opt) => opt.innerText == optTxt);
+
+  if (optIdx === -1) return;
+
+  if (optIdx === selectedIndex) return;
+
+  selectedIndex = optIdx;
+
+  const contents = [...document.querySelectorAll(".exp-content li")];
+
+  for (let i = 0; i < contents.length; i++) {
+    if (i !== optIdx) {
+      contents[i].style.display = "none";
+      expOptions[i].classList.remove("selected");
+    } else {
+      contents[i].style.display = "block";
+      expOptions[i].classList.add("selected");
+    }
+  }
+};
+
+for (let i = 0; i < expOptions.length; i++) {
+  expOptions[i].addEventListener("click", handleExperienceSelect);
+}
+//#endregion

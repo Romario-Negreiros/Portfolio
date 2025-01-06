@@ -166,7 +166,6 @@ h2:not(.no-default-h2)::after {
   z-index: 1;
 }
 
-
 .header-logo a {
   display: block;
   width: fit-content;
@@ -533,6 +532,19 @@ h2:not(.no-default-h2)::after {
   background-color: var(--lightest-navy);
 }
 
+.exp-list li.selected button {
+  color: var(--green);
+  border-bottom: 2px solid var(--green);
+}
+
+.exp-content li {
+  display: none;
+}
+
+.exp-content li:first-child {
+  display: block; 
+}
+
 .exp-content h3 {
   margin-bottom: 2px;
   font-size: clamp(1.375rem, 1.327rem + 0.192vw, 1.5rem);
@@ -604,6 +616,12 @@ h2:not(.no-default-h2)::after {
     color: var(--green);
     background-color: var(--lightest-navy);
     cursor: pointer;
+  }
+
+  .exp-list li.selected button {
+    color: var(--green);
+    border-left: 2px solid var(--green);
+    border-bottom: 0 none;
   }
 
   .exp-container div:last-child {
