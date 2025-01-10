@@ -101,14 +101,16 @@ h2:not(.no-default-h2) {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: clamp(26px, 5vw, 32px);
 }
 
 h2:not(.no-default-h2)::after {
   content: " ";
   display: block;
   height: 1px;
+  max-width: 400px;
   flex-grow: 1;
-  transform: translateY(-3px);
+  transform: translate(10px, -3px);
   background-color: var(--lightest-navy);
 }
 
@@ -496,10 +498,6 @@ h2:not(.no-default-h2)::after {
   width: 100%;
 }
 
-.exp-container h2 {
-  font-size: clamp(26px, 5vw, 32px);
-}
-
 .exp-list {
   display: flex;
   width: 100%;
@@ -542,7 +540,7 @@ h2:not(.no-default-h2)::after {
 }
 
 .exp-content li:first-child {
-  display: block; 
+  display: block;
 }
 
 .exp-content h3 {
@@ -629,5 +627,21 @@ h2:not(.no-default-h2)::after {
     justify-content: space-between;
     gap: 30px;
   }
+}
+/*#endregion*/
+
+/*#region Projects*/
+.projects-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 900px;
+  min-height: 100vh;
+}
+
+.projects-container div {
+  width: 100%;
 }
 /*#endregion*/
