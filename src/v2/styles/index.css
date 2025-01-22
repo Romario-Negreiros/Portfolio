@@ -49,6 +49,7 @@
   --nav-paddingY: 50px;
   --nav-translateY: var(--nav-height) + var(--nav-paddingY);
   --page-paddingX: clamp(15px, 4vw, 40px);
+  --transition: 0.25 ease-in-out;
 }
 
 /*#region Reset*/
@@ -641,7 +642,80 @@ h2:not(.no-default-h2)::after {
   min-height: 100vh;
 }
 
-.projects-container div {
+.projects-container > div {
   width: 100%;
 }
+
+.projects-container ul {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 100%;
+}
+
+.projects-container li {
+  position: relative;
+}
+
+.projects-imgContainer {
+  width: 100%;
+  opacity: 0.25;
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  height: 300px;
+}
+
+.projects-imgContainer a {
+  position: relative;
+  display: block;
+  height: 100%;
+  background-color: var(--green);
+}
+
+.projects-imgContainer a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0px;
+  z-index: 3;
+  background-color: var(--navy);
+  mix-blend-mode: screen;
+}
+
+.projects-imgContainer img {
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  filter: grayscale(100%) contrast(1) brightness(50%);
+}
+
+.projects-desc {
+  position: absolute;
+  top: 0;
+  padding: 40px;
+}
+
+.projects-desc h3 {
+  color: var(--white);
+  font-size: clamp(24px, 5vw, 28px);
+  width: fit-content;
+  line-height: 1.1;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: color var(--transition);
+}
+
+.projects-desc h3:hover {
+  color: var(--green);
+}
+
+.projects-desc p {
+  margin: 15px 0;
+}
+
+/*900 px altera estilo
 /*#endregion*/
