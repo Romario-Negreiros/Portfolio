@@ -79,7 +79,7 @@ button {
 body {
   background-color: var(--navy);
   font-family: var(--font-sans);
-  font-size: clamp(1.125rem, 1.036rem + 0.238vw, 1.25rem);
+  font-size: clamp(1.15rem, 1.036rem + 0.238vw, 1.25rem);
   color: var(--slate);
   line-height: 1.3;
 }
@@ -101,7 +101,6 @@ h2:not(.no-default-h2) {
   margin-bottom: 25px;
   display: flex;
   align-items: center;
-  gap: 10px;
   font-size: clamp(26px, 5vw, 32px);
 }
 
@@ -109,9 +108,17 @@ h2:not(.no-default-h2)::after {
   content: " ";
   display: block;
   height: 1px;
-  max-width: 400px;
   flex-grow: 1;
   transform: translate(10px, -3px);
+  background-color: var(--lightest-navy);
+}
+
+h2:not(.no-default-h2)::before {
+  content: " ";
+  display: block;
+  height: 1px;
+  flex-grow: 1;
+  transform: translate(-10px, -3px);
   background-color: var(--lightest-navy);
 }
 
@@ -314,7 +321,6 @@ h2:not(.no-default-h2)::after {
   min-height: 100vh;
   max-width: 1100px;
   margin: auto;
-  padding: 0 var(--page-paddingX);
 }
 
 .landing-container h1 {
@@ -442,22 +448,11 @@ h2:not(.no-default-h2)::after {
 }
 
 .about-text p {
-  position: relative;
-  padding-left: 15px;
   margin: 0 0 15px;
 }
 
 .about-text p:last-child {
   margin-bottom: 0;
-}
-
-.about-text p::before {
-  content: "▹";
-  position: absolute;
-  top: 1.2%;
-  left: -15px;
-  color: var(--green);
-  font-size: 14px;
 }
 
 .about-image {
@@ -468,6 +463,7 @@ h2:not(.no-default-h2)::after {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50%;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -477,6 +473,7 @@ h2:not(.no-default-h2)::after {
   }
 
   .about-image {
+    display: block;
     height: 500px;
     background-position: center center;
     background-size: 100%;
@@ -638,7 +635,7 @@ h2:not(.no-default-h2)::after {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 900px;
+  max-width: 1100px;
   min-height: 100vh;
 }
 
@@ -651,7 +648,7 @@ h2:not(.no-default-h2)::after {
   flex-direction: column;
   align-items: stretch;
   gap: 20px;
-  max-width: 100%;
+  width: 100%;
 }
 
 .projects-container li {
@@ -689,14 +686,18 @@ h2:not(.no-default-h2)::after {
   mix-blend-mode: multiply;
   object-fit: cover;
   width: 100%;
-  height: 300px;
+  height: 100%;
   filter: grayscale(100%) contrast(1) brightness(50%);
 }
 
 .projects-desc {
   position: absolute;
   top: 0;
-  padding: 40px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .projects-desc h3 {
@@ -717,5 +718,89 @@ h2:not(.no-default-h2)::after {
   margin: 15px 0;
 }
 
-/*900 px altera estilo
+.projects-desc::before {
+  display: inline-block;
+  content: "Projeto Novo";
+  margin-bottom: 15px;
+  color: var(--green);
+  font-size: clamp(0.875rem, 0.786rem + 0.238vw, 1rem);
+}
+
+.projects-desc p ~ a:hover svg {
+  fill: var(--green);
+}
+
+.projects-desc p ~ a svg {
+  width: 18px;
+  height: 18px;
+}
+
+.projects-desc p ~ a svg {
+  fill: var(--lightest-slate);
+}
+
+@media screen and (min-width: 900px) {
+  .projects-container ul {
+    gap: 100px;
+  }
+
+  .projects-container li {
+    display: flex;
+    align-items: center;
+  }
+
+  .projects-imgContainer {
+    max-width: 65%;
+    margin-left: 50px;
+  }
+
+  .projects-imgContainer img {
+    object-fit: contain;
+  }
+
+  .projects-imgContainer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .projects-imgContainer a::before {
+    right: 0;
+  }
+
+  .projects-desc {
+    max-width: 75%;
+    right: 50px;
+    align-items: flex-end;
+  }
+
+  .projects-desc p {
+    text-align: right;
+    background-color: var(--light-navy);
+    border-radius: 4px;
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 0 25px;
+  }
+
+  .project-left {
+    flex-direction: row-reverse;
+    padding-right: 100px;
+  }
+
+  .project-left .projects-imgContainer a::before {
+    left: 0;
+  }
+
+  .project-left .projects-desc {
+    align-items: flex-start;
+    left: 50px;
+  }
+
+  .project-left .projects-desc p {
+    text-align: left;
+  }
+}
 /*#endregion*/
