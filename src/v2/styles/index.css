@@ -469,6 +469,7 @@ h2:not(.no-default-h2)::before {
 @media screen and (min-width: 768px) {
   .about-container {
     flex-direction: row;
+    justify-content: center;
     gap: 15px;
   }
 
@@ -712,31 +713,47 @@ h2:not(.no-default-h2)::before {
 
 .projects-desc h3:hover {
   color: var(--green);
+  cursor: pointer;
 }
 
 .projects-desc p {
   margin: 15px 0;
 }
 
-.projects-desc::before {
+.projects-desc a:first-child {
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-desc a:first-child::before {
   display: inline-block;
   content: "Projeto Novo";
   margin-bottom: 15px;
   color: var(--green);
   font-size: clamp(0.875rem, 0.786rem + 0.238vw, 1rem);
+  width: fit-content;
 }
 
-.projects-desc p ~ a:hover svg {
+.projects-desc a:last-child {
+  width: fit-content;
+}
+
+.projects-desc a:last-child:hover svg {
   fill: var(--green);
 }
 
-.projects-desc p ~ a svg {
+.projects-desc a:last-child svg {
   width: 18px;
   height: 18px;
 }
 
-.projects-desc p ~ a svg {
+.projects-desc a:last-child svg {
   fill: var(--lightest-slate);
+}
+
+.projects-desc ~ p {
+  display: none;
 }
 
 @media screen and (min-width: 900px) {
@@ -751,7 +768,8 @@ h2:not(.no-default-h2)::before {
 
   .projects-imgContainer {
     max-width: 65%;
-    margin-left: 50px;
+    height: fit-content;
+    z-index: 2;
   }
 
   .projects-imgContainer img {
@@ -770,24 +788,57 @@ h2:not(.no-default-h2)::before {
     right: 0;
   }
 
+  .projects-imgContainer:hover a,
+  .projects-imgContainer:hover a::before,
+  .project-left .projects-imgContainer:hover a::before,
+  .projects-imgContainer:hover img {
+    mix-blend-mode: normal;
+    background-color: transparent;
+    filter: unset;
+  }
+
   .projects-desc {
     max-width: 75%;
-    right: 50px;
+    right: 0px;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .projects-desc a:first-child {
     align-items: flex-end;
   }
 
   .projects-desc p {
-    text-align: right;
-    background-color: var(--light-navy);
+    display: none;
+  }
+
+  .projects-desc ~ p {
+    display: block;
+    position: absolute;
+    right: 0;
     border-radius: 4px;
     padding: 25px;
+    width: 50%;
+    height: 100px;
     max-width: 500px;
-    margin: 0 0 25px;
+    margin-top: 25px;
+    z-index: 3;
+    text-align: right;
+    background-color: var(--light-navy);
   }
 
   .project-left {
     flex-direction: row-reverse;
-    padding-right: 100px;
+  }
+
+  .project-left .projects-desc a:first-child {
+    align-items: flex-start;
+  }
+
+  .project-left .projects-desc ~ p {
+    text-align: left;
+    left: 0;
   }
 
   .project-left .projects-imgContainer a::before {
@@ -796,7 +847,7 @@ h2:not(.no-default-h2)::before {
 
   .project-left .projects-desc {
     align-items: flex-start;
-    left: 50px;
+    left: 5px;
   }
 
   .project-left .projects-desc p {
