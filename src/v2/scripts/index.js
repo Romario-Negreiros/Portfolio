@@ -1,6 +1,6 @@
-// import "../../../public/assets/logo.svg";
+import "../../../public/assets/logo.svg";
 
-// import "../styles/index.css";
+import "../styles/index.css";
 
 //#region Mobile menu
 const menuMechanisms = (event) => {
