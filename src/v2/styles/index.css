@@ -133,6 +133,23 @@ h2:not(.no-default-h2)::before {
     padding: 0 100px;
   }
 }
+
+.animate-right {
+  transform: translateX(-300px);
+  visibility: hidden;
+  transition: transform 0.8s;
+}
+
+.animate-left {
+  transform: translateX(300px);
+  visibility: hidden;
+  transition: 0.8s;
+}
+
+.animated {
+  transform: translate(0px) !important;
+  visibility: visible !important;
+}
 /*#endregion*/
 
 /*#region Header*/

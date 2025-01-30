@@ -56,8 +56,6 @@ const handleHeaderScrollEffect = () => {
 
   prevScrollHeight = window.scrollY;
 };
-
-window.onscroll = handleHeaderScrollEffect;
 //#endregion
 
 //#region Switch experience content
@@ -93,3 +91,42 @@ for (let i = 0; i < expOptions.length; i++) {
   expOptions[i].addEventListener("click", handleExperienceSelect);
 }
 //#endregion
+
+//#region Animate on scroll
+const addAnimationClasses = () => {
+  const animateDirections = {
+    right: "animate-right",
+    left: "animate-left",
+  };
+
+  const elementsToAnimate = Array.from(document.querySelectorAll("[data-aos]"));
+  elementsToAnimate.forEach((element) => {
+    const animateDirection = element.getAttribute("data-direction");
+    element.classList.add(animateDirections[animateDirection]);
+  });
+};
+
+const animateOnScroll = () => {
+  const { scrollY, innerHeight } = window;
+  const elementsToAnimate = Array.from(document.querySelectorAll("[data-aos]"));
+  elementsToAnimate.forEach((element) => {
+    if (
+      element.offsetTop - scrollY <=
+      innerHeight - (element.offsetTop - scrollY) / 7
+    ) {
+      element.classList.add("animated");
+    }
+  });
+};
+
+window.onload = () => {
+  addAnimationClasses();
+  // Delay to allow seeing the animation in presentational section
+  setTimeout(() => animateOnScroll(), 200);
+};
+//#endregion
+
+window.onscroll = (e) => {
+  handleHeaderScrollEffect(e);
+  animateOnScroll(e);
+};
