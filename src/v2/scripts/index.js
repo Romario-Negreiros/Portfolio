@@ -7,7 +7,7 @@ import "../../../public/assets/changix-snapshot.png24";
 import "../styles/index.css";
 
 //#region Mobile menu
-const menuMechanisms = (event) => {
+const menuMechanisms = () => {
   if (window.innerWidth <= 768) {
     window.document.body.classList.toggle("body--active");
 
@@ -33,7 +33,7 @@ internLinks.forEach((link) => {
     // Closes menu when click occurs on mobile
     menuMechanisms(event);
     const element = document.querySelector(event.target.getAttribute("href"));
-    window.scroll({
+    window.scrollTo({
       top: element.offsetTop,
       behavior: "smooth",
     });
@@ -132,7 +132,7 @@ window.onload = () => {
 //#endregion
 
 //#region Scroll to top
-const logo = document.querySelector("#header");
+const logo = document.querySelector("#logo");
 logo.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
