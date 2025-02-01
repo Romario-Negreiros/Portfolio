@@ -1,6 +1,6 @@
-import "../../../public/assets/logo.svg";
+// import "../../../public/assets/logo.svg";
 
-import "../styles/index.css";
+// import "../styles/index.css";
 
 //#region Mobile menu
 const menuMechanisms = (event) => {
@@ -42,6 +42,7 @@ let prevScrollHeight = window.scrollY;
 
 const handleHeaderScrollEffect = () => {
   const header = document.querySelector(".header-container");
+  console.log(header);
 
   if (window.scrollY === 0) {
     header.classList.remove("header-container--showNotOnTop");
@@ -126,7 +127,17 @@ window.onload = () => {
 };
 //#endregion
 
+//#region Scroll to top
+const logo = document.querySelector("#header");
+logo.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+//#endregion
+
 window.onscroll = (e) => {
-  handleHeaderScrollEffect(e);
+  handleHeaderScrollEffect();
   animateOnScroll(e);
 };
