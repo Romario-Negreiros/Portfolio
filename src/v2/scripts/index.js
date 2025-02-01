@@ -104,10 +104,19 @@ const addAnimationClasses = () => {
     left: "animate-left",
   };
 
+  const noAnimationOnMobile = ["float-left-container", "float-right-container"];
+
   const elementsToAnimate = Array.from(document.querySelectorAll("[data-aos]"));
   elementsToAnimate.forEach((element) => {
-    const animateDirection = element.getAttribute("data-direction");
-    element.classList.add(animateDirections[animateDirection]);
+    debugger;
+    if (
+      ((element.classList.contains(noAnimationOnMobile[0]) ||
+        element.classList.contains(noAnimationOnMobile[1])) &&
+        window.clientWidth > 768) === false
+    ) {
+      const animateDirection = element.getAttribute("data-direction");
+      element.classList.add(animateDirections[animateDirection]);
+    }
   });
 };
 
