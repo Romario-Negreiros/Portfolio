@@ -1,6 +1,10 @@
-// import "../../../public/assets/logo.svg";
+import "../../../public/assets/logo.svg";
+import "../../../public/assets/bdm-snapshot.png24";
+import "../../../public/assets/easybank-snapshot.png24";
+import "../../../public/assets/fylo-snapshot.png24";
+import "../../../public/assets/changix-snapshot.png24";
 
-// import "../styles/index.css";
+import "../styles/index.css";
 
 //#region Mobile menu
 const menuMechanisms = (event) => {
