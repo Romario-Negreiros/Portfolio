@@ -1,10 +1,10 @@
-import "../../../public/assets/logo.svg";
-import "../../../public/assets/bdm-snapshot.png24";
-import "../../../public/assets/easybank-snapshot.png24";
-import "../../../public/assets/fylo-snapshot.png24";
-import "../../../public/assets/changix-snapshot.png24";
+// import "../../../public/assets/logo.svg";
+// import "../../../public/assets/bdm-snapshot.png24";
+// import "../../../public/assets/easybank-snapshot.png24";
+// import "../../../public/assets/fylo-snapshot.png24";
+// import "../../../public/assets/changix-snapshot.png24";
 
-import "../styles/index.css";
+// import "../styles/index.css";
 
 //#region Mobile menu
 const menuMechanisms = () => {
@@ -104,11 +104,8 @@ const addAnimationClasses = () => {
     left: "animate-left",
   };
 
-  const noAnimationOnMobile = ["float-left-container", "float-right-container"];
-
   const elementsToAnimate = Array.from(document.querySelectorAll("[data-aos]"));
   elementsToAnimate.forEach((element) => {
-    debugger;
     if (
       ((element.classList.contains(noAnimationOnMobile[0]) ||
         element.classList.contains(noAnimationOnMobile[1])) &&

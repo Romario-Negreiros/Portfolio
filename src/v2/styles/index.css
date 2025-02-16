@@ -150,6 +150,12 @@ h2:not(.no-default-h2)::before {
   }
 }
 
+@media screen and (max-height: 600px) {
+  section {
+    padding: 100px 0;
+  }
+}
+
 .animate-right {
   transform: translateX(-300px);
   visibility: hidden;
@@ -345,6 +351,19 @@ h2:not(.no-default-h2)::before {
     display: none;
   }
 }
+
+@media screen and (max-height: 400px) {
+  .header-linkList {
+    flex-flow: row wrap;
+    align-items: flex-end;
+    padding: 100px 0;
+    gap: 100px;
+  }
+
+  .header-linkList li {
+    width: fit-content;
+  }
+}
 /*#endregion*/
 
 /*#region Landing*/
@@ -408,7 +427,19 @@ h2:not(.no-default-h2)::before {
   width: 20px;
 }
 
+.float-left-container:not(.float-left-container-mobile) {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
+  .float-left-container-mobile {
+    display: none;
+  }
+
+  .float-left-container:not(.float-left-container-mobile) {
+    display: block;
+  }
+
   .float-left-container {
     position: fixed;
     bottom: 0;
@@ -427,6 +458,12 @@ h2:not(.no-default-h2)::before {
     height: 150px;
     background-color: var(--lightest-slate);
     margin: auto;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .float-left-container::after {
+    display: none;
   }
 }
 /*#endregion*/
@@ -460,6 +497,12 @@ h2:not(.no-default-h2)::before {
     height: 150px;
     background-color: var(--lightest-slate);
     margin: auto;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .float-right-container::after {
+    display: none;
   }
 }
 /*#endregion*/
@@ -903,9 +946,15 @@ h2:not(.no-default-h2)::before {
 
 /*#region Contacts*/
 .contact-container {
-  padding: 300px 0;
+  padding: 300px 0 150px;
   max-width: 900px;
   margin: auto;
+}
+
+@media screen and (max-height: 600px) {
+  .contact-container {
+    padding: 50px 0 0;
+  }
 }
 
 .contact-container div:last-child {
