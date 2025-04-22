@@ -7,7 +7,7 @@
     "dev": "webpack serve --hot --mode development",
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production",
-    "deploy": "npm run build-prod && git add . && git commit -m \"Gerando arquivos de build\" && git push origin main && git subtree push --prefix dist origin gh-pages"
+    "deploy": "npm run build-prod && git add . && git commit -m \"Gerando arquivos de build e publicando\" && git push origin main && git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
