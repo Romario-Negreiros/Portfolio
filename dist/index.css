@@ -172,6 +172,27 @@ h2:not(.no-default-h2)::before {
   transform: translate(0px) !important;
   visibility: visible !important;
 }
+
+.link-btn {
+  display: inline-block;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: 1px solid var(--green);
+  padding: 20px 28px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  transition: all 0.25s ease-in-out;
+}
+
+.link-btn:hover {
+  box-shadow: 4px 4px 0 0 var(--green);
+  transform: translate(-5px, -5px);
+}
+
+section {
+  padding: 25px 0;
+}
 /*#endregion*/
 
 /*#region Header*/
@@ -400,6 +421,10 @@ h2:not(.no-default-h2)::before {
   max-width: 600px;
   margin-top: 50px;
 }
+
+.landing-container a {
+  width: fit-content;
+}
 /*#endregion*/
 
 /*#region Floating left*/
@@ -576,6 +601,11 @@ h2:not(.no-default-h2)::before {
   width: 100%;
 }
 
+.exp-container div:last-child {
+  max-width: 100%;
+  flex-grow: 1;
+}
+
 .exp-list {
   display: flex;
   width: 100%;
@@ -617,7 +647,7 @@ h2:not(.no-default-h2)::before {
   display: none;
 }
 
-.exp-content li:first-child {
+.exp-content li:last-child {
   display: block;
 }
 
@@ -717,7 +747,6 @@ h2:not(.no-default-h2)::before {
   flex-direction: column;
   max-width: 1100px;
   min-height: 100vh;
-  padding-top: 55px;
 }
 
 .projects-container > div {
@@ -965,23 +994,6 @@ h2:not(.no-default-h2)::before {
   gap: 20px;
   max-width: 500px;
   margin: 50px auto;
-}
-
-.contact-container a {
-  display: inline-block;
-  margin-top: 25px;
-  border-radius: 5px;
-  border: 1px solid var(--green);
-  padding: 20px 28px;
-  color: var(--green);
-  font-family: var(--font-mono);
-  font-size: 14px;
-  transition: all 0.25s ease-in-out;
-}
-
-.contact-container a:hover {
-  box-shadow: 4px 4px 0 0 var(--green);
-  transform: translate(-5px, -5px);
 }
 /*#endregion*/
 
