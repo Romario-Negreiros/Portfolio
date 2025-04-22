@@ -3,6 +3,7 @@ import "../../../public/assets/bdm-snapshot.png24";
 import "../../../public/assets/easybank-snapshot.png24";
 import "../../../public/assets/fylo-snapshot.png24";
 import "../../../public/assets/changix-snapshot.png24";
+import "../../../public/assets/Curriculo_Romario_Negreiros.pdf";
 
 import "../styles/index.css";
 
@@ -107,9 +108,7 @@ const addAnimationClasses = () => {
   const elementsToAnimate = Array.from(document.querySelectorAll("[data-aos]"));
   elementsToAnimate.forEach((element) => {
     if (
-      ((element.classList.contains(noAnimationOnMobile[0]) ||
-        element.classList.contains(noAnimationOnMobile[1])) &&
-        window.clientWidth > 768) === false
+      (window.clientWidth > 768) === false
     ) {
       const animateDirection = element.getAttribute("data-direction");
       element.classList.add(animateDirections[animateDirection]);

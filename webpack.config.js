@@ -23,7 +23,7 @@ module.exports = (env, argv) => ({
   module: {
     rules: [
       { test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] },
-      { test: /\.(svg|png24)$/, type: "asset/resource" },
+      { test: /\.(svg|png24|pdf)$/, type: "asset/resource" },
     ],
   },
   plugins: [
