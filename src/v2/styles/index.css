@@ -609,7 +609,7 @@ section {
 @media screen and (min-width: 768px) {
   .about-container {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 15px;
   }
 
