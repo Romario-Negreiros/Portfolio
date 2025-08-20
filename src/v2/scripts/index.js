@@ -47,7 +47,6 @@ let prevScrollHeight = window.scrollY;
 
 const handleHeaderScrollEffect = () => {
   const header = document.querySelector(".header-container");
-  console.log(header);
 
   if (window.scrollY === 0) {
     header.classList.remove("header-container--showNotOnTop");
@@ -67,9 +66,10 @@ const handleHeaderScrollEffect = () => {
 //#region Switch experience content
 const expOptions = [...document.querySelectorAll(".exp-list li")];
 
-let selectedIndex = 0;
+let selectedIndex = 2;
 
 const handleExperienceSelect = (ev) => {
+ 
   const optTxt = ev.target.innerText;
 
   const optIdx = expOptions.findIndex((opt) => opt.innerText == optTxt);

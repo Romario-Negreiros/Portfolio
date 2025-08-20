@@ -315,6 +315,10 @@ section {
   color: var(--lightest-slate);
 }
 
+.header-linkList li:first-child a {
+  color: var(--green);
+}
+
 .header-linkList a:hover {
   color: var(--green);
 }
@@ -328,6 +332,10 @@ section {
 .header-linkList svg {
   width: 18px;
   fill: var(--lightest-slate);
+}
+
+.header-linkList li:first-child a svg {
+  fill: var(--green);
 }
 
 .header-mobileMenu {
@@ -639,7 +647,7 @@ section {
 
 .exp-container div:last-child {
   max-width: 100%;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .exp-list {
@@ -702,19 +710,25 @@ section {
   margin-bottom: 20px;
 }
 
-.exp-content p:not(.exp-subtitle) {
+.exp-content p:not(.exp-subtitle),
+.exp-content p:not(.exp-stack) {
   position: relative;
   padding-left: 30px;
   margin: 0 0 15px;
 }
 
-.exp-content p:not(.exp-subtitle)::before {
+.exp-content p:not(.exp-subtitle)::before,
+.exp-content p:not(.exp-stack)::before {
   content: "▹";
   position: absolute;
   top: 1.5%;
   left: 0;
   color: var(--green);
   font-size: 14px;
+}
+
+.exp-stack strong {
+  color: var(--green);
 }
 
 @media screen and (min-width: 600px) {
