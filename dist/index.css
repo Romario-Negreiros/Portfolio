@@ -41,8 +41,7 @@
   --green-tint: rgba(100, 255, 218, 0.1);
   --pink: #f57dff;
   --blue: #57cbff;
-  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system,
-    system-ui, sans-serif;
+  --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
   --border-radius: 4px;
   --nav-height: 70px;
@@ -66,6 +65,10 @@ ul {
 a {
   color: unset;
   text-decoration: none;
+}
+
+a:focus {
+  outline: 0;
 }
 
 button {
@@ -185,9 +188,25 @@ h2:not(.no-default-h2)::before {
   transition: all 0.25s ease-in-out;
 }
 
-.link-btn:hover {
+.link-btn:hover,
+.action-btn:hover,
+.link-btn:focus,
+.action-btn:focus {
   box-shadow: 4px 4px 0 0 var(--green);
   transform: translate(-5px, -5px);
+}
+
+.action-btn {
+  display: inline-block;
+  margin-top: 25px;
+  border-radius: 5px;
+  border: 1px solid var(--green);
+  background-color: var(--light-navy);
+  color: var(--green);
+  padding: 20px 28px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  transition: all 0.25s ease-in-out;
 }
 
 section {
@@ -209,8 +228,7 @@ section {
   background-color: var(--navy);
   box-shadow: unset;
   transform: translateY(0);
-  transition: transform 0.5s ease-in-out, padding 0.5s ease-in-out,
-    box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, padding 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .header-container--showNotOnTop {
@@ -297,6 +315,10 @@ section {
   color: var(--lightest-slate);
 }
 
+.header-linkList li:first-child a {
+  color: var(--green);
+}
+
 .header-linkList a:hover {
   color: var(--green);
 }
@@ -310,6 +332,10 @@ section {
 .header-linkList svg {
   width: 18px;
   fill: var(--lightest-slate);
+}
+
+.header-linkList li:first-child a svg {
+  fill: var(--green);
 }
 
 .header-mobileMenu {
@@ -422,8 +448,26 @@ section {
   margin-top: 50px;
 }
 
+.landing-container div {
+  gap: 15px;
+  margin-top: 0;
+}
+
 .landing-container a {
   width: fit-content;
+}
+
+@media screen and (min-width: 406px) {
+  .landing-container div {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  .landing-container a {
+    margin-top: 0px;
+  }
 }
 /*#endregion*/
 
@@ -573,7 +617,7 @@ section {
 @media screen and (min-width: 768px) {
   .about-container {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 15px;
   }
 
@@ -603,7 +647,7 @@ section {
 
 .exp-container div:last-child {
   max-width: 100%;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 .exp-list {
@@ -625,8 +669,7 @@ section {
   font-size: clamp(0.75rem, 0.688rem + 0.208vw, 0.875rem);
   padding: 10px 25px;
   border-bottom: 2px solid var(--lightest-navy);
-  transition: border-bottom 0.25s ease-in-out, color 0.25s ease-in-out,
-    background-color 0.25s ease-in-out;
+  transition: border-bottom 0.25s ease-in-out, color 0.25s ease-in-out, background-color 0.25s ease-in-out;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -667,19 +710,25 @@ section {
   margin-bottom: 20px;
 }
 
-.exp-content p:not(.exp-subtitle) {
+.exp-content p:not(.exp-subtitle),
+.exp-content p:not(.exp-stack) {
   position: relative;
   padding-left: 30px;
   margin: 0 0 15px;
 }
 
-.exp-content p:not(.exp-subtitle)::before {
+.exp-content p:not(.exp-subtitle)::before,
+.exp-content p:not(.exp-stack)::before {
   content: "▹";
   position: absolute;
   top: 1.5%;
   left: 0;
   color: var(--green);
   font-size: 14px;
+}
+
+.exp-stack strong {
+  color: var(--green);
 }
 
 @media screen and (min-width: 600px) {
@@ -707,8 +756,7 @@ section {
   .exp-list button {
     border-left: 2px solid var(--lightest-navy);
     border-bottom: 0 none;
-    transition: border-left 0.25s ease-in-out, color 0.25s ease-in-out,
-      background-color 0.25s ease-in-out;
+    transition: border-left 0.25s ease-in-out, color 0.25s ease-in-out, background-color 0.25s ease-in-out;
     padding: 20px;
     text-align: left;
     white-space: unset;
