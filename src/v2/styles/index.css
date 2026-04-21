@@ -690,7 +690,7 @@ section {
   display: none;
 }
 
-.exp-content li:last-child {
+.exp-content li.selected {
   display: block;
 }
 

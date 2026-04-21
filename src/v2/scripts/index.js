@@ -66,10 +66,10 @@ const handleHeaderScrollEffect = () => {
 //#region Switch experience content
 const expOptions = [...document.querySelectorAll(".exp-list li")];
 
-let selectedIndex = 2;
+
+let selectedIndex = 0;
 
 const handleExperienceSelect = (ev) => {
- 
   const optTxt = ev.target.innerText;
 
   const optIdx = expOptions.findIndex((opt) => opt.innerText == optTxt);
